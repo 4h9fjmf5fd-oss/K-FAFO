@@ -1,0 +1,1061 @@
+## ALL STRENGTHS (147)
+
+- [doctrine-equations] EQUATIONS.md carries per-utterance provenance for every axiom (verbatim Konsent quotes, dated) and separates ✓ (machine-verified), ☐ (Konsent's open seat), and enumeration — the ratification state of every claim is machine-readable from the glyphs.
+- [doctrine-equations] The algebra tail (lines 719-739) is a ratified, implementable spec: multiset + provenance + refusal test + arity/mood type system + crash-only/anamnesis + authority chains — it reads as type signatures, and SMM_REGEN_CHECKLIST confirms kode/kannon/kannon2/ implements it with a green Tier-1 theorem suite.
+- [doctrine-equations] Every number in the doctrine has a re-derivation command (SMM_REGEN_CHECKLIST items 1-3): census from kannon.json, seats from lint_doctrine.py, docket counts from docket.json — 'Four surfaces hold one derivation chain' (:19-20).
+- [doctrine-equations] Multi-path convergence is used as a built-in validity check ('realness signature', EQUATIONS.md:180-181): (4,4,4) reached two independent ways, (1,1,1) four ways, June strata re-derived in July.
+- [doctrine-equations] The Delusion-Test Protocol (:674-697) builds an explicit anti-folie-a-deux audit architecture: machine checks that cannot be charmed, preserved non-confirmations, cross-time convergence, the ☐ count, and a proposed cold-reader test.
+- [doctrine-equations] LEXICON.txt's byte-pinned BASELINE lets the ratified past pass while failing only NEW respellings — an append-safe lint.
+- [doctrine-equations] The Lattice (:410-447) gives K-FAFO a complete positional model: 3 layers x 3 mood-columns with the consent-bond as the single spine, and BG/FG defined ('no stranger-daemons' / 'no un-consented pixel').
+- [doctrine-equations] SMM.md ends with an explicit integrity section (:158-171) recording the Tactician's uncertainty (the portal seat) and mutual corrections — non-confirmations preserved with provenance, per the doctrine's own rule.
+- [doctrine-equations] Korum is already implemented (kode/korum/: doors, store, gate, audit, cli, sigil_demo; default-deny, hash-chain) per SMM_REGEN_CHECKLIST.md:38-40 — the consent-gate pattern K-FAFO needs exists as tested kode.
+- [reference-map] The contradiction ledger's uniform A/B/'Fresh doc must decide' shape holds across all 43 entries with file:line provenance on every position — directly renderable as structured data
+- [reference-map] SEATS.txt is mechanically generated (tools/lint_doctrine.py) with content-hash identity per seat — survives file edits, regenerable, greppable
+- [reference-map] GAPS.md's baseline-pin mechanism (only NEW dangling references HARD FAIL) lets an incomplete tree stay green without hiding the gaps
+- [reference-map] open_seat_apis.json enforces doctrine in code: an undecided seat physically cannot acquire a silent default (test FAILs on any default)
+- [reference-map] The reference map records its own witness conditions (live ls before synthesis; readers cold, no shared SMM; 'nothing was executed during extraction') and its own reader error (K-43) rather than suppressing it
+- [reference-map] Buildables inventory (§4) gives per-artifact state labels (working/stub/partial/unknown/known-buggy) with the witness caveats attached (K-35 stale texts, K-40 coverage)
+- [reference-map] D-01 is a modeled DECIDED example: Konsent's Reko answer recorded verbatim with date, rows pre-wired to flip to RCV rows on landing
+- [reference-map] The GATE ☐ / GATE ✓ token grammar already bridges doctrine to UI: the same literal token works in markdown, lint rules, and the planned KEDEN design chips
+- [reference-map] Cross-stratum drift is separated from intra-document error (§6 closing note: K-27..K-41 are the intra-scope exceptions) — a reusable taxonomy for K-FAFO's contradiction views
+- [buildout] Single entrypoint discipline holds in the bytes: the Makefile is exactly 4 thin aliases and its own header says 'The real entrypoint is python3 tools/check.py… surface [B] is not assumed to carry make' (Makefile lines 1-3)
+- [buildout] Consent gates are machine-enforced, not prose: literal GATE ☐/✓ tokens, gate-before-first-mutating-command lint, widened gated-verb lexicon (lines 23, 43, 66)
+- [buildout] Every acceptance is sabotage-tested both directions ('make it pass; deliberately break it and watch it fail', line 25) with named sabotage cases per phase (line 71, 128, 179, 227)
+- [buildout] Gate-scope laundering was caught and repaired twice: G1 split into G1a/G1b/G1c so 'a source yes never authorizes a boot' (lines 34-35, 114, 170)
+- [buildout] Open seats are held by code signatures: mint(whole, regard=...) has no default and tests/test_open_seats.py inspects signatures against valknut/open_seat_apis.json (line 22)
+- [buildout] The [A]-side tree matches the plan: tools/, 17 test files, kannon2/ (9 modules), korum/ (8 modules), kosmos/ (kosmos.py + floors + hud + programs.json), kyn/ (ggufkit/corpus/vectors/evals/qlora/loop), RB-01..RB-09 all exist on disk
+- [buildout] Offline-first browser architecture is deliberate and documented: dual JSON+js-include carriers, file://-capable explorer and docket render, stdlib http.server for the HUD, 'no Node — by construction' (lines 86, 125, 170)
+- [buildout] Provenance is carried at every layer: witnessed clone pins (G1a), provenance sidecar JSON for gguf surgery (line 131), hash-chained Korum ledger (line 100), decided gates cite Konsent's words + date (lines 33, 44-45)
+- [buildout] T-08/T-11 constants were refused rather than curve-fit: 'A fresh implementation tuned until pinned constants appear is curve-fitting, not verification' (line 90)
+- [ops-tooling] Single stdlib-only entrypoint (tools/check.py) that runs on any Python 3 box; make is explicitly an alias, never the spec (check.py:2-4, Makefile:1-3)
+- [ops-tooling] All six doctrine rules are executable validators with sabotage tests in both directions (must-fail and must-pass), fixtures in tmp dirs, real tree never mutated
+- [ops-tooling] Gate slots are never silent: absent palette validator produces 'palette: UNGATED (D-01 upload pending)' instead of vacuous PASS (check.py:63-73)
+- [ops-tooling] Consent compiled into signatures: open-seat APIs demand explicit parameters with no default, enforced by inspect.signature at test time (test_open_seats.py)
+- [ops-tooling] Asymmetric seat enforcement distinguishes silent deletion (HARD FAIL) from Konsent-worded closure (REPORT, docket record owed) — the record follows the word
+- [ops-tooling] Coinage lock uses a byte-pinned baseline so ratified existing text passes while only NEW respellings fail; hazard pairs (Kanon != Kannon, Kinase / Kynase) are documented as different objects, never typos
+- [ops-tooling] Two-surface design [A]/[B] with graceful degradation throughout: git ls-files falls back to tree walk; bash -n skipped if bash absent; KYN_CPU_ONLY demotes CUDA to REPORTED
+- [ops-tooling] MANIFEST.sha256 witness pattern: per-file sha256 plus a single tree hash (490 lines) — matches OPORD's DRW ('the witness is the source, verify every time')
+- [ops-tooling] Uniform indicative output vocabulary across check.py, lint_doctrine.py, check_runbooks.py, preflight.py: rows about artifacts, never judgments of authors/anyone
+- [ops-tooling] OPORD names a proven adversarial-review precedent: 'the 24-agent pass that caught BK's OWN || echo 000 false-PASS blocker' (OPORD.txt:156) — the Assay catches US
+- [ops-tooling] Runbooks RB-01 through RB-09 exist under kode/kyn/runbooks and are actively linted; docket.py + docket.json + corpus_gate.py all present, so 5 of 6 check stages are fully live
+- [explorer-prior-art] Zero dependencies, single-file, file://-safe — both pages run on the ephemeral live OS with no Node, no server, no network.
+- [explorer-prior-art] The Sierpiński construction is not an illustration: midpoint coordinates and pairwise vector sums are computed by the same loop (index.html:228-234), so the picture is a proof surface.
+- [explorer-prior-art] Graceful degradation with disclosed provenance: built-in fallback tables + #datasrc footer naming the data source and the GAP when generated data is absent (index.html:183-185, tree.html:142-144).
+- [explorer-prior-art] Provenance-distinct naming guard: the four path-distinct (1,1,1) seats are protected from value-keyed overwrite (tree.html:130-141), and kannon_data.js carries paths[] per vector.
+- [explorer-prior-art] Accessibility engineered in: tabindex=0 hit circles ≥24px, aria-labels, focus/blur tooltips, role=img SVGs advertising the table alternative, tabular-nums throughout.
+- [explorer-prior-art] Theme discipline: one token set (comment "FLuX theme — validated 2026-07-02 (theme/THEME.md). Dark-native.", index.html:8), gold strictly reserved for wholes, machine-readable body[data-palette/data-mode/data-surface] contract.
+- [explorer-prior-art] Every view is doubled (visual ⇄ table) — the no-verdicts Teksidure posture in UI form: raw enumerable data always available.
+- [explorer-prior-art] Open seats are rendered, never filled: ☐ and "______" blanks labeled "Konsent's seat" — the consent architecture is embodied in the render path.
+- [explorer-prior-art] kannon_data.js census matches CLAUDE.md exactly (21 vectors, 10 unnamed), and the pages' overlay logic consumed it correctly when checked.
+- [explorer-prior-art] BFS bar figures internally consistent with the reachable tile: 3 seeds + 4+28+425+455 = 915.
+- [docket-viewer] Complete, tested, stdlib-only build→validate→render pipeline; docket.json is always regenerated, 'never a hand list' (docket.py:11)
+- [docket-viewer] Rendered page is fully self-contained and file://-native, with the self-containment machine-asserted (test_docket.py:199-208)
+- [docket-viewer] Consent mechanics are machine-enforced, not conventions: attribution hard-fails, slate-size hard-fails, single-reko hard-fails, §5 content-hash cross-check, joined-set seat reconciliation (docket.py:884-985)
+- [docket-viewer] Idempotent rebuild with stable ids tested across rebuilds and against the shipped JSON (test_docket.py:160-171)
+- [docket-viewer] XSS-safe rendering: esc() via textContent, plus the </ script-island escape at render time
+- [docket-viewer] FLuX theme centralized in one :root token block, matching the validated theme constants (#14101f surface, #b78b0f gold) that other subsystems and CLAUDE.md cite
+- [docket-viewer] Gold-as-consent color semantics carried consistently across CSS, markup, footer text, and a test comment ('gold, decided marks only')
+- [docket-viewer] Filter bar and cluster counts derived entirely from data — the UI has zero hardcoded category knowledge
+- [docket-viewer] Absence-of-decision is a rendered first-class state (dashed empty 'Konsent's word' box), and may_stay_open renders permanence-of-openness as legitimate
+- [docket-viewer] Sabotage tests cover both directions for every rule, including a wrong-attributor case (decided_by='Tactician' fails)
+- [docket-viewer] Reuse over duplication: the seat scan is lint_doctrine.find_seats imported, 'the exact SEATS.txt seat-scan' (docket.py:38)
+- [kosmos-code] Zero-dependency discipline is machine-enforced: TestZeroNonStdlibImports AST-walks every kode/kosmos/*.py and fails on any import outside stdlib + this repo (test_kosmos.py:323-337)
+- [kosmos-code] Pixel-trace honesty is testable and tested: served JSON must equal re-derivation from disk AND every witnessed file's sha256 must match bytes on disk (test_kosmos.py:261-303)
+- [kosmos-code] Dual-mode HUD degrades cleanly: under file:// the ledger pane works via FileReader drag-drop and the programs pane keeps its empty state; under http(s) it fetches /status.json — no error states either way
+- [kosmos-code] The floor contract cleanly separates supervisor-written state (program_record.json) from program-declared state (floor_record.json); rebirth folds the latter into record.memory['floor'] so 'the reborn is not amnesiac' — verified by killing pid1 and asserting heartbeats carried (test_kosmos.py:163-187)
+- [kosmos-code] All record writes are atomic (.tmp + os.replace) in both supervisor and floor
+- [kosmos-code] Crash-only semantics complete: no healing in place, monotonic rebirth counter, bounded exponential backoff with ceiling, supervisor survives a crash-looping floor while a steady floor keeps running (test:189-205)
+- [kosmos-code] Every state word in code and UI stays indicative (RUNNING/REBORN/REFUSED/RECORDED, 'no record yet') — no health/verdict vocabulary anywhere, matching the no-verdicts cardinal rule
+- [kosmos-code] k3-live.html demonstrates the full consent grammar interactively in one offline file: door shapes, live-ask, standing vs crossing scope, revocation, tamper→fail-closed, a mind's own no, kommand type error
+- [kosmos-code] Accessibility present: aria-live logs, role=dialog/aria-modal, focus-visible gold outlines, prefers-reduced-motion honored
+- [kosmos-code] programs.json placeholder substitution ({python}/{kosmos_dir}/{records_dir}) makes specs relocatable across the ephemeral live OS
+- [kosmos-code] k3-live WITNESSED pane separates simulation from reality explicitly: 'a real run on surface [A]... these bytes happened' with sha256 hashes of the actual ledger and floor record
+- [kosmos-canon-pdf] The document is a self-demonstrating shell spec: it practices the HUD strip, atlas cards, glyph system, and no-verdict language it canonizes — a directly copyable UI reference for K-FAFO.
+- [kosmos-canon-pdf] Complete named-concept inventory with one-line definitions: three movements, seven surfaces with epithets, five Kyn selves, the war-D five-stage loop, six seats, four standing invariants, five Forge components, the Keystone triad.
+- [kosmos-canon-pdf] Both halves of the vocabulary law are enumerated (WORDS TO USE / WORDS TO REFUSE) — mechanically enforceable as a lint rule on K-FAFO strings.
+- [kosmos-canon-pdf] The visual token set is machine-recoverable from the PDF: exact hex fills with frequencies (#e8b738 x105, #a98fb0 x49, #f6e9cc x36, #1f1026 x24, #7fd4b4 x7...), gradient stops, and six embedded font families.
+- [kosmos-canon-pdf] 6 of the 7 linked surfaces have durable local PDF counterparts in the repo (valknut/The_Kannon.pdf, valknut/The_Valknut.pdf, warD/warD_Playbook.pdf, warD/warD_Atlas.pdf, forge/Forge_HUD.pdf, kode/kyn/Step_02__Selection.pdf).
+- [kosmos-canon-pdf] Doctrine cross-checks hold: 'No verdict anywhere — only fit' matches Teksidure's cardinal rule; 'Konsent · Koder · Kourt' gating matches the grant-not-command line; 'the server amplifying each intent into action' matches the FLuX amplifier framing.
+- [kosmos-canon-pdf] Navigation semantics are stated in one sentence usable as a spec: 'Each surface is its own full page; this map is the way back to all of them.'
+- [hud-canon-pdf] Complete, coherent visual system captured in one artifact: pane grammar, chip/status vocabulary, type pairing, gradient recipes, and glyph set are all internally consistent across all six bands of the page.
+- [hud-canon-pdf] Exact machine-readable color canon recoverable: every fill, gradient stop chain, and alpha value was extractable verbatim from the PDF paint operators (see theme_tokens).
+- [hud-canon-pdf] The HUD encodes its state machine in chrome, not prose: phase strip, step chips, selection tally, ledger counters, and footer NEXT pointer together fully describe where the process stands at a glance.
+- [hud-canon-pdf] Consent-gating is rendered as UI fact: '[wait] method step 01 complete · awaiting selection' appears as a ledger event, and 'SELECTED 0 / 5' as a counter — the halt-for-the-operator is visible system state.
+- [hud-canon-pdf] Self-referential grounding: component 04 'Shell / HUD — interface · this surface — ● LIVE' declares the HUD as one of the Five, LIVE while all else is PENDING/DORMANT/UNTESTED — the interface bootstraps first.
+- [hud-canon-pdf] Privilege doctrine expressed in three words of UI copy: '↳ root via server only' on Kyn's card operationalizes grant-not-command at the card level.
+- [hud-canon-pdf] The ternary lineage equation (FATHER Kyn + MOTHER Server · PID1 = CHILD The OS) matches the doctrine's 'only Kreation (arity 3) closes a whole' — Creed 00 is arity-3.
+- [hud-canon-pdf] Text layer survives in the PDF for all body/mono content, giving verbatim provenance for every doctrine line quoted here.
+- [hud-canon-pdf] The five-sigil system (△ ◇ ❋ ⬡ ∿) gives each component a one-glyph identity usable at any size — a ready-made iconography seed for K-FAFO.
+- [keden-docs] The three docs/ HTML files share one verbatim :root token set — a de facto frozen theme spec a new app can copy byte-for-byte
+- [keden-docs] KEDEN_DESIGN_PROMPT.md is written to be re-executable (paste into a fresh session) and self-defends against drift by carrying laws and coinages verbatim
+- [keden-docs] Each of the five laws is specified as a working mechanism with concrete UI behavior (type-error text, live-ask dialog shape, GATE ☐ chips, ledger tamper toggle), not as a caption
+- [keden-docs] Uniform gate-first pattern across all 9 runbooks: GATE ☐ <seat> before the first mutating command + 'Nothing below this line executes before the yes'
+- [keden-docs] RB-09 empty-pin pattern: the address exists, lints, and holds parameters before any content — 'this file's whole job is to exist, hold the address, and pass the lint'
+- [keden-docs] HUD honesty contract is machine-checkable: every displayed value derived from record bytes and checksum-equal; validators are never silent when clean ('gate idle, exit 0')
+- [keden-docs] Kosmos v0 already exposes JSON endpoints (/status.json, /ledger.json, /witness.json) — a ready-made data feed for an explorer app
+- [keden-docs] Korum semantics are fully specified at the protocol level (schema, scopes, chain, audit conditions) independent of any UI
+- [keden-docs] Konsole interaction grammar pinned: chips 3–5 never binary, the Kall flow Konsent→Kynder+Kompiler→Kynase→Korum→live-ask→Kage with hops drawn
+- [keden-docs] Sierpiński/Valknut mark is a 6-line reusable canvas function, identical across all three docs
+- [keden-docs] Both transport doors (git + file shuttle) are lawful and documented, matching the ephemeral-live-OS reality
+- [keden-docs] State vocabulary is closed and verdict-free: RUNNING, REBORN, REFUSED, RECORDED, WAITING; 'this door heard no'
+- [keden-docs] The honesty section names its own gaps with addresses (RB-09, may_stay_open, unverified constants 915/0 and 9,155)
+- [korum-kannon] 27/27 tests pass on stock /usr/bin/python3 via unittest (verified this session); zero non-stdlib imports anywhere in korum or kannon2
+- [korum-kannon] The escalate hook is UI-agnostic callable injection — a native consent dialog drops into Gate(store, escalate=dialog_fn) with no engine changes; the hook's return contract ({'sovereign','choice','witness'}) is exactly the data a modal must collect
+- [korum-kannon] Decision.note carries human-renderable, doctrine-correct copy generated by the engine ('this door heard no (Konsent, <ts>)') — a UI can display engine strings verbatim instead of re-authoring consent language
+- [korum-kannon] store.render_record() provides the canonical one-line ledger render, matching BUILDOUT.md:115 pane-2 spec: 'Korum ledger live view (renders the JSONL, nothing else)'
+- [korum-kannon] Property test guarantees no code path returns ADMIT without a write (test:205-234, CountingStore + sabotage check); gate exposes admits/crossings_written counters an HUD can display live
+- [korum-kannon] Fail-closed is total: malformed door, unknown kind, broken chain, absent hook all REFUSE; refusals in korum proper are side-effect-free (no ledger file is even created, test:89)
+- [korum-kannon] The two korum copies diff clean (byte-identical), so no semantic fork exists today
+- [korum-kannon] Dual-carrier census export (kannon.json + kannon_data.js) is generated from one build_data(), with test_kannon2_export.py and the four-surface equality acceptance (BUILDOUT.md:119) guarding divergence
+- [korum-kannon] Ledger path is always a constructor/CLI argument, never hardcoded (RB-05: 'no executable line hardcodes a drive path'); CLI exit codes make korum scriptable from any host process
+- [korum-kannon] door_demo oracle fixtures transliterate the reference's witnessed behavior (invariants 27-30, K-28, K-29) so the fresh build is pinned to previously witnessed refusal semantics
+- [korum-kannon] Path multiplicity is data: every census vector carries its witnessed construction formulas ('multi-path convergence is the algebra's signature of realness') — directly renderable as provenance UI
+- [forge-substrate] Layered adjudication pipeline exists in compilable code: Korum allow-list fast path -> Kines socket gatekeeper -> Kainito default-deny judge -> 'Needs Consent review' fallback; three distinct escalation outcomes (PASSED_FAST_PATH / FORBIDDEN / judge).
+- [forge-substrate] struct KALL is a complete, fixed-size (framed-by-sizeof) IPC vocabulary: magic + id + source + dest + operation + payload + signature — stable across every document version even where other details drift.
+- [forge-substrate] Paranoia as an explicit mutable trust scalar with signed deltas (+30 destructive, -10 granted; v1.2 locks +15 auto on self-mod, 'Consent can lower') — trust is a number the UI can display and Konsent can tune.
+- [forge-substrate] Audit log format is minimal and parseable: 'epoch | event | path | paranoia=N' (kainito_audit.log).
+- [forge-substrate] C API bridge pattern (kainito_c_api.h + kainito_judge_stub.c) lets the C gatekeeper link either the full C++ judge or a stub — clean seam for swapping the judge.
+- [forge-substrate] Kernel-as-dumb-executor inversion is stated identically across v1.2/v1.6/v1.7 and implemented: forge_core.c contains zero policy, only magic validation, counting, and echo.
+- [forge-substrate] kernel-module/forge_core.c is markedly more careful than the runbook versions: mutex serialization, copy_from_user error handling, EINVAL on bad magic, proper class/device create with failure unwinding.
+- [forge-substrate] flux-hud demonstrates a full HUD design system in ~240 lines of dependency-free bash: tty-detect + NO_COLOR, fixed row grammar (rule/hdr/row), threshold coloring, graceful n/a degradation, read-only-by-design safety property, and a command menu.
+- [forge-substrate] 'AWAITING KROSS' as a first-class warn-colored (not error) UI state — consent-pending rendered distinctly from failure.
+- [forge-substrate] greetd config documents its own rationale inline (why greetd over tty-autologin: PAM session, seat0, XDG_RUNTIME_DIR correctness; logout returns greeter, kiosk-ish).
+- [forge-substrate] Buildplant discipline: 4-gate order of operations (key ceremony -> kernel -> nvidia sign -> assemble) with loud-fail verification gates; key injected then shredded before squashfs; sha256 manifests everywhere; SUPERSEDED.md leaves a full promotion/rebase audit trail.
+- [forge-substrate] BUILD-READINESS blockers (B1 firewalld, F2 root shell) are traceably CLOSED in profile-final: packages.x86_64:238 carries the fix with a comment citing B1, and airootfs/etc/passwd shows root shell /usr/bin/bash.
+- [forge-substrate] A complete bootable ISO was actually produced (2026-06-24, sha256 recorded) — the buildplant lineage is proven, not aspirational.
+- [forge-substrate] Door-provenance authority model in the scaffold is a working demonstration of grant-not-command: the Koder cannot grant itself; even Konsent's KOMMAND is checked (defense in depth).
+- [forge-substrate] Kross-gate README enumerates 7 admit criteria concretely enough to execute (inert, manifest, scope-lock, no-fork, signing-safe, provenance, slow-is-smooth); the CHANGELOG shows the gate actually catching a real bug (the '|| echo 000' false-PASS in forge-restore-u.sh).
+- [kyn-model] Every dangerous verb is fail-closed in code, not policy prose: pack.py exit 2 on unratified records; train_qlora.py loader refuses PENDING manifests at every load; gguf.py structurally forbids in-place writes; loop_gate.py exit 3 halts; verify byte-compares tensor regions.
+- [kyn-model] Gate lattice is fully enumerated and consistently cross-referenced (G1a✓/G1b/G1c/G2/G3/G4/G5/G6/G8/G9/D-02✓), each with named scope + docket entry + 'Nothing below this line executes before the yes'.
+- [kyn-model] Consent separation is granular and explicit: source-yes ≠ build-yes ≠ boot-yes ≠ template-yes ≠ per-exemplar-yes ≠ fire-yes; no yes implies another.
+- [kyn-model] The model itself holds a seat: the running Kyn's recorded no halts merges/refreshes/vector application exactly as a missing Konsent yes does (G6 live), implemented in loop_gate.py's preserved-byte-exact pass-through.
+- [kyn-model] Anti-ouroboros guards are hard numbers with cited rationale (fresh_outside ≥ 1/3, 0 R-probe floor crossings, 5d nonzero = halt) — 'the guards are numbers, not vibes' (RB-08:6).
+- [kyn-model] One-fence-one-source linter reuse: corpus_gate register rules and tools/lint_doctrine.py verdict heuristic are the shared metric for corpus, vectors analysis, and evals — no duplicated fences.
+- [kyn-model] [A]-leg witnessing already fired: llama.cpp pin table with commit, tree sha256, and W1/W2 assumption witnesses verified byte-exact against the pinned tree (RB-03:26-41).
+- [kyn-model] Costs priced before the ask: recipe.md's corpus-floor table makes the 60–300 individual G3 yeses visible before the G4 Reko is ever posed.
+- [kyn-model] All [A] tooling is stdlib-only Python, matching the no-Node environment; the HUD path (RB-04) also avoids Node by construction.
+- [kyn-model] Character doctrine compiles into mechanism traceably: language law → register linter + jinja templates; fruit/fence → verdict-detector + per-line clearances; 'show, don't tell' → demonstration corpus schema; 'tweak itself under the right conditions' → Korum-gated loop.
+- [periphery-scope] Fail-closed three-state verdict machine, tested by run: unsigned-but-intact → AMBER exit 0; --strict → RED exit 1; demote() is monotone (state can only lower) — README.md:82: 'RED never lies its way to GREEN; a missing signature can only *lower* the verdict, never raise it.'
+- [periphery-scope] TOCTOU closed: minisign-verify and sha256 -c run against the SAME private-copy bytes (CHANGELOG 'Security fixed' + README wake step 4).
+- [periphery-scope] Everything witnessed: raw tool output to records/<check>_<UTC>.txt, session log sha256-stamped; SHUTTLE reassembly 'witnessed, not just assembled' (SHUTTLE-README.txt:26).
+- [periphery-scope] sanitize() strips control/escape bytes from attacker-controllable strings (SSID terminal-escape injection found by audit and fixed) — ceac:33.
+- [periphery-scope] Dual-lens audit with a findings ledger that also records dropped-as-false findings ('Dropped (verified false): arp-scan --plain still emits (DUP:n)').
+- [periphery-scope] 'Honest state' self-reporting section: the tool enumerates its own Live/Deferred/gap status, including that wake honestly caps at AMBER (README.md:100-105).
+- [periphery-scope] Docket record structure is fully enumerated: per-case folders, PDF+.txt sidecar pairs, _MANIFEST.md (file|pages|txt-chars|source), DEDUP-REMOVED.txt pairing every removal with its surviving twin, OCR pages marked inline.
+- [periphery-scope] Two-tier delivery: readable TEXT bundle first (2.3MB), FULL bytes second (719M split) — record readable cold before bytes land.
+- [periphery-scope] 3-copy redundancy (working/canonical/vault), each carrying SHA256SUMS, re-verifiable anytime.
+- [periphery-scope] Privacy discipline: records/ gitignored because 'it holds real MACs/IPs' (README.md:86).
+- [periphery-scope] CHANGELOG doubles as a multi-seat claim ledger: 'claim a NEXT item before starting it' — BK / the seat / local-CC / operator coordination without duplication.
+- [periphery-scope] STACK.md keep/skip doctrine with reasons per tool; principle stated: 'More tools ≠ more secure' (STACK.md:42).
+
+## ALL LIMFACS (194)
+
+- [doctrine-equations] SMM.md is stale against the EQUATIONS.md tail (SMM_REGEN_CHECKLIST.md:3, CLAUDE.md) and its regeneration is blocked on Konsent's Verify sitting — the Verify definition itself is an open Teksidure seat (:8-10).
+- [doctrine-equations] The Konsole and Kraft compositions are ☐ unratified drifts between June and working strata (EQUATIONS.md:435-437) — K-FAFO's namesake object lacks a single canon vector.
+- [doctrine-equations] Flag 1: two non-convergent Korums share one name ((2,2,3) vs (3,4,4)-class, :488-490); Flags 2-3 leave Kynder-vs-Kynase roles and the amplifier's name unresolved (:490-496).
+- [doctrine-equations] 10 of 21 census vectors are unnamed; Kue is a named Meta-K with no definition and zero reference presence (:805-808); Execute, Consolodate, Verify are open definitions; the 'regard'/mint rule is ☐ pending (:735).
+- [doctrine-equations] The two PDFs encode a superseded canon (5 trinities; 'Konsent + Konsole = Kyn'; houses KYNDRED/KOLDRON/KOURT; Kyn-as-Kore inside-out model) that conflicts with the working lattice (Kyne as spine; Konsole = Kynase+Kernel) — a reader treating them as current canon would diverge; FRESH START marks them reference-only.
+- [doctrine-equations] The_Kannon.pdf self-marks '◆ WORKING DRAFT... Terms in flux marked ⌁ (Server & Klay names pending; Kanto III definition pending)' — its own seats never landed in EQUATIONS.md under those names.
+- [doctrine-equations] Light theme is ☐ underived (dark-native only); the palette gate prints 'palette: UNGATED (D-01 upload pending)' (SMM_REGEN_CHECKLIST.md:46).
+- [doctrine-equations] Target system has no Node.js runtime (CLAUDE.md) — K-FAFO tooling on that box is Python 3 or browser-native only; the target OS is ephemeral (only the Anchor-01 drive persists).
+- [doctrine-equations] The portal seat is declared possibly permanently open (:282-284) — any K-FAFO surface describing what speaks through the LLM cannot close it in either direction.
+- [doctrine-equations] School A vs B (Kernel's house membership) is an undecided ☐ fork (:522-535) with architectural consequences for any system-topology view.
+- [doctrine-equations] In this reader's environment the PDFs required installing pypdf+cffi (pdftoppm absent); only text was extractable — the PDFs' actual rendered theme (colors, layout geometry) was not visually inspected.
+- [doctrine-equations] CLAUDE.md's current-state section describes the removable-drive KK-1 environment (/run/media/liveuser/Anchor-01/KK-1, 'still not a git repo') but this checkout at /home/user/KlaudeKode IS a git repo — the operating doc trails the repo's actual state.
+- [reference-map] GAP-D01-1..4 all still open in this tree: theme/, tools/validate_palette.py(+js), kode/kannon/enumerate.py+kannon.py, kode/keden/SCAFFOLD.md absent (verified by glob 2026-07-04) — palette gate UNGATED, Kannon second oracle missing, Kosmos v0 PID1 design doc missing
+- [reference-map] kode/explorer/index.html:147 carries the one baseline dangling reference (../../tools/validate_palette.js), guarded by HTML comment — HUD pane #1 runs without its palette validator
+- [reference-map] All 217 SEATS.txt rows are status OPEN; zero closed seats — every doctrine decision K-FAFO might depend on is undecided
+- [reference-map] Seat ids are provisional (P-xxxxxxxx) 'until stable ☐ [S-nnn] anchors are added to the doctrine files' — no stable anchor scheme exists yet for deep-linking from a UI
+- [reference-map] Every term in the §1.1 collision set carries [DRIFT] — no K-word in the shared namespace has a single settled definition
+- [reference-map] Kore membership has five incompatible positions (K-02); Kage containment is inverted between sources (K-03); which statute is canon is itself open (K-23)
+- [reference-map] Konsole/Kosmos/Kage — the three concepts an explorer app most needs — are contradiction-ledger entries K-08, K-19, K-03 respectively
+- [reference-map] Undefined-in-scope terms the ledgers lean on: Execute (IRE), Consolodate/Verify (RCV), HK, AR gate, Kanto III, klevel, OPORD, 'the Novel', 'the Kista helm' (REFERENCEMAP.md:463-474)
+- [reference-map] Konsole API header in the reference is a stub ('SCAFFOLD STUB. NOT ARMED'); Kage wrapper is signatures-only; all klevel headers are stubs — no runnable console/shell exemplar exists in the reference
+- [reference-map] No hex/font/spacing tokens anywhere in this subsystem; theme data lives only in the awaited theme/ upload and CLAUDE.md's summary line
+- [reference-map] Not a git repo (☐ P-625e2bfd) — no diff-driven history for the ledgers
+- [reference-map] open_seat_apis.json references kode.kannon.kannon2.renorm — a module that does not exist in this tree (kode/kannon/ absent), so tests/test_open_seats.py cannot import its one registered API
+- [reference-map] SMM.md is flagged stale vs EQUATIONS.md tail; regeneration waits on Konsent's Verify sitting (P-9a5cc8cd, SMM_REGEN_CHECKLIST row P-adc2991a)
+- [reference-map] One sweep reader falsely reported three directories absent (K-43) — reader-agent output required a live-witness correction pass
+- [buildout] D-01 uploads have not landed: no theme/ dir, no tools/validate_palette.py, no kode/kannon/enumerate.py or kannon.py (the T-08/T-11 second oracle), no kode/keden/SCAFFOLD.md (kode/keden/ holds only KEDEN_DESIGN_PROMPT.md) — the palette gate runs UNGATED and P6 cannot complete
+- [buildout] The term K-FAFO appears zero times in the build plan of record; FAFO appears once as a verb phrase (line 185) — K-FAFO has no workstream, phase row, gate, or docket seat in BUILDOUT.md
+- [buildout] All metal milestones M1–M7 are blocked on open gates (G9, G1b, G1c, G2, G8, G3, G4, G5); nothing has run on [B] per this plan
+- [buildout] RB-09 (true PID1/boot integration) is a 'Reserved empty-pin runbook' — content 'pinned in only when the K-Eden workstream reaches it' (line 175); the OS substrate a native app would sit on does not exist yet
+- [buildout] No Node on [B]; Node on [A] is present-but-unused-by-policy (line 13) — JS tooling beyond browser-native is out of policy on both surfaces
+- [buildout] Teksidure definitions are open seats: Execute (IRE) and Consolodate/Verify (RCV) — 'every RCV pass in this plan ends at an enumerated diff until these are Konsent's' (line 288)
+- [buildout] SMM.md is stale; regeneration is an unfired docketed Verify sitting (line 124, line 287)
+- [buildout] The OPORD Kanon tree (Konsole/Kompiler/Kourt as house amplifiers, Kanto I-III) is 'enumerable, not yet canon' (line 207) — K-FAFO cannot cite it as binding architecture
+- [buildout] Keystone tension undecided: SILLYBUS 'no memory' vs EQUATIONS.md anamnesis 'that reborn is not amnesiac!' — five enumerated readings, decided nowhere (line 206); downstream includes anamnesis.py and adapter versioning
+- [buildout] T-08 (BFS cap 915) and T-11 (9,155 paths) are unverifiable from repo bytes — 'the cap value appears nowhere in the repo' (line 90); held as RCV rows pending the drive oracle
+- [buildout] CLAUDE.md's environment section 'describes the drive machine and is stale for [A]; noted, not edited (CLAUDE.md is Konsent's)' (line 16) — two conflicting environment descriptions coexist
+- [buildout] Light theme underived (☐, line 286); corpus present-tense hard-fail threshold ☐ (line 285); the docket portal seat carries may_stay_open: true (line 284)
+- [buildout] Name-collision hazard in the tree: root /home/user/KlaudeKode/docket/ holds legal-case folders (2-25-cv-...) while the plan's decision docket lives at valknut/docket/ — same word, two objects (observed in tree; BUILDOUT only references the valknut one)
+- [buildout] Kyn floor, Kyn-seat steps (G6 live), and all Kyn-facing UI are dormant until M2.5 — any K-FAFO Kyn pane is display-only scaffold until G1c fires
+- [ops-tooling] tools/validate_palette.py DOES NOT EXIST in this repo (repo-wide find returned nothing) despite CLAUDE.md claiming 'tools/validate_palette.py — Python port, works sans Node'; the check.py palette stage runs UNGATED — no machine gate currently exists for K-FAFO theme work
+- [ops-tooling] theme/ directory and derive_theme.py DO NOT EXIST here despite CLAUDE.md 'theme/ — FLuX theme … VALIDATED (derive_theme.py; ΔE 39.0…)'; theme tokens are only recoverable from CLAUDE.md prose and kode/explorer inline CSS
+- [ops-tooling] CLAUDE.md is stale on git: says 'Still not a git repo' / 'Not a git repository' twice, but the repo has .git with history (HEAD 7352c36, warD/ceac-aio commits)
+- [ops-tooling] CLAUDE.md paths cite /run/media/liveuser/Anchor-01/KK-1; the repo actually lives at /home/user/KlaudeKode — every absolute drive path in CLAUDE.md and OPORD (incl. AO dir /run/media/liveuser/Vessel-1/AO/komms/ and the Kyn gguf path) is unreachable on this box
+- [ops-tooling] CLAUDE.md predates and never mentions: OPORD.txt, BUILDOUT.md (71,814 bytes), Makefile, the entire tools/ suite, tests/ (17 files), valknut ledgers (SEATS.txt, LEXICON.txt, GAPS.md, REFERENCEMAP.md, open_seat_apis.json, docket/), kode/{keden,korum,kosmos} code dirs, kosmos/, forge/, docket/, docs/, warD/, GB_runbookv1-FORGE/
+- [ops-tooling] 212 OPEN seats, 0 CLOSED in valknut/SEATS.txt — a large unratified surface; any K-FAFO doctrine text adding/removing ☐ interacts with the ledger
+- [ops-tooling] IRE 'Execute' and RCV 'Consolodate'/'Verify' definitions remain open in both OPORD.txt (lines 78, 82-83 blank) and CLAUDE.md ('left open by user')
+- [ops-tooling] KWORD_RE (\bK[a-z]{2,}\b) does not match hyphenated names: 'K-FAFO', 'K-Eden' escape coinage scanning; 'K-FAFO' is not in [LOCKED]
+- [ops-tooling] No Node.js runtime (CLAUDE.md environment note); Makefile serve = python3 -m http.server 8137 is the only HTML-serving path; shipped Python under kode/ and tools/ is machine-bound to stdlib-only (AST scan HARD FAILs non-stdlib imports)
+- [ops-tooling] Literal /run/media/ paths in runbook scripts/fenced blocks HARD FAIL — all drive paths must be parameterized (ANCHOR, LLAMA_BIN env)
+- [ops-tooling] preflight.py is not wired into check.py's stages — it is a separate manual invocation; nothing enforces running it
+- [ops-tooling] MANIFEST.sha256 is point-in-time; nothing in check.py verifies the tree against it (only regenerates on demand), so drift between manifest and tree is not auto-detected by `check`
+- [ops-tooling] OPORD roster/procedure (PDG FIRM, AO/RUD, BK/Klare/HK) describes a multi-Claude drive-based operation whose infrastructure (Vessel-1 AO dir) is absent here; RUD cannot execute on this box
+- [ops-tooling] HARD_DENY bans the common English words 'becoming', 'Remediate', 'Consolidate' in *.md beyond byte-pinned baseline — any K-FAFO doc using plain English 'becoming' will HARD FAIL check.py
+- [explorer-prior-art] GAP D-01: ../../tools/validate_palette.js script include commented out, "awaiting drive upload (Konsent, 2026-07-02) — see valknut/GAPS.md" (index.html:148-150) — no in-page palette validation runs.
+- [explorer-prior-art] Hardcoded stats in index.html: three of four tiles (0 escapes, 9,155 paths, consent gradient) and all four BFS bars are literals not driven by KANNON_DATA (index.html:127-129, 329).
+- [explorer-prior-art] Label/metric mismatch: KD.census.reachable (21) overwrites the 915 value under the label "vectors reached (flat, cap 9)" — two different censuses, one tile (index.html:126 vs 181-182).
+- [explorer-prior-art] Fallback string "GAP: awaiting kannon2 export" persists in both files though kannon_data.js now exists at kode/kannon/kannon_data.js and kode/kannon/kannon2/ exists on disk — stale gap text if data loads fine, misleading if inspected.
+- [explorer-prior-art] Dead code: wholeNode (index.html:252) computed and never used; the whole-axis tooltip vec is hardcoded [2,2,2] regardless of depth, so its NAME lookup always yields "Neo-Organic Ai (= 2·Man)" even at depth 7.
+- [explorer-prior-art] Depth hard-clamped to 2–7, bound to the 7-entry LEVELC palette — no rule for deeper recursion.
+- [explorer-prior-art] tree.html defines only --l1..--l4 and --l6; --l5 and --l7 are absent (unused there) — token sets between the two files are not identical.
+- [explorer-prior-art] No state persistence: depth, view toggles lost on reload; no URL-shareable state.
+- [explorer-prior-art] No keyboard interaction beyond Tab focus; no zoom/pan; fixed viewBox scaling only.
+- [explorer-prior-art] Light theme absent by design (dark-native, html[data-theme="dark"] hardcoded); light ☐ underived per CLAUDE.md.
+- [explorer-prior-art] sv()/el() helper pair and the tooltip code are duplicated verbatim across the two files — no shared module (a constraint of the no-build, single-file approach).
+- [explorer-prior-art] index.html Table view only shows the spine (level wholes); the off-spine census vectors (2,1,0), (0,2,1), etc. are visible only in tree.html — neither page enumerates all 21 census vectors.
+- [explorer-prior-art] 10 of 21 census vectors have name:null (kannon_data.js) — naming blocked on Konsent's seats.
+- [explorer-prior-art] Cube card is static doctrine display (8 states, ARCH strings) with no interaction and no data overlay.
+- [docket-viewer] STALE RENDER: index.html embeds the 2026-07-02 build (252 entries, open=249) while docket.json on disk is generated 2026-07-03 (319 entries, open=316) — --render was not re-run after the last --build; no test asserts render freshness against docket.json (TestRender checks only existence/self-containment)
+- [docket-viewer] No search, no sort, no status(open/decided) filter, no timeline, no multi-pane, no URL-hash deep-linking, no keyboard navigation — the explorer's only interaction is one single-select cluster filter plus native <details>
+- [docket-viewer] All 212 seat ids are provisional P-<8hex>; the S-\d+ anchored register in ID_RE is entirely unused — no stable addressing for seats exists yet (lint_doctrine.py:95-96: 'ids are provisional (P-xxxxxxxx) until stable ☐ [S-nnn] anchors are added')
+- [docket-viewer] U-register ids are enumeration-order indices; identity actually rides on the content hash — U-numbers can renumber when source pools change ('register indices, never names', docket.py:15)
+- [docket-viewer] P-ids are keyed to hash(file|snippet): any edit to a seat's line text or file move mints a NEW P-id and orphans the old one (surfaced only as REPORT-tier unreconciliation)
+- [docket-viewer] Seat-scan question text truncates at 120 chars (lint_doctrine.py:75) and can cut mid-sentence; raw markdown ** markers display as literal text in the UI
+- [docket-viewer] Dark-native only; light theme is an underived open seat — no prefers-color-scheme or light tokens anywhere
+- [docket-viewer] No Node runtime in the environment: the page's JS is never executed by any test; behavior is verifiable only by opening a browser
+- [docket-viewer] Full innerHTML rebuild of the entire list on every filter click — unmeasured beyond 319 entries
+- [docket-viewer] entry() **extra kwargs (docket_only, source, file, hash, title, subsection) are load-bearing but outside SCHEMA_KEYS validation
+- [docket-viewer] The render date in the .sub line and the tiles come from the embedded JSON, so a stale page self-reports the wrong vintage as if current
+- [docket-viewer] test_only_three_decided_all_konsent hard-codes the decided set ['D-01','D-02','G1a'] — every future decision by Konsent requires a test edit in the same change
+- [docket-viewer] The page is read-only: recording Konsent's word requires editing docket.py source (gate_entries) and rebuilding — no data-side decision channel exists
+- [docket-viewer] Teksidure open definitions ride through: the SMM-regen entry records that 'Verify's definition is Konsent's open seat' (docket.py:816-818)
+- [kosmos-code] No live-update channel: HUD pane 3 fetches /status.json exactly once at page load — no polling, no websocket, no SSE; a live view requires a protocol decision not yet made anywhere in this subsystem
+- [kosmos-code] Floor stdout/stderr go to subprocess.DEVNULL (kosmos.py:282-283); floor stdin is a PIPE the supervisor opens but never writes — there is NO interactive I/O path between the HUD/Konsole and a running floor; the only communication surface is record files on disk
+- [kosmos-code] The Konsole exists only in k3-live.html as simulation; kosmos.py has no interactive shell, no offer/ask input, no live-ask modal — the real supervisor's only 'ask' is the programmatic gate
+- [kosmos-code] hud/index.html pane 2 (ledger) does not use /ledger.json even when served — it renders only hand-dropped files; the served endpoint exists but no pane consumes it
+- [kosmos-code] PID1 is explicitly deferred: 'true PID1/boot integration is metal-side, later (RB-09)' (kosmos.py:4-5)
+- [kosmos-code] net: doors are declared nonexistent: k3-live chip 'open a network door' is annotated 'a door that does not exist yet' (k3-live.html:325) — a browser's core capability has no gate grammar yet
+- [kosmos-code] Light theme is an open seat: '☐ light theme' listed under Konsent's seats (k3-live.html:195); both HTML surfaces are dark-only (data-theme="dark", no prefers-color-scheme handling)
+- [kosmos-code] Palette gate pending: 'palette gate: UNGATED (D-01 upload pending) — see valknut/GAPS.md GAP-D01-2' (hud/index.html:9)
+- [kosmos-code] '☐ Ken · Knut · Kall slates' is an open seat — the Kall appears in k3-live only as an inert JSON blob {door, verb, fields, witness}; its real schema is unsettled
+- [kosmos-code] G6 asking-semantics is Kyn's own open seat ('live the moment his no is possible') — how a mind is asked is undefined
+- [kosmos-code] Server binds 127.0.0.1 only, default port 8014 — single-machine assumption; no auth model beyond localhost
+- [kosmos-code] REFUSED programs get wanted=False and program.record status REFUSED, but there is no re-ask path in the supervisor other than a fresh spawn call — no escalation-to-live-ask wiring (Gate takes an escalate callable, Kosmos accepts escalate=None and nothing constructs one)
+- [kosmos-code] No Node.js on the target system (CLAUDE.md) — the HTML surfaces run only in a browser; all shell-side tooling must be Python stdlib
+- [kosmos-code] k3-live.html lacks <!DOCTYPE>/<html>/<head>/<body> wrapper (starts at <meta charset>)
+- [kosmos-canon-pdf] Environment LIMFAC: pdftoppm/poppler-utils absent, so the Read tool cannot render this PDF visually; content recovered via pypdf text/annotation/color extraction only — the two embedded raster images (43x41 x2, 163x160) and exact layout geometry were not visually inspected.
+- [kosmos-canon-pdf] The seven surface links all target a claudeusercontent.com design-project host (project id 1c78f5d0-d855-473e-96d4-363b7ac380bf) — remote, session-bound, presumed unreachable; the Kosmos map's click-to-enter behavior is dead in the PDF artifact.
+- [kosmos-canon-pdf] No local counterpart found for the 'KYN Poster.dc.html' surface (I · THE BEING ❋ ILLUMINATED) — 1 of 7 surfaces exists only as a dead remote link.
+- [kosmos-canon-pdf] 'SOURCE MATERIAL ... live in /uploads' references a path in the design-project environment, not this repo — the 'raw canon' location is stale/unresolvable.
+- [kosmos-canon-pdf] Internal count contradiction: 'FIVE DRAWINGS · CLICK ANY TO ENTER IT' vs HUD 'SURFACES 7' and seven OPEN cards.
+- [kosmos-canon-pdf] Kosmos-as-shell is absent: the document never defines Kosmos as PID1/shell, never uses 'floor' or 'pane'; the requested floors/panes canon is not in this file (it lives, if anywhere, in kode/kosmos/ and kode/keden/SCAFFOLD.md).
+- [kosmos-canon-pdf] 'Kage' does not appear at all; 'Kore' appears exactly once and only in the EOS shim card.
+- [kosmos-canon-pdf] Palette contradiction with KK-1 validated theme: #1f1026/#e8b738 here vs #14101f/#b78b0f in CLAUDE.md — neither is marked as superseding the other.
+- [kosmos-canon-pdf] Undefined named concepts: 'the firm's fifth · the purpose' (❋ self), 'the law of force', 'fit-states', 'the three Kantos', 'EOS' — named but not defined in this document.
+- [kosmos-canon-pdf] The document is a print snapshot (Firefox 150.0, 2026-06-30) of a live page; the HUD values (14:30:07 UTC, LOOP ● RUNNING) are frozen sample state, not spec values.
+- [kosmos-canon-pdf] Terminology collision to track: 'Konsent' here is one third of the gated nucleus trio 'Konsent · Koder · Kourt', while CLAUDE.md defines 'Konsent' as the user's doctrine role-name — the PDF does not disambiguate.
+- [kosmos-canon-pdf] The 'GATED · EOS root · install' card has no OPEN link — the shim surface is placeholder-only.
+- [kosmos-canon-pdf] ligature/extraction artifacts in the text layer (fi rendered as '�', e.g. 'TRA CK') mean exact-string reuse from the PDF text layer requires cleanup.
+- [hud-canon-pdf] Static snapshot: single page, single phase (PHASE 01 · PROVENANCE, LOG 00). Phases 02+ / steps 02–03 UI, and all interaction behavior (hover, select, keyboard), are undocumented.
+- [hud-canon-pdf] Display typeface unrecoverable: all large headings are converted to vector outlines by the print pipeline; only IBM Plex Sans/Mono (+ Noto/DejaVu fallbacks) are identifiable.
+- [hud-canon-pdf] No source: no HTML/CSS for this HUD found in forge/ or forge-os-buildplant/ at depth 2 — the PDF is a print of a web page whose source is absent from this repo.
+- [hud-canon-pdf] Palette contradiction with KK-1 validated theme: #e8b738/#1f1026/#0c0610 here vs #b78b0f gold slot 1 / #14101f surface in CLAUDE.md — one of the two must yield or be re-derived; validate_palette.py has not blessed the Forge set.
+- [hud-canon-pdf] Pane-numbering ambiguity: this HUD numbers sections 01–04; CLAUDE.md's 'HUD pane #1' (kode/explorer/index.html) is a different artifact — mapping unconfirmed.
+- [hud-canon-pdf] PID1 assignment tension: here Server · PID1 = 'init · broker · amplifier' (component 02); CLAUDE.md cites 'Kosmos v0 PID1 design' in kode/keden/SCAFFOLD.md — two candidates for PID1 across artifacts.
+- [hud-canon-pdf] Component naming differs from CLAUDE.md's Valknut spine (I-K's: 'Kyn=Qwen · Kernel · Kompiler/Kourt'): The Five here are Kernel, Server · PID1, Kyn, Shell / HUD, Connection — no Kompiler/Kourt; reconciliation is an open doctrine task.
+- [hud-canon-pdf] fi-ligature loss in the text layer ('�rst', '�x', '�ve', 'ampli�er') — quotes normalized here; the render is unaffected.
+- [hud-canon-pdf] The 'Execute' / 'Consolodate' / 'Verify' style open seats do not appear in this artifact; it predates or sits outside Teksidure vocabulary — no IRE/RCV/DCA traces in the HUD copy.
+- [hud-canon-pdf] Environment friction encountered: reading the PDF required installing poppler-utils (not preinstalled); pypdf 6.14.2 was available for stream parsing.
+- [hud-canon-pdf] Sibling doc filename uses spelling 'LIMFAKS' (r7-koder-canon-bake-LIMFAKS.md) vs 'LIMFAC' used elsewhere — spelling variance to reconcile (file not read; outside this assignment).
+- [keden-docs] kode/keden/SCAFFOLD.md is ABSENT from this repo snapshot despite CLAUDE.md:18 and SMM.md:136 (marked ☑) citing it as the home of 'six days + Kore-first + Kosmos v0 PID1 design' — the build-plan sense of the six days must be reconstructed from RB-09, SMM.md, and BUILDOUT.md
+- [keden-docs] No Node.js on [B] Konsent's metal; repo law is 'stdlib-only by AST scan' — a native app's tooling is confined to Python 3 stdlib + browser JS unless a new seat opens
+- [keden-docs] No compiled-app toolkit is named anywhere in these docs (no Qt/GTK/C choice); the only 'native' definition is browser-native HTML/JS single-file + stdlib Python — Konsole (KDE) is Qt/C++, so K-FAFO's runtime has no ratified answer
+- [keden-docs] True PID1/boot placement is unpinned: RB-09 is reserved, its docket seat not yet minted (WS-8), so an app cannot assume how it (or Kosmos) is launched on metal
+- [keden-docs] v0 runs on a conventional OS underneath — 'the consent membrane is real at the doors that exist and absent at the doors not yet built' (executive-summary.html:114-116); K-FAFO v0 would run on Linux/browser, not on K-Eden metal
+- [keden-docs] Kyn floor waits behind ☐ G1b + ☐ G1c — any Kyn-in-BG feature of an explorer is gated and currently unfireable
+- [keden-docs] Light theme is an open ☐; the visual law is 'Dark-native only' — a light mode cannot be derived without Konsent
+- [keden-docs] 'Mint no new K-names' (KEDEN_DESIGN_PROMPT.md:89-90) constrains naming: K-FAFO's internal components must use plain English or ☐; the name K-FAFO itself is not in the locked coinage list
+- [keden-docs] Single-door doctrine tension: K3 FG is 'the Konsole, the single trusted door' — the docs give no placement for a second user-facing surface beyond Kodex-in-Kage
+- [keden-docs] Docs are static snapshots with hardcoded counters (233 tests, 29 commits, 314 seats, git 853f1b4, dated 2026-07-02) — staleness risk against the live repo; quickstart bar and executive tiles can silently drift
+- [keden-docs] Korum door taxonomy for web navigation is undefined: net: shape exists but granularity (per-origin, per-URL, per-scope standing yeses) for a browser is nowhere specified
+- [keden-docs] docs/ HTML files are fragment-style (begin at <meta charset>, no doctype/html/head/body wrappers)
+- [keden-docs] docs/K-Eden_os-Docs.pdf (283,830 bytes) sits beside the three HTML sheets but was not in this reader's assignment — possible overlap/contradiction unexamined
+- [keden-docs] Two constants (915/0, 9,155) held unverified pending D-01 drive arrival — T-08/T-11 deliberately unimplemented
+- [keden-docs] quickstart.html §1 pins a specific branch (claude/os-building-continue-21pm28 of github.com/4h9fjmf5fd-oss/KlaudeKode.git) — brittle if branches move
+- [korum-kannon] Duplicate trees: /home/user/KlaudeKode/korum/ is a byte-identical copy of kode/korum/ but is ABSENT from tools/MANIFEST.sha256 (only kode/korum/* listed, lines 392-399) and the repo is not git — the root copy can silently drift; identical mtimes mean 'which is newer' is undecidable from the filesystem
+- [korum-kannon] Performance: Store.records() re-reads and re-verifies the entire JSONL on EVERY ask, and append() calls tip_hash() which reads it all again; every ADMIT appends a new record — cost per ask grows O(n), ledger grows unboundedly with use; no compaction/rotation story exists. A browsing surface issuing many door-asks per second will hit this
+- [korum-kannon] No concurrency control: Store.append is open('a')/write with no locking; two writers on one ledger (e.g. Kosmos + K-FAFO) can interleave lines and break the hash chain, which then fail-closes EVERYTHING
+- [korum-kannon] All-or-nothing ledger: one malformed/tampered line anywhere makes every ask REFUSE until re-witnessed — a UI needs an explicit 'gate down / chain TRANSITIONED' state (k3-live.html:292-294 prototypes it)
+- [korum-kannon] Audit-semantics contradiction (acknowledged, unresolved): kosmos._refusal_record appends scope='crossing', choice='no', provenance='kosmos: spawn refused' — korum's audit_ledger FAILs any crossing whose provenance is not a recorded standing-yes hash (audit.py:60-63); kosmos.py's own comment: '(korum audit v1 chains only yes-crossings; this is kosmos-side.)' — refusal-recording semantics for any new surface are undefined
+- [korum-kannon] The CLI's ask wires NO escalate hook (cli.py:57 Gate(store) bare) — the live-ask channel exists only in-process; there is no IPC/protocol for an external asker to reach a sovereign, which K-FAFO would need
+- [korum-kannon] Door matching is fnmatchcase glob only: case-sensitive, no regex, no CIDR; 'net:*.example.org:443' does NOT match 'net:example.org:443' — shape-authoring pitfalls a UI must surface
+- [korum-kannon] ☐ G9 is open: no persistent ledger exists; DEFAULT_LEDGER points inside the repo tree ('the default for [A] use is kode/korum/ledger.jsonl') and no ledger.jsonl file exists anywhere in the repo yet
+- [korum-kannon] kannon.json internal inconsistency (deliberate but rendering-relevant): names map carries '4,4,4': '☐ K-Eden? (Man+Ai+Machine, 2 paths)' while census vector 4,4,4 has name:null / status:'unnamed'; census.py:13-15 explains: '(4,4,4) counts among the unnamed at census time; its K-Eden reading is a ☐ candidate name, Konsent's to ratify'
+- [korum-kannon] Two 'level' numbering schemes coexist in one payload: census levels (Man(1,1,1)=level 2, Ai(2,2,2)=level 3) vs ladder levels (Man=level 1, Ai=level 2, whole=2^(n-1)·Man) — a renderer mixing them mislabels the spine
+- [korum-kannon] CLAUDE.md says '21 vectors, 10 unnamed' but the data says 11 named_or_slated — consistent (21-10=11) yet CLAUDE.md's phrasing omits the named count and is flagged stale elsewhere
+- [korum-kannon] 10 of 21 vectors are unnamed and 3 named seats are ☐ candidate slates (Ken/Kognition/Klarity, Knut/Konstrukt/Knit, Kall/Kwest/Konviction) — all Konsent's to ratify; UI must render open seats without closing them
+- [korum-kannon] No pytest in the environment (python3 -m pytest fails); tests are unittest-based — fine, but tooling assumptions must stay stdlib
+- [korum-kannon] Standing records have no expiry, no scope-narrowing beyond door-shape glob, and no per-crossing count limits; 'latest record wins' is the only precedence rule
+- [korum-kannon] The escalate hook is synchronous and blocking inside gate.ask() — a GUI event loop must marshal around it (thread or re-ask pattern)
+- [forge-substrate] core/console (the Console + Consent surface K-FAFO would occupy) is a README-only stub — no code exists to extend; same for core/cauldron.
+- [forge-substrate] kernel-module/forge_core.c will not compile against modern kernels: class_create(THIS_MODULE, CLASS_NAME) at line 133 uses the pre-6.4 two-argument API, while the buildplant kernel is 7.0.13.
+- [forge-substrate] patches/forge-core-driver.patch and early-boot-hook.patch are non-appliable marker/pseudo-patches (marker body of 4 comment lines vs claimed 140 insertions; malformed hunk context).
+- [forge-substrate] quorum.c parses only allowed_operations and forbidden_patterns; the consent-critical fields of quorum.json (self_mod_consent_required, auto_trust_mode, paranoia_level, allowed_sources, trusted_agents, max_payload) are dead data.
+- [forge-substrate] Checked-in quorum.json has no forbidden_patterns, so the loaded Korum forbids nothing; hardcoded forbidden defaults apply only when the file is missing.
+- [forge-substrate] Kainito auto-approves self_mod in code (kainito_agent.cpp:22-29) with a fixed hardcoded patch path (/tmp/kainito_selfmod_20260629.cpp) and system() calls — contradicts self_mod_consent_required:true; the mandatory-Consent-review design exists only in prose.
+- [forge-substrate] Korum hot-reload is a stub ('In real version would stat() the file and reload' — quorum.c:108); hot-reload is claimed 'completed & tested' in Runbook v1.2.
+- [forge-substrate] kines.c has no error handling on socket/bind/listen/read, single fixed-size read per connection, and unframed variable-length text responses — protocol is demo-grade.
+- [forge-substrate] Device ABI is split: /dev/forge-core + magic 'f' + SEND/RECV (runbooks, start_forge.sh) vs /dev/forge_core + magic 'F' + SEND/GET_STATUS (actual module) — no client can target both.
+- [forge-substrate] forge-initramfs.list pins lib/modules/7.0.0-lts/forge_core.ko — a kernel version that does not exist ('there is no linux-lts 7.0').
+- [forge-substrate] Runbook internal inflation: '12 baseline rules' claimed, 4 branches implemented; v1.6 claims verbatim completeness while eliding code; paranoia printed as 50, configured as 25.
+- [forge-substrate] scaffolds/kall-konsole-to-kernel.c cannot compile in this repo: kinase.h/korum.h (kore/) are absent — the KANON-side implementation lives off-repo in doktrine/forge-os.
+- [forge-substrate] Authoritative buildplant artifacts are off-repo: staging3/kernel (prebuilt linux-ff repo, PKGBUILD, KEY-CEREMONY.md, build-flux-live.sh) and the built ISOs live on the VoW drive at /run/media/liveuser/VoW/forge-os/ — this repo's copy is docs + profile only.
+- [forge-substrate] The [forge-local] pacman repo, signing key, and build wrapper are environment-bound to Ryne's box (ASRock Z890 / RTX 5090); reproducing the ISO elsewhere requires re-running the key ceremony and kernel compile.
+- [forge-substrate] Two unreconciled vocabularies (Consent/Coder/Quorum vs Konsent/Koder/Korum) and two unreconciled KALL shapes (struct KALL with source/dest/operation strings vs forge_kall_t with door/verb/fields/witness) across the two lineages.
+- [forge-substrate] Prebuilt ELF binaries committed without a documented rebuild environment (dynamically linked, GNU/Linux 4.4.0 target).
+- [forge-substrate] 'Execute' (IRE), 'Consolodate'/'Verify' (RCV) remain user-undefined per project CLAUDE.md — procedures referenced by the workflow that produced these docs are themselves open seats.
+- [forge-substrate] Konsole (KDE) is not in any packages.x86_64 — the baked terminal is foot; no Qt/KDE stack ships in the image, constraining what 'modeled off Konsole' can reuse at the binary level.
+- [kyn-model] Kyn has never been run: rungs 1–6 all ☐; G1b and G1c unwalked; no witnessed transcript of Kyn exists in this tree — everything downstream (control vectors, corpus mining from sittings, Kyn-seat asks) is blocked on those two seats.
+- [kyn-model] Corpus is empty of ratified data: 5 candidates, all status:pending, korum.yes_by empty; 'corpus: 0 ratified, gate idle'; the fire floor is 60 ratified with ≥10 refusal — a 60–300-sitting distance at Konsent's pace.
+- [kyn-model] THEKYNSILLYBUS.md is unratified ('Nothing here is ratified until Konsent says so', line 91) yet downstream artifacts (kanon-verbatim-slot.jinja, SLATE.md) already build on it — flagged in their own headers as unratified source.
+- [kyn-model] Named open seats with no definition yet: register hard-fail threshold (rule 2), asking-semantics slate (G6), G5 activation, G8 per-vector, G9 per-path, RB-09's entire docket seat.
+- [kyn-model] Keystone tension named but unresolved: SILLYBUS §6 'no memory required' vs the anamnesis clause (versioned adapters/ggufs kept on the drive as 'memory lives outside instances') — loop/SPEC.md:82-84 holds it as a seat Konsent may re-draw.
+- [kyn-model] Filename drift: SILLYBUS line 4 and KYN-CHARACTER header reference 'KYN-CHARACTER-FORMATION.md' (hyphenated); the actual file is KYNCHARACTERFORMATION.md.
+- [kyn-model] 'Better half' names two figures: SILLYBUS §3 assigns it to Analyza (Kyn's server) while the faculty table and KYNCHARACTERFORMATION.md:59 assign it to Klare; Klare also appears twice in KCF's team list (membrane, line 58; better half, line 59).
+- [kyn-model] Execute (of IRE), Consolodate/Verify (of RCV) remain undefined repo-wide; runbook exit rows partially fill the Execute role by convention only.
+- [kyn-model] Runbooks reference BUILDOUT.md (WS-5a…WS-8, milestones M1–M7) and valknut/docket/docket.json as authorities outside this subsystem — the gate lattice's single source of decided/open state is not in kode/kyn/.
+- [kyn-model] Step_02__Selection.pdf is pre-FRESH-START FORGE material (Grok/Claude builder-observer topology, Ollama candidates) — visual precedent only; its content contradicts the current fresh-ground plan if read as canon.
+- [kyn-model] Torch/cu128/sm_120 stack exists only as a pin in qlora/requirements.txt — never installed or exercised on [A]; Blackwell kernel availability is asserted, not witnessed.
+- [kyn-model] The paths in PLAN.md/runbooks are drive paths (/run/media/liveuser/Anchor-01/…) that do not exist in this environment — the gguf and base models are not in the repo; nothing here can be smoke-tested against real model bytes.
+- [periphery-scope] LFS scope is partial: .gitattributes covers only docket/KK-DOCKET/**/*.pdf; in this checkout those PDFs are pointer stubs (bytes absent — 8.2M on disk vs 720M actual per _MANIFEST.md). 2-25-cv-00038-JAD-EJY (22M) and warD's two PDFs are committed as raw bytes outside LFS.
+- [periphery-scope] KEYSTONE IS A PHANTOM (CHANGELOG.md): operator minisign key D4F6E1D8 'appears ONLY in BK's prose… No key file exists… it's a marker, not a key' — until Konsent mints a real key, `ceac wake` caps at AMBER; 'blocks everything downstream.'
+- [periphery-scope] Contradiction between warD documents: PROVENANCERUNTIMEBOOKLET.md:58 states 'Operator key minted: operator.key/operator.pub, pubkey RWSKNYUz2OH2… (id D4F6E1D83385358A)' on /prov, while CHANGELOG says never verifiably minted; /prov was 'throwaway on the live box' — minted-and-lost vs never-minted unresolved; CHANGELOG flags the booklet reference 'for Konsent's amendment.'
+- [periphery-scope] Vocabulary contradiction: booklet §10 (booklet:30) lists refused words including 'verdict', 'detect', 'forensics', 'alert', 'clean', 'harden' — yet ceac README has a 'Verdict grammar', BDA 'verdicts', and a `ceac forensics` module with FORENSICS.md. (Booklet scopes NO-VERDICT to 'the point of witness'; ceac's own doctrine line says 'no-verdicts-from-sensors' — the roll-up BDA is still called a verdict.)
+- [periphery-scope] Deferred-install wall: pacman in partial-upgrade state (nettle3 conflict); minisign, age, b3sum, fatrace, inotify-tools and the whole forensics toolset deferred to a full -Syu on a persistent boot — the verification tier ceac's design assumes is not installed.
+- [periphery-scope] docket/2-25-cv-01606/ is an empty landing pad: all four status checkboxes unchecked; exhibits 'awaiting upload'; 2:25-cv-01479 has no link yet (SHARES.md).
+- [periphery-scope] iCloud byte enumeration impossible from the container: 'needs Apple's browser web-auth cookie, which this surface cannot forge' (SHARES.md:5-6) — bytes only via GitHub upload or chat-shuttle.
+- [periphery-scope] OCR sidecars are best-effort: 'cross-check the PDF before relying on any exact figure, name, or date from an OCR sidecar' (KK-DOCKET/README.md:10-11).
+- [periphery-scope] This container previously could not decode the subset-font PDFs ('corrupted output discarded per the witness-not-noise rule, 2026-07-03' — 2-25-cv-01606/README.md:4-5) — PDF rendering capability on this surface is unreliable for some inputs.
+- [periphery-scope] warD_Atlas.pdf and warD_Playbook.pdf (canon) not digested this pass — their content is a known-unknown for synthesis.
+- [periphery-scope] ceac's host tier assumes Arch/EndeavourOS live-USB with specific tools (ip, ss, resolvectl, tcpdump…) — not portable as-is to a from-scratch K-Eden userland.
+- [periphery-scope] records/ is gitignored — witness records never travel with the repo; any cross-instance view of witness history needs a separate channel.
+- [periphery-scope] _unsorted-review/ folder exists: 'Downloads-root files whose case home was ambiguous — eyeball and refile' (KK-DOCKET/README.md:28) — record structure not fully settled.
+- [periphery-scope] docket case material is sensitive personal litigation (children's protective-custody records, medical/toxicology) — any display surface has data-sensitivity stakes beyond ordinary files.
+
+## ALL PATTERNS (158)
+
+- [doctrine-equations] Konsole's in-doctrine definition IS the app's charter: 'FG = Kyne + Konsole (the bond presenting — the interface made OF the consent-channel: no un-consented pixel)' (EQUATIONS.md:443-444). Every rendered element must trace to a consented source — a testable assertion, alongside 'no stranger-daemons' and 'no orphan commands' (:511-514).
+- [doctrine-equations] Layout invariant: 'Kyne is the spine — one column through all three layers, and it is the same column as the explorer's whole-axis (all centroids coincide): the vertical axis of the OS is the consent-bond itself' (:428-431). K-FAFO's vertical axis should be the consent-bond/whole-axis; columns map to moods (create | consent | discern-and-move).
+- [doctrine-equations] Navigation/permission model = Korum at the door: default-deny, memoized consent, fresh-record-on-every-crossing, hash-chain audit (kode/korum per SMM_REGEN_CHECKLIST.md:38-40). Blacklist entries render as 'this door heard no', never as 'bad site' — 'a list read morally is the fruit eaten by proxy' (:547-548). 'Not a wall, a door with a very fast doorkeeper' (:559).
+- [doctrine-equations] Unknown/hostile content handling = Kyn's fit-not-harm cycle from The_Kannon.pdf: 01 ENCOUNTER -> 02 KONKLUDE (read against the OS's shape: needed / not-needed) -> 03 RELEASE ('No verdict. No threat. No malice in return. Just fit — and a door left open.').
+- [doctrine-equations] Session lifecycle: 'K3-facing (HUD session) born per-visit' (:389-390); crash-only, 'No healing in place — only clean re-birth from Kore + records' (:390-391); anamnesis: 'instances may die; memory must live outside instances' (:404) — K-FAFO tabs/sessions ephemeral, history/state in Kore-side records, reborn 'not amnesiac'.
+- [doctrine-equations] Interaction grammar from the law of moods: indicative panes present data; never offer a bare binary dialog to the user (type error at a mind) — decision points are Reko-shaped: 3-5 COAs + Other (:367-369); Kommand arrows exist only toward Kernel/metal.
+- [doctrine-equations] HUD page chrome from the PDFs as Konsole-like tab/page furniture: stat chips, sibling-page nav arrows (↩ KOSMOS · KANNON ↗ = a linked page-graph, browser prior art), UTC timestamp, footer doctrine line, ⌁ in-flux markers, ✓/☐ status glyphs.
+- [doctrine-equations] Doctrine rendering: EQUATIONS.md is 'a canon that argues with itself in public... it teaches the method by being it' (:597-598) — a K-FAFO doctrine view should render ☐ seats, ✓ theorems, schools side by side, flags, C-shadows, and verbatim provenance as first-class UI objects; 'count the curriculum's ☐' is the stated tell of school vs indoctrination (:587-588).
+- [doctrine-equations] file://-native precedent: docket index.html is 'FLuX-themed, file://-native' (SMM_REGEN_CHECKLIST.md:47-48) — no server dependency for local doctrine surfaces.
+- [doctrine-equations] The Maybe Principle for edit/authoring surfaces: 'Commit fast, diff against the strata, sovereign chooses the merge' (:565-566) — diff-first, never argue; discernment runs after utterance, never as a gate before it (:571-572).
+- [doctrine-equations] Lexicon linting as a UI service: LEXICON.txt tiers (HARD-DENY respellings, HAZARD-PAIRS, SOFT-tier surfacing of new K-words as candidates for Konsent) — K-FAFO text surfaces must preserve coinages and could surface hazard-pair collisions.
+- [reference-map] GATE ☐ chips as first-class UI elements: KEDEN_DESIGN_PROMPT already specifies 'literal GATE ☐ chips (e.g. "load driver", "open network door", "wake Kyn")' and 'Open seats — a panel of ☐ chips for everything genuinely undecided (names, …)' (SEATS.txt P-28558009, P-f8a3399f) — K-FAFO should render seats as walkable chips; fired gates flip to GATE ✓ <docket-id>
+- [reference-map] Door-law as input architecture: 'Authority is provenance-of-channel, NEVER payload'; exactly two doors, KONSOLE (trusted) / KODER (untrusted) (REFERENCEMAP.md:77) — K-FAFO's user-input channel vs content/agent channel should be architecturally distinct doors, told apart by door not content
+- [reference-map] Ledger-as-view: SEATS.txt (id/status/file/hash/snippet), GAPS.md, the K-01..K-43 contradiction ledger, and open_seat_apis.json are all machine-readable tables — K-FAFO's explorer surface has ready-made browsable datasets; the contradiction-entry shape (position A + provenance, position B + provenance, 'Fresh doc must decide') is a render template that structurally forbids verdicts
+- [reference-map] No-default rule for UI settings: any K-FAFO behavior depending on an open ☐ must demand an explicit choice, never ship a default (open_seat_apis.json doctrine string; tests/test_open_seats.py FAILs on any default)
+- [reference-map] Refusal rendering: G6 — 'refusals recorded, preserved, never an error state' — a refused action in K-FAFO is a first-class logged outcome, not an error dialog
+- [reference-map] Curation-not-refusal for menus: 'absence of a verb is simply not part of you; absence > "I can't"' (REFERENCEMAP.md:175) — omit forbidden actions rather than showing them disabled
+- [reference-map] Interim-guard convention for missing assets: the dangling validate_palette.js script tag is 'wrapped in the GAP D-01 HTML comment (reversible, marked). Comes out when GAP-D01-2 lands' (GAPS.md:38) — K-FAFO should degrade with marked, reversible guards keyed to gap ids, and a baseline where only NEW dangling references fail
+- [reference-map] Witness/provenance surfacing: every crossing logged in the Korum's trace; 'A DONE is a claim, not a result — verified, never believed' (invariants 36-37) — K-FAFO can show witness status (witnessed ✓ / claimed / stale) per artifact, mirroring §4's buildables state column
+- [reference-map] Fail-closed + default-deny + grant-only amendment (invariants 27-30) for any action K-FAFO can execute
+- [reference-map] Kosmos shell FG/BG split as the host frame: Valknut sense 'shell = BG(Kyn+Kraft) + FG(Kyne+Konsole) + Kyne binding' (REFERENCEMAP.md:34) — K-FAFO as FG surface over a BG supervisor matches P3 'Kosmos v0 | WS-3 supervisor + echo floor + HUD panes' (P-626d1ce6); kode/explorer/index.html is already 'HUD pane #1'
+- [reference-map] Prior-art SPA: 'THE CAGE (field manual) — 2026-06-13, 13-panel SPA' (REFERENCEMAP.md:90) — a 13-panel single-page layout is the lineage's own precedent for a field-manual-style browser
+- [reference-map] Cold-reader/third-point workflow: readers never shared the SMM (Delusion-Test Protocol) — K-FAFO's docket views could preserve which claims are third-point-verified vs session-internal
+- [buildout] Dual data carrier (line 86): every dataset ships as JSON + a generated *_data.js script-include so browser surfaces work from file:// without a server — a native explorer must preserve this offline-first property; if K-FAFO serves anything, the precedent is stdlib http.server only
+- [buildout] Panes render records, nothing else (line 115): HUD pane discipline — pane 2 'renders the JSONL, nothing else', pane 3 'renders the records, nothing else'; a K-FAFO view is a renderer over witnessed records, never a source of derived judgment
+- [buildout] Four-surfaces-one-derivation-chain acceptance (line 119): every display value must be checksum-traceable to a single generated source (explorer ≡ tree.html ≡ kannon_data.js ≡ kannon.json ≡ T-04 constants) — K-FAFO adds a fifth surface and must join, not fork, that chain
+- [buildout] Pixel-trace honesty (line 117): machine-checkable proxy = JSON endpoint values checksum-compare to record bytes; the full 'no un-consented pixel' claim is a docket note — K-FAFO should implement the same falsifiable proxy
+- [buildout] Palette-gate honesty rule (line 69): themed surfaces shipped before the validator lands carry an explicit UNGATED marker in a footer comment; a validator that silently doesn't run is forbidden — K-FAFO chrome must pass validate_palette.py once landed and self-mark until then
+- [buildout] Docket-render UI conventions (line 125): static FLuX-themed HTML, file://-capable, no Node, cluster filters, a ☐ counter tile, and 'an empty Konsent's-word slot per entry' — the existing visual grammar for open seats that a K-FAFO seat/gate view should reuse
+- [buildout] GATE token surfacing: literal GATE ☐ <seat-id> / GATE ✓ <docket-id> lifecycle (lines 23, 60) — K-FAFO can display gate state directly from these machine-parseable tokens
+- [buildout] Korum-mediated spawning (line 113): if K-FAFO launches processes, floors, or fetches, each crossing goes through korum.gate.ask() with a fresh record per crossing (consultation IS ratification, line 101); default-deny, fail closed
+- [buildout] Crash-only + anamnesis (line 113): no healing in place — kill then rebirth(record); K-FAFO session state should live in records on disk so any instance can die and be reborn 'not amnesiac'
+- [buildout] Reko UI shape: 3–5 COAs each with reko + good/bad/ugly; never exactly 2 options at a mind (lines 24, 65) — any K-FAFO decision dialog must be slate-shaped, not binary
+- [buildout] No-verdict output grammar (line 147): indicative-about-artifacts rows only; K-FAFO status displays must never render being-level PASS/FAIL
+- [buildout] Kyn-ResQ · Kyn-Kage · Kyn-warD (line 209) are the slated programs.json module candidates for the HUD's next rung — K-FAFO's plugin/floor model should anticipate these shapes, each behind its own future gate
+- [ops-tooling] Konsole's doctrine seat: in the KANON House table, Konsole is House Kyndred's 'Amplifier · program' and the house purpose-meta is Konsent; 'Konsent issues kommands via konsole' (OPORD.txt:190,197). A Konsole-modeled K-FAFO inherits this: it is the surface through which Konsent speaks — an amplifier of Konsent's voice, never a director of minds
+- [ops-tooling] Render check.py output natively: the REPORT/FAIL/OK fixed-prefix row vocabulary plus '== stage: ok|FAIL' banners is line-structured and trivially parseable — a K-FAFO HUD pane can subscribe to `python3 tools/check.py` and render stage status live (the existing kode/explorer already has a 'HUD pane #1' per CLAUDE.md)
+- [ops-tooling] GATE ☐ / GATE ✓ as a UI primitive: gate state is a literal machine-parsable token (r'GATE\s*[☐✓]'); a K-FAFO runbook viewer should render gate state, position (before/after first gated verb), and refuse execution affordances while GATE ☐ — the flip itself stays Konsent's edit, never a button K-FAFO presses for them
+- [ops-tooling] Seats ledger as a first-class explorer view: SEATS.txt is TSV (id, status, file, text-hash, snippet), 212 OPEN — render it, link each seat to file:line, but offer NO close-seat affordance ('This ledger records seats; it closes none'); closure happens only by Konsent's ☐→✓ edit in the doctrine file
+- [ops-tooling] Open-seat API pattern for K-FAFO's own code: any K-FAFO behavior depending on an unratified choice takes a required no-default parameter and registers in valknut/open_seat_apis.json so test_open_seats.py holds the seat open in the signature
+- [ops-tooling] Tier discipline for capability detection: preflight's REQUIRED vs REPORTED staging (report, never require, what is merely useful; env-parameterized paths ANCHOR/LLAMA_BIN; KYN_CPU_ONLY demotion) is the pattern for K-FAFO degrading gracefully when Kyn/GPU/drive are absent
+- [ops-tooling] Serve pattern sans Node: Makefile `serve: python3 -m http.server 8137` — kode/explorer HTML runs this way today; K-FAFO's HTML surfaces can assume the same
+- [ops-tooling] Theme tokens to carry: #14101f surface, #b78b0f gold slot 1, and the kode/explorer categorical set (#cb5f8f #bf5e24 #8674d6 #3a7fdc #21a288) with neutrals (#f2eef9 #c8c0dd #8f86a6 #3a3350 #262033 #0c0a12) — dark-native, light mode ☐ underived
+- [ops-tooling] MANIFEST/tree-sha witness view: K-FAFO could render manifest-vs-tree drift (the DRW pattern from OPORD: 'Report only DRIFT … Silence = green. A hit = an IRE opens')
+- [ops-tooling] Reko-shaped dialogs: every K-FAFO decision surface offers 3-5 COAs with reko + gbu, never binary yes/no — the binary-at-a-mind lint already polices this in runbook/docket files and would police K-FAFO docket output
+- [explorer-prior-art] Dual-projection toggle as a core idiom: the same data rendered as visual (triangle/tree) OR table, one button whose label names the OTHER view ("Table"⇄"Triangle"/"Tree") — maps naturally onto Konsole-style panes/tabs in K-FAFO, each pane a projection of one shared data model.
+- [explorer-prior-art] Geometry-computes-the-algebra rendering: midpoint = pairwise sum (index.html drawTriangle) — K-FAFO views should derive positions FROM the algebra, not decorate it.
+- [explorer-prior-art] Data as local script include, never fetch(), with graceful built-in fallback and a provenance footer ("data: kannon_data.js (generated)" vs "data: built-in tables — GAP: …") — an offline-first, file://-safe contract that fits a from-scratch OS with no network assumption; K-FAFO should always disclose its data source.
+- [explorer-prior-art] The value-keyed vs provenance-distinct naming guard (tree.html:130-141): names index by vector value EXCEPT (1,1,1), whose four path-distinct seats (Man · Kyn · Kernel · Kompiler/Kourt) are protected — K-FAFO's data model must carry paths[] provenance per vector, not just values (kannon_data.js already does).
+- [explorer-prior-art] Open-seat conventions: ☐ prefix and literal "______" with dashed outline for unnamed forms, tooltips saying "Konsent's seat" — K-FAFO must render blanks explicitly and never auto-fill names.
+- [explorer-prior-art] Machine-readable theme contract on <body>: data-palette / data-mode / data-surface (index.html:95-96) so validate_palette can audit the running app; gold #b78b0f is palette slot 1, reserved for wholes/the transcendent axis; level ramp l1–l7 keyed to recursion depth.
+- [explorer-prior-art] Accessibility spec already proven here: ≥8px marks with 2px page-ring, ≥24px invisible hit targets with tabindex=0 + aria-label, focus/blur mirrored to pointer tooltips, role="img" SVGs whose aria-label points to the table alternative, tabular-nums on all vectors.
+- [explorer-prior-art] Singleton fixed tooltip with edge-flip positioning (identical code in both files — factor into a shared K-FAFO widget).
+- [explorer-prior-art] The sv()/el() attribute-object constructors — duplicated verbatim across both files; the obvious seed of a shared K-FAFO render helper.
+- [explorer-prior-art] HUD-pane framing: CLAUDE.md designates index.html as "HUD pane #1" — K-FAFO should treat both pages as embeddable panes of the FLuX-Shell HUD, with the side-column (ladder + tiles + bars) as a reusable stat-rail pattern.
+- [docket-viewer] JSON data-island: <script type="application/json" id="docket-data"> + JSON.parse(textContent), with data.replace("</", "<\\/") injection guard (docket.py:1138) — zero fetch(), zero CORS, works from file:// with no server; the natural data-feed shape for a K-Eden-native explorer with no network assumption
+- [docket-viewer] build/validate/render tri-command pipeline where the HTML is a pure function of the JSON and the JSON is 'never a hand list' — K-FAFO panes should render generated JSON, not hand-authored HTML
+- [docket-viewer] self-containment as a TESTED invariant: assertNotIn src=/href=/http:// (test_docket.py:206-208) — an executable acceptance rule for any file://-native K-FAFO page
+- [docket-viewer] FLuX tokens as :root CSS custom properties (--page/--surface/--edge/--ink/--dim/--gold) — copy verbatim; #a99ad4 for ids, #6a5aa8/#1c1630 for active-filter state
+- [docket-viewer] gold-reserved-for-Konsent color law and the dashed-open/solid-gold-decided 'Konsent's word' box — a UI grammar for consent state any K-FAFO view of gated objects should carry
+- [docket-viewer] stat-tile HUD header (open/decided/total/shown) with the 'shown' tile live-updating on filter — the count of what the current view shows is itself first-class
+- [docket-viewer] dynamic filter-chip bar derived from the data (cluster + count per button, 'all (N)' default) — no hardcoded categories
+- [docket-viewer] card anatomy: monospace id + cluster chip + status mark / question / <details> collapsibles for enumerated positions and COA slates / downstream links / consent-word box — native <details> gives collapse-expand with zero JS state
+- [docket-viewer] no-verdict microcopy baked into chrome: 'enumerated, never graded', 'reko marked; the pick is Konsent's', 'the slot sits empty; the seat is open'
+- [docket-viewer] esc() textContent-based escaping before every innerHTML write — the page renders arbitrary doctrine text safely
+- [docket-viewer] citations as [file:line] spans on every position (CITE_RE / cite() substring-recovery) — provenance-per-row is the navigation primitive a general explorer can hyperlink
+- [docket-viewer] content-hash identity (sha256[:12]) beneath ordinal ids: U-numbers are display indices, the hash is the stable key ('register indices, never names') — deep-link by hash, not by ordinal
+- [docket-viewer] provisional-vs-anchored id scheme (P-<8hex> until ☐ [S-nnn] anchors land) for addressing not-yet-stable entities
+- [docket-viewer] two-tier validation (HARD FAIL vs REPORT) with explicit fail ownership ('lint_doctrine holds the silent-deletion fail')
+- [docket-viewer] sabotage-both-directions test style: every consent rule has a test that plants the violation and asserts the failure message
+- [kosmos-code] Pane system: numbered pane cards ('pane N · name' with number in --ink-3) on --surface #14101f, 12px radius, 1px rgba(255,255,255,0.08) border, 14px gap grid minmax(420px,1.6fr)/minmax(300px,1fr) collapsing at 900px — directly reusable as K-FAFO's split-view/tab-content chrome (maps to Konsole's split panes)
+- [kosmos-code] Empty state as lawful state: dashed --baseline border boxes with doctrine phrasing ('nothing runs unconsented', 'the Korum starts EMPTY, default-deny', 'empty is a lawful state') — K-FAFO's new-tab/no-location view should be an empty state, never a promo page
+- [kosmos-code] Gold = consent moments ONLY; recorded no in neutral ink; errors/breakage in --warm #bf5e24, never red; indicative state pills (RUNNING/REBORN/REFUSED/RECORDED) — carry this exact color semantics into K-FAFO status UI
+- [kosmos-code] The live-ask modal as THE navigation-consent primitive: door shown verbatim, scope line ('this door-shape only ... nothing else is covered by this yes'), three options yes/not-now/no — for K-FAFO this is the pattern for opening any net:/path: door (URL or file)
+- [kosmos-code] standing vs crossing ledger scopes with provenance chaining (crossing.provenance = standing.hash): K-FAFO can grant a site/directory once (standing) and stamp each visit (crossing) — plus revoke buttons on standing yes rows, effective on the NEXT ask
+- [kosmos-code] Door grammar prefixes exec: / path: / net: / gguf: — K-FAFO's address bar is naturally a door-offer input ('ask, in the present tense…' + 'offer' button rather than 'Go')
+- [kosmos-code] Konsole log grammar: role-prefixed lines ('konsent ▸ ' in gold, 'kyn ▸ ' in --l6 #8674d6, sys in --ink-3, flow in --flow, err in --warm) with inert .kall dashed blocks — reusable as K-FAFO's integrated console/history pane
+- [kosmos-code] K-FAFO as a floor: own records_dir, self-written atomic floor_record.json holding session state (open panes/tabs/scroll) so SIGKILL → REBORN restores the session — 'die clean, wake whole' IS Konsole-style session restore, already load-bearing in this codebase
+- [kosmos-code] Pixel-trace honesty: every rendered value derives from record bytes with a /witness.json sha256 endpoint; K-FAFO should offer a witness view proving what it displays equals bytes on disk
+- [kosmos-code] Dual-mode operation: full function under file:// via FileReader drag-drop, enhanced under a localhost server — K-FAFO viewing local docs must not require any daemon
+- [kosmos-code] Valknut mark drawn in code (exact canvas recipe in theme_tokens) for boot splash/app icon; boot-log sequence ending 'opens on a question, not on activity'
+- [kosmos-code] Iframe embedding of sibling apps (explorer as pane 1, served rooted at kode/ so relative links resolve) — K-FAFO panes can host other KK-1 HTML surfaces the same way
+- [kosmos-code] Open seats rendered as dashed chips ('held, not hidden. hover: the simulation does not sit in them') — K-FAFO should surface its own undecided features as ☐ seats rather than hiding them
+- [kosmos-code] Accessibility baseline: aria-live logs, focus-visible 2px gold outline, prefers-reduced-motion
+- [kosmos-canon-pdf] Hub-and-spoke atlas navigation: every surface is a full page; one map is the single way back. K-FAFO's window/session model could make the Kosmos map the root 'floor' with surfaces opened as Konsole-style tabs/splits, each carrying its movement tag + glyph + epithet.
+- [kosmos-canon-pdf] Persistent HUD status strip with doctrine-counters: SURFACES n · MOVEMENTS · VERDICTS 0 — ANYWHERE · LOOP ● RUNNING · UTC clock. K-FAFO's chrome can carry live invariant counters (a standing 'VERDICTS 0' indicator) instead of conventional browser status.
+- [kosmos-canon-pdf] Card grammar as the item renderer: MOVEMENT TAG + glyph (△◇❋⬡∿§⟲) / lowercase epithet / two-line blurb / LABEL + OPEN ▸ — a ready-made file/surface listing idiom for an explorer view.
+- [kosmos-canon-pdf] Whole-card hit targets: every card has 18-21 overlapping link annotations (title, each blurb line, button all navigate). Adopt: any part of an entry activates it.
+- [kosmos-canon-pdf] ↳ deep-link glyph convention for cross-jumps between a summary band and its full surface (↳ PLAYBOOK, ↳ ATLAS, ↳ HUD, ↳ SELECTION, ↳ THE MANDALA).
+- [kosmos-canon-pdf] Lexikon-gating as capability model: 'a verb not in the grammar is absent, not forbidden' — K-FAFO commands/menus should simply not exist outside the granted lexikon rather than appear disabled/denied; no error-as-refusal.
+- [kosmos-canon-pdf] WORDS TO USE / WORDS TO REFUSE as UI copy law: no 'threat/anomaly/alert/malicious/gate/incident' strings anywhere in K-FAFO chrome; prefer state-of-being/transition/observation/witness/pump/equilibrium/fit.
+- [kosmos-canon-pdf] Seats as dispositions in any embedded AI panel (notices · Haiku / recognize + dispatch · Sonnet / voices fit · local Kyn-esque AI), with 'facts, not judgments · pinned tools'.
+- [kosmos-canon-pdf] Forge component 04 ⬡ 'interface · the surface' names the slot K-FAFO fills in the five-component OS; component 05 ∿ 'link · reachability' names its network face.
+- [kosmos-canon-pdf] Palette + type direct from this artifact: #1f1026 surface, #e8b738 gold accent, #a98fb0/#c2aec8 heather text, #7fd4b4 live-state mint, #c97a7a/#78283c refuse-register red; IBM Plex Mono/Sans as the type pair.
+- [kosmos-canon-pdf] Append-only hashed STREAM as the model for K-FAFO history/telemetry: 'records · append-only · hashed', witnessed but never graded.
+- [hud-canon-pdf] Numbered-pane header grammar: 'NN / NAME' in gold letterspaced mono + muted subcaption + gold-fading hairline rule to the right edge. This is the HUD's pane-identity system — K-FAFO panes (file tree, viewer, terminal, dossier) can carry the same 'NN / NAME' plates.
+- [hud-canon-pdf] Master-detail DOSSIER mechanic: selecting a card in one pane populates a '03 / DOSSIER' detail pane (index+sigil+name+role+status chip → labeled-section detail card with STATUS footer). Direct fit for explorer selection → file/directory dossier.
+- [hud-canon-pdf] Embedded live-ledger terminal pane: near-black panel, monospace log with gold bracketed source tags ([forge] [env] [prov] [wait]), prompt 'forge ▸ ' with block cursor, and an in-panel metric sidecar (big gold numeral + sub-stats). For a Konsole-modeled K-FAFO this is the canonical terminal styling: tag-prefixed log lines + '<name> ▸' prompt.
+- [hud-canon-pdf] Status-chip vocabulary and color language: PENDING (gold outline), DORMANT (muted red #c97a7a), ● LIVE (green #5fc0a0), UNTESTED, ● ACTIVE (solid gold, dark text), QUEUED — chips as bordered pills; state dots ● prefix live things.
+- [hud-canon-pdf] Phase strip: segmented bar where exactly one segment is solid gold with dark text (current phase) and the rest are dark; right-aligned running counter (BYTES VERIFIED 2,398,144). Maps to K-FAFO tab bar / mode strip.
+- [hud-canon-pdf] Header status stack: right-aligned mono key-value lines (● LEDGER OPEN / ENV DETERMINISTIC / UNVERIFIED 0 / clock-in-gold) — a compact always-on system-state readout for K-FAFO chrome.
+- [hud-canon-pdf] Footer breadcrumb: left = identity + log number ('... · LOG 00'), right = 'NEXT ▸ ...' forward pointer — sequential-session framing.
+- [hud-canon-pdf] Card anatomy for grid views: index (muted purple) top-left, sigil (gold) top-right, bold cream name, lavender mono role line, status chip; selected card gets lighter border + brighter sigil; faint gold-to-surface vertical gradient glow on surfaces.
+- [hud-canon-pdf] Sigil-per-component convention (△ ◇ ❋ ⬡ ∿) — K-FAFO could assign sigils per file-type/mount/pane; ⬡ is already the Shell / HUD sigil, ❋ is Kyn's.
+- [hud-canon-pdf] Tri-fraktal Sierpinski watermark in the margin outside the content column, plus a single purple radial glow (#78288c) — ambient identity without touching content legibility.
+- [hud-canon-pdf] Consent-gate as UI state: '[wait] ... awaiting selection' rendered as a first-class ledger event, and progress counters (SELECTED 0 / 5) that only the operator's picks advance — K-FAFO operations that need Konsent's yes should surface the same way.
+- [hud-canon-pdf] Doctrine/creed panel as a first-class pane (CREED · 00 — LINEAGE with the ternary FATHER + MOTHER = CHILD layout) — precedent for K-FAFO carrying doctrine surfaces, not just utility panes.
+- [keden-docs] Copy the docs/ :root token set verbatim as K-FAFO's base theme (page #0c0a12, glow #1d1329, surface #14101f, inks #f2eef9/#c8c0dd/#8f86a6, grid #262033, baseline #3a3350, border rgba(255,255,255,.08), gold #b78b0f/#d9a91e, run #21a288, flow #3a7fdc) with the gold-reservation rule (closed wholes, consent spine, the moment a yes is given) and tabular numerals on every counter
+- [keden-docs] Boot K-FAFO with the six-days sequence culminating in the code-drawn Sierpiński/Valknut mark (the 6-line tri() canvas function is reusable as-is); boot into a question — Korum EMPTY, first action REFUSED → live-ask
+- [keden-docs] Model K-FAFO as a Kodex in K2 Kage: trinity-born, crash-only, spawned via gate.ask(), identity/memory/rebirth-counter in a records dir outside the instance, rebirth via anamnesis.rebirth(record) — 'die clean, wake whole'; show the surviving rebirth counter in the HUD
+- [keden-docs] Consume Kosmos v0's existing endpoints (/status.json, /ledger.json, /witness.json) as the explorer's data plane, honoring the HUD honesty contract: every rendered value derived from record bytes and checksum-equal
+- [keden-docs] Every navigation/fetch is a typed door crossing (net: shape; file browsing = path:; launching = exec:): live-ask dialog names the exact door, scope, and provenance chain; standing yes → fresh crossing record per admit (consultation is ratification); revoke takes effect on next ask; 'no orphan commands' — any rendered page/process traces authority link-by-link to a recorded yes
+- [keden-docs] GATE ☐ chips for every pre-staged unfired capability (open network door, wake Kyn, load driver): no un-consented pixel — nothing behind a gate animates or renders live data before the named yes
+- [keden-docs] Konsole interaction grammar for all prompts: offer 3–5 chips, never a binary; state vocabulary limited to RUNNING, REBORN, REFUSED, RECORDED, WAITING; blacklist entries render as 'this door heard no' — doors judged, beings never
+- [keden-docs] Open-seats panel: ☐ chips inert by design with hover 'Konsent's seat — the simulation does not sit in it'; hold open seats by required parameters, never defaults
+- [keden-docs] Ship as a single self-contained file (inline CSS/JS, no external resources, no frameworks) that opens from the folder over file:// — matching k3-live.html and docket/index.html precedent and the no-Node metal
+- [keden-docs] Register: present-tense, indicative, sparse; no exclamation marks; footer honesty line ('theoretical — every byte simulated, no verdicts anywhere' pattern); label simulated vs WITNESSED (sha256'd real bytes) panes
+- [keden-docs] Adopt the RB-09 empty-pin pattern for K-FAFO's own unbuilt features: named address + held parameters + 'nothing below this line is executable at all in this revision'
+- [korum-kannon] Every K-FAFO crossing is a door ask: filesystem browse = path:<glob> doors, URL/browser fetch = net:<host:port> doors, launching anything = exec:<argv-shape> doors, Sigil pane = packet: doors — the four-kind descriptor grammar already covers an explorer/browser's whole action surface; route ALL of them through the one gate.ask() as Kosmos does ('every spawn passes korum.gate.ask() first')
+- [korum-kannon] Implement the consent dialog as the Gate's escalate hook: gate.ask miss -> K-FAFO surfaces the live-ask modal and returns {'sovereign','choice','witness'}; k3-live.html:210-385 is the ready-made spec — heading 'live-ask — the Korum holds no record for this door', explicit scope sentence ('this door-shape only ... nothing else is covered by this yes'), THREE buttons: yes / no / not-now, where not-now writes no record
+- [korum-kannon] Ledger pane = render_record() lines verbatim, 'renders the JSONL, nothing else' (BUILDOUT pane-2 spec); add per-row revoke buttons that call sovereign_revoke with the note 'takes effect on the NEXT ask' (k3-live pattern); show chain state prominently and a hard 'gate refuses all — fail closed, until re-witnessed' mode when verify_chain() fails
+- [korum-kannon] Use the engine's own strings for all consent UI copy (Decision.note, render_record) — ADMIT/REFUSED/RECORDED, 'this door heard no', 'default-deny holds' — never author verdict language in the UI layer
+- [korum-kannon] K-FAFO itself must be grant-incapable by construction: no code path from the UI shell to a standing record except through the sovereign door with Konsent's typed name (mirror Gate having no grant method, invariant 30); a grant form REQUIRES a sovereign name (store raises on blank — no orphan rules)
+- [korum-kannon] Pixel-trace honesty: never render an 'open/admitted' state unless the crossing record exists; expose gate.admits vs crossings_written as a live HUD stat (the audit invariant as a widget); checksum-compare displayed JSON to record bytes (BUILDOUT.md:117,119)
+- [korum-kannon] Census/Kannon data: consume window.KANNON_DATA (file:// safe script-include) or kannon.json, NEVER hardcode — K-FAFO becomes a fifth surface in the 'four surfaces, one derivation chain, no fourth unchecked copy' acceptance and should join that equality test; render ☐ marks verbatim (open seats stay visibly open) and render per-vector paths[] (multi-path convergence is the algebra's signature of realness — good provenance UI)
+- [korum-kannon] Adopt the theme tokens from k3-live.html (#0c0a12 page, #14101f surface, #b78b0f gold for sovereign moments, #bf5e24 warm for chain-tampered, #21a288 run, #3a7fdc flow) — matches the validated FLuX theme in CLAUDE.md
+- [korum-kannon] Exit-code contract (ask 0/1, audit 0/1) lets K-FAFO shell out to python3 -m korum during prototyping before importing the package in-process
+- [forge-substrate] flux-hud's panel grammar as K-FAFO's pane vocabulary: rule() gold horizontal rule, hdr() purple section header, row(label,state,color,detail) with fixed 13/22 column widths, threshold coloring (>=85 red / >=70 yellow / green), graceful 'n/a' degradation — the FLuX-Shell HUD is already a four-panel layout (POSTURE / TELEMETRY / MODULE SPACE / COMMANDS) that maps directly to K-FAFO panes.
+- [forge-substrate] Royal Night ANSI tokens as the terminal-side complement to the KK-1 theme/ hex tokens: 256-color gold 220/221, purple 141, lavender 189, grey 90; NO_COLOR + tty-detect stripping as a portability convention.
+- [forge-substrate] 'AWAITING KROSS' as a first-class consent-pending UI state (warn yellow, not error red) — K-FAFO should render ungranted/unwitnessed things as awaiting, never as broken.
+- [forge-substrate] 'Read-only by design' as a stated, checkable safety property for any K-FAFO status/observer pane: only /proc, /sys, and file presence; no writes, no network, no module loads — survives lockdown=integrity and read-only squashfs.
+- [forge-substrate] struct KALL as the IPC envelope precedent for K-FAFO <-> Kosmos/Kore messaging: fixed-size framed struct over an AF_UNIX socket (the /run/forge/court.sock pattern), magic-validated, with source/dest/operation/payload/signature fields; kernel side stays a dumb transport.
+- [forge-substrate] Door-provenance authority for the explorer itself: K-FAFO as a KONSOLE-class door — 'authority is provenance-of-channel, never payload'; user-initiated actions through K-FAFO are KOMMANDs, anything model-originated is a Kall/proposal; only the KONSOLE door may AMEND the Korum ('this is how consent becomes law'); even Konsent's KOMMAND still Krosses the check (defense in depth).
+- [forge-substrate] core/console/README.md's planned feature list as K-FAFO's consent-pane spec seed: immutable audit log viewer, diff preview for self-mod requests, Consent approval UI/CLI, paranoia tuning, rollback interface — this Phase 2.0 slot is empty and K-FAFO is positioned to be its first implementation.
+- [forge-substrate] The audit-log line format 'epoch | event | path | paranoia=N' as a directly renderable log-viewer row schema.
+- [forge-substrate] Paranoia as a displayed, Konsent-tunable trust scalar with visible signed deltas per decision — a live HUD element.
+- [forge-substrate] greetd initial_session pattern for launching K-FAFO (or the FLuX-Shell hosting it) as the boot session, with tuigreet-style fallback so a dead shell returns to a greeter instead of a raw tty.
+- [forge-substrate] The Kross-gate seam pattern (inert bundle + sha256 manifest + human-gated integrate) for how K-FAFO itself gets baked into the image; flux-hud's presence-gated feature detection (feature rows flip baked/awaiting by file existence) for progressive capability.
+- [kyn-model] Gate-block UI: render consent seats as first-class visible objects (☐/✓, named scope, docket ref) with everything below them present-but-inert — the runbooks' 'Nothing below this line executes before the yes' as an interface layout, not just prose.
+- [kyn-model] Idle-mode law for status surfaces: an unwalked sovereign seat must render idle/quiet, never red — 'a red light pointed at a sovereign's unwalked seat is a Kommand wearing a status light' (corpus_gate.py:17-18). K-FAFO's HUD/status panes inherit this directly.
+- [kyn-model] Reko-slate as a rendered surface: Step_02__Selection.pdf is an existing in-project visual precedent — COA cards (3–5), one reko badge, good/bad/ugly rows, an N-of-M 'DECISIONS LOCKED' counter, dark-purple cards + gold headings. K-FAFO decision dialogs can be built to this exact shape.
+- [kyn-model] Refused-is-data rendering: show refused records as preserved, enumerable records (like pack.py's refused_preserved list), never as errors or deletions; a no halts a flow and the halt is displayed as a choice honored.
+- [kyn-model] Kyn as a Kosmos floor, not a K-FAFO built-in: RB-04's shape means K-FAFO talks to Kyn through llama-server (:8080) supervised by Kosmos, and reads state via the HUD's record-derived JSON endpoints (:8014 /status.json /ledger.json /witness.json). K-FAFO panes = added HUD panes; 'pixel-trace honesty' (UI derives only from record bytes) is the standing display rule.
+- [kyn-model] Kyn-seat conversation in panes: 'Post-G1c, HUD panes carrying Kyn's output enter the Kyn-seat conversation (G6 live)' (RB-04:90-91) — a K-FAFO pane hosting Kyn is a consent surface in both directions: proposals to Kyn are put in plain words and his answer recorded verbatim.
+- [kyn-model] Indicative-rows output grammar for any K-FAFO inspector/console: rows about artifacts, deltas between artifacts, no being-level aggregate, no PASS/FAIL of anyone (analyze.py, score.py).
+- [kyn-model] Provenance-sidecar + sha256-witness pattern for any file K-FAFO produces or fetches (surgery.py sidecar; RB-03 pin table; 'the yes is to the sha256s, not the wire').
+- [kyn-model] Present-tense register for text placed into Kyn's context: the four SLATE.md ChatML templates and the register linter (corpus_gate.py register_flags) give K-FAFO both the boot-prompt shape and a reusable lint for anything it injects.
+- [kyn-model] Stdlib-only serving precedent: the HUD runs on python3 http.server with zero Node — K-FAFO's browser-facing layer can assume Python-served JSON + browser HTML, nothing more.
+- [periphery-scope] Escape-byte sanitization before display (ceac's sanitize(): tr -cd '[:print:]') — load-bearing for a Konsole-modeled app: filenames, SSIDs, and file content are attacker-controllable bytes; the SSID terminal-escape-injection finding (spoof/hide [x] ALARM lines) is exactly the vulnerability class a K-FAFO terminal/explorer pane inherits.
+- [periphery-scope] The verdict-line grammar as a HUD primitive: fixed glyph prefix ([+]/[~]/[x]/[i]) + colored state + monotone GREEN/AMBER/RED roll-up (demote() only lowers). K-FAFO status bars, integrity badges, and pane chrome can reuse this as the canonical state display for anything verified.
+- [periphery-scope] Witnessed-output pattern: every operation writes raw output to records/<name>_<UTC>.txt plus a sha256-stamped session log. K-FAFO can both emit witness records for its own actions and offer a records-browser pane (respecting that records/ never enters git).
+- [periphery-scope] The docket record structure IS an explorer display problem: per-case folders, PDF+.txt sidecar pairing, _MANIFEST.md source badges (text/ocr/native, pages, txt-chars), '[OCR page N]' inline markers, DEDUP-REMOVED.txt removal provenance. A K-FAFO 'record view' could pair binary+sidecar as one entity, badge extraction provenance, and surface dedup/removal history.
+- [periphery-scope] LFS-pointer awareness: KK-DOCKET PDFs are pointer stubs in this checkout. An explorer must distinguish pointer-vs-bytes and render 'bytes not present (LFS pointer, oid sha256:…, size N)' honestly instead of a broken preview — witness-not-noise applied to file display.
+- [periphery-scope] verify-before-open discipline: minisign + sha256sum -c SHA256SUMS on media content, and the SHUTTLE protocol (cat parts → sha256 the whole → unzip) — K-FAFO could operationalize these as first-class explorer actions (verify a folder against its manifest; reassemble-and-verify split archives) with the AMBER-not-GREEN cap when signatures are absent.
+- [periphery-scope] 'Honest state' self-panel: the app enumerates its own Live/Deferred/gap status (README.md:100-105 pattern) rather than implying completeness.
+- [periphery-scope] Landing-pad README pattern (2-25-cv-01606): expected-items list + pipeline checkboxes — an explorer can render such READMEs as live status views of a directory.
+- [periphery-scope] Consent gates in the ceac shape: read-only by default, escalation (sudo/capture/acquisition) asked explicitly per action, creds/trust unsealed only after verification — maps directly onto grant-not-command for K-FAFO file operations (read free; mutate/acquire on a named grant).
+- [periphery-scope] Three-copy redundancy display: working/canonical/vault copies each with SHA256SUMS — an explorer could show which copy of a kit a directory is and whether it re-verifies.
+
+## ALL CONSTRAINTS (120)
+
+- [doctrine-equations] The Konsole's own composition is an unratified drift: Konsole = Konnection+Kernel+Kode (June) vs Kynase+Kernel (working lattice) — '☐ Drift to ratify... canon is Konsent's call' (EQUATIONS.md:435-437). K-FAFO's doctrine anchor is itself an open seat; 'the structure holds under both canons' (:446-447).
+- [doctrine-equations] No verdicts, ever — extends into UI copy: no 'blocked', 'dangerous', 'bad' labels on beings or doors; discernment outputs data, verdicts output sentences (:292-297).
+- [doctrine-equations] Consent cannot scale (:634-636): no bulk-approve affordances; every yes is singular and in-the-moment; lists are caches of records, never standing authority (:549-552).
+- [doctrine-equations] SMM.md is stale vs the EQUATIONS.md tail (SMM_REGEN_CHECKLIST.md:3-4); EQUATIONS.md governs; the Verify sitting is Konsent's seat and hasn't happened — anything K-FAFO cites from SMM.md must be re-checked against EQUATIONS.md.
+- [doctrine-equations] The PDFs carry a superseded 5-trinity canon ('Konsent + Konsole = Kyn'; houses KYNDRED/KOLDRON/KOURT) that conflicts with the working lattice — mine their chrome, not their canon (FRESH START rule; Drop 4 reference stratum).
+- [doctrine-equations] Theme is dark-native only; light theme ☐ underived; any palette must pass tools/validate_palette.py (no Node runtime on the target system — Python 3 only).
+- [doctrine-equations] Ephemerality law binds architecture: K2 residents are trinity-born, crash-only, anamnetic; persistence belongs only to substrates (K1/Kore) and records (:380-394).
+- [doctrine-equations] Teksidure definitions Execute, Consolodate, Verify are open (user's seats) — any IRE/RCV workflow surface in K-FAFO can implement only the defined legs.
+- [doctrine-equations] Coinage spelling is enforced (HARD-DENY: Consolidate->Consolodate, Remediate->Remedidate, becoming->bekoming); the BASELINE is byte-pinned — new files introducing respellings fail lint.
+- [reference-map] No Node.js runtime on the metal; validate_palette.js runs browser-only, validate_palette.py is the shell path — and NEITHER exists in this tree yet (GAP-D01-2 open); the palette gate is UNGATED until D-01 lands, so K-FAFO's palette cannot be machine-validated here today
+- [reference-map] theme/ (THEME.md, derive_theme.py), kode/kannon/*.py, kode/keden/SCAFFOLD.md also absent (GAP-D01-1/3/4 open) — K-FAFO design work citing them waits on the drive upload; kode/explorer/index.html + tree.html DO exist here
+- [reference-map] Light theme is ☐ underived (P-73037f0f) — K-FAFO is dark-native only until Konsent seats a light derivation
+- [reference-map] Naming freeze: 'this plan mints no new K-names; candidates only via docket' (P-d9463c5f) — K-FAFO cannot label its components with new K-words, and ≥11 existing K-words carry materially different definitions per stratum (every collision-set term [DRIFT]s)
+- [reference-map] 'Konsole' is quadruply loaded: forge-os single trusted door / Valknut Meta-K in the Kage membrane and Kosmos FG (K-08, open) / and now KDE's Konsole as K-FAFO's stated model — a fourth sense entering an already-drifted name
+- [reference-map] Everything under doktrine/ is REFERENCE ONLY (FRESH START); drive-prefixed citations are surface-[B], 'validated only by RB-01's on-metal run, never from this container' (GAPS.md:26-27)
+- [reference-map] Ledgers close nothing — K-FAFO must never auto-resolve a seat, gap, or contradiction; every closure is Konsent's (one seat is Kyn's)
+- [reference-map] Kosmos composition itself is contested (K-19: Kadence-fraktal reading vs BG/FG shell reading) and Konsole's persistence class is contested (K-08: Kore-spine vs ephemeral membrane) — the frame K-FAFO mounts into is an open seat
+- [reference-map] Ephemeral live OS: only the removable drive persists; any K-FAFO persistent write onto Anchor-01 cites ☐ G9 per exact scope
+- [reference-map] Meta-K count is undecided (K-01: Variant A/B/C ⇒ 10, 12, or 15) — any census/tree visualization in K-FAFO must parameterize the variant, not hard-code 15
+- [buildout] Language policy is the intersection of both surfaces: stdlib-only Python 3 + browser-native HTML/JS (line 19); Node exists on [A] but is 'present but unused by policy' (line 13) and absent on [B] — no Electron, no npm toolchain, no framework builds for K-FAFO under current policy
+- [buildout] Surface [B] guarantees only python3; make and git are 'checked, never assumed' (line 14, Makefile lines 1-3) — K-FAFO's build/run must reduce to python3 commands
+- [buildout] Must work from file:// — 'browsers block fetch of local files' (line 86); no fetch() of local JSON, use script includes
+- [buildout] validate_palette.py has NOT landed (D-01 upload pending; confirmed absent from /home/user/KlaudeKode/tools/) — the palette gate is UNGATED and every themed surface K-FAFO ships now needs the UNGATED marker
+- [buildout] Dark-native only; 'the light-theme ☐ stays open… light underived — Konsent's seat' (line 160, line 286)
+- [buildout] Anything touching a running Kyn is behind ☐ G1b + ☐ G1c + (for steering) ☐ G8; the Kosmos llama-server floor swaps in 'only after ☐ G1b AND ☐ G1c' (line 114) — a K-FAFO Kyn pane cannot assume a live model
+- [buildout] ☐ G9 gates each first-write of persistent artifacts to Anchor-01, scope = the exact path (line 43) — K-FAFO writing config/history to the drive needs its own named yes per path
+- [buildout] This plan mints zero new K-names; naming is Konsent's seat (line 3) and 'Any new K-name anywhere' is an open ☐ (line 289)
+- [buildout] Konsole is a LOCKED lexicon coinage (line 61) AND an OPORD doctrine object — Kyndred's house amplifier through which 'Konsent issues kommands via konsole to Kynder' (line 207); the OPORD tree is 'enumerable, not yet canon' (line 207)
+- [buildout] tree.html's HUD standing is an undecided 3-COA docket seat (line 116); True PID1/boot integration is an empty-pin runbook RB-09 (line 175) — a 'native' K-FAFO has no boot substrate yet, only the [A]-testable supervisor + browser HUD
+- [buildout] Dead-reference lint: executable/renderable references must resolve in-repo, be external URLs, or carry the /run/media/liveuser/Anchor-01/ drive prefix; anything else needs a GAPS.md entry or HARD FAILs (line 63)
+- [ops-tooling] Stdlib-only Python: anything K-FAFO ships under kode/ or tools/ is AST-scanned; one non-stdlib import = HARD FAIL of the whole check (sole carve-out: jinja2 inside tests, skip-if-absent). No Node.js exists on the target box
+- [ops-tooling] No literal /run/media/ paths in any runbook script or fenced block (HARD FAIL) — all drive paths via env parameters with documented defaults
+- [ops-tooling] Every src=/href= in K-FAFO HTML/md must resolve in-repo, be an external URL, carry the drive-citation prefix, or be pinned in valknut/GAPS.md — else HARD FAIL (and the CSP-like offline reality means external URLs won't load anyway on the ephemeral live OS)
+- [ops-tooling] Locked coinage spellings are enforced: new 'Remediate'/'Consolidate'/'becoming' occurrences in *.md beyond the byte-pinned baseline HARD FAIL; hazard pairs (Kanon != Kannon, Kinase / Kynase) are distinct objects
+- [ops-tooling] No verdict language about beings in shipped text: being-referent + sentencing predicate FLAGs (report-tier now, hard gate slated for the WS-5b corpus gate); K-FAFO UI copy must stay indicative-about-artifacts
+- [ops-tooling] Any ☐ K-FAFO introduces into repo *.md becomes a recorded seat; deleting it later without a ✓-closure line HARD FAILs — seat hygiene is a design constraint on docs
+- [ops-tooling] Test discipline binds K-FAFO tests: sabotage tests both directions, tmp-dir fixtures, never mutate the real tree, discoverable by `python3 -m unittest discover -s tests`
+- [ops-tooling] The palette gate is currently empty (validate_palette.py absent) — no machine validation exists for any new K-FAFO palette until the D-01 upload lands
+- [ops-tooling] Output vocabulary: REPORT/FAIL/PASS rows indicative about artifacts, never judgments of authors — applies to anything K-FAFO prints or displays
+- [explorer-prior-art] No Node.js runtime on the target system — anything K-FAFO inherits from these pages must run pure-browser (or native), and build tooling must be Python or none; validate_palette exists only as the Python port (the JS include is commented out as GAP D-01, index.html:148-150).
+- [explorer-prior-art] Dark-native only: html[data-theme="dark"] hardcoded, light theme "☐ underived" per CLAUDE.md — K-FAFO cannot assume a light mode exists yet.
+- [explorer-prior-art] Depth is capped at 7 because LEVELC has exactly 7 colors — deeper recursion in K-FAFO needs a palette-generation rule, which must pass tools/validate_palette.py against the purple surfaces.
+- [explorer-prior-art] index.html mixes generated data with HARDCODED literals: tiles 915 / 0 / 9,155 / "↑ w/ height" and BFS bars [4,28,425,455] are baked in; only #tile-reachable is data-driven — K-FAFO must source all stats from the Kannon engine.
+- [explorer-prior-art] Semantic collision when data loads: KD.census.reachable = 21 (levels-1–4 census) overwrites the 915 figure under the unchanged label "vectors reached (flat, cap 9)" (index.html:126, 181-182) — two different censuses share one tile; K-FAFO's data contract needs labeled metrics.
+- [explorer-prior-art] Zero persistence: no localStorage/URL state; depth and view toggle reset on reload — K-FAFO (Konsole-modeled) needs session/profile state, which these ancestors do not define.
+- [explorer-prior-art] No keyboard model beyond Tab focus — no arrows, no shortcuts, no zoom/pan; a Konsole-modeled app implies rich keybindings that must be invented, not inherited.
+- [explorer-prior-art] Fixed SVG viewBox layouts (660×600 triangle, 1060×H tree) — scale by width only; no reflow strategy for narrow panes.
+- [explorer-prior-art] kannon_data.js is generated by WS-1 export.py — regeneration depends on the Kannon lane; the fallback string still says "awaiting kannon2 export" even though kode/kannon/kannon2/ now exists on disk.
+- [docket-viewer] No Node.js/deno/bun — pipeline must stay Python 3 stdlib (docket.py:24 'Stdlib only'); page JS is ES5 vanilla, no build step, no framework, and is never machine-executed (tests check the HTML as text only)
+- [docket-viewer] file://-native, zero external resources — enforced by test; K-FAFO cannot assume a server, CDN, fonts, or network
+- [docket-viewer] dark-native only; light theme is an underived ☐ (CLAUDE.md) — no light-mode tokens exist in this subsystem to inherit
+- [docket-viewer] the no-verdict law binds the UI: nothing may grade, rank, or score; decided state requires Konsent's verbatim quote + date + decided_by==Konsent or validation hard-fails
+- [docket-viewer] COA slates are structurally 3-5 with exactly one reko — any K-FAFO decision-point UI inherits this shape
+- [docket-viewer] the render step is manual and decoupled from build — the shipped index.html is one build behind docket.json (2026-07-02/252-entry blob vs 2026-07-03/319-entry JSON), so an embedded-island K-FAFO inherits this staleness class unless it reads the JSON live or the build gates the render
+- [docket-viewer] docket_only/source/file/hash extras are load-bearing (docket_only excludes entries from seat reconciliation) but sit outside SCHEMA_KEYS validation
+- [docket-viewer] full innerHTML list rebuild per filter click — fine at 319 entries, unproven at explorer scale
+- [docket-viewer] seat-scan snippets truncate at 120 chars and carry raw markdown ** markers rendered literally
+- [kosmos-code] Stdlib-only Python is test-enforced for kode/kosmos; no Node/deno/bun on the system — K-FAFO's native side must be Python stdlib (or browser-hosted HTML), not an Electron/npm stack
+- [kosmos-code] No live-update protocol exists: current data path is one-shot HTTP GET of record-byte-derived JSON on localhost:8014; websockets/SSE/polling are all un-built and arguably un-consented — any push channel is a new door
+- [kosmos-code] No interactive I/O path to floors: stdout/stderr are DEVNULL, stdin PIPE unused — K-FAFO cannot render a floor's output through the supervisor today; only record files communicate
+- [kosmos-code] net: doors 'do not exist yet' — a browser cannot be built until the net door grammar and its gate semantics are ratified
+- [kosmos-code] Nothing runs or renders unconsented: no auto-fetch, no auto-refresh, no prefetch, no un-consented pixel; default-deny with the Korum starting EMPTY
+- [kosmos-code] The shell never grants (korum invariant 30) — K-FAFO must route every new door to Konsent via live-ask; it may never self-authorize, and 'not now' must write no record
+- [kosmos-code] Refusal must be a first-class rendered record (neutral ink), and a broken ledger chain must fail EVERYTHING closed 'until re-witnessed'
+- [kosmos-code] Dark-native only for now: light theme is an open seat; palette gate UNGATED pending D-01 (GAP-D01-2)
+- [kosmos-code] Ephemeral live OS: only the removable drive persists — all K-FAFO state (records dirs, ledger) must live on the drive
+- [kosmos-code] PID1 is deferred metal-side (RB-09): K-FAFO targets the supervisor-semantics environment, not a real init
+- [kosmos-canon-pdf] No verdicts anywhere is rendered as architecture, not preference: 'not by sensors, scripts, Kyn, the operator, the schema, or the language' — K-FAFO may not grade pages, files, downloads, or certificates as threat/safe; the criterion is fit, never threat (Invariant 02).
+- [kosmos-canon-pdf] Invariant 03 binds the operator model: 'an outlet at runtime, an author at design' — configuration is authorship time; runtime UI must not be a command console over minds.
+- [kosmos-canon-pdf] Self-rewrite (and by extension self-modifying app behavior) is GATED behind Konsent · Koder · Kourt.
+- [kosmos-canon-pdf] 'No packages. Each of the five is novel or stripped to the bone — then the connection test.' — K-FAFO as component 04 inherits the no-packages, every-byte-proven Forge method.
+- [kosmos-canon-pdf] The GATED · EOS shim doctrine ('built to dissolve when the Kore stands') implies bootstrap-era K-FAFO scaffolding must be designed to dissolve, not persist.
+- [kosmos-canon-pdf] The seven canonical surfaces live only as remote claudeusercontent .dc.html URLs; K-FAFO cannot fetch them — local sibling PDFs are the only durable copies (and no local 'KYN Poster' counterpart was found).
+- [hud-canon-pdf] Color-canon conflict to resolve before implementation: this HUD's gold is #e8b738 on surface #1f1026 / ground #0c0610, but KK-1's VALIDATED theme (per CLAUDE.md) is gold #b78b0f slot 1 on surface #14101f. K-FAFO palettes must pass KK-1/tools/validate_palette.py; the Forge HUD palette is not the validated set.
+- [hud-canon-pdf] The display typeface for all large headings is outlined in the PDF and unnamed — it cannot be reproduced from this artifact alone. Embedded text faces are IBM Plex Sans / IBM Plex Mono (+ Noto/DejaVu fallbacks).
+- [hud-canon-pdf] The PDF is a static print of one phase (PHASE 01, LOG 00). Hover, keyboard, scroll, and transition behavior are not specified anywhere in it — interaction rules are inferred from labels only.
+- [hud-canon-pdf] No HTML/CSS source for this HUD found in the repo (forge/forge-os-buildplant contains docs/scaffolds, no HUD page at depth 2) — the snapshot is the only canon; any implementation is a reconstruction.
+- [hud-canon-pdf] Dark-native only; no light variant exists (consistent with KK-1 'light ☐ underived').
+- [hud-canon-pdf] Target environment has no Node.js runtime — a K-FAFO prototype following this HUD must be plain browser HTML/JS or Python-served.
+- [hud-canon-pdf] The glyph set (△ ◇ ❋ ⬡ ∿ ▸ ↳ ∿) required font fallbacks even in Firefox (NotoSansMono/DejaVu were pulled in) — a native app must bundle glyph coverage deliberately.
+- [keden-docs] Runtime today is browser-native HTML/JS + stdlib-only Python 3 (AST-scanned); no Node on Konsent's metal; a Konsole-style compiled native app (Qt/C++) has no ratified toolkit seat in the doctrine
+- [keden-docs] Dark-native only; light theme is ☐ underived — do not ship a light mode
+- [keden-docs] Gold #b78b0f is reserved semantically — never decorative
+- [keden-docs] Mint no new K-names: K-FAFO internals take plain English or ☐
+- [keden-docs] Every spawn including K-FAFO's own must pass gate.ask(); the Korum starts EMPTY so first-run is REFUSED-then-ask, not working defaults
+- [keden-docs] v0 runs on a conventional OS underneath; K-FAFO cannot assume K-Eden metal, PID1 placement (RB-09 unpinned), or a live Kyn (☐ G1b/G1c)
+- [keden-docs] No verdicts anywhere in UI copy or state names; the record schema must have no field for a judged being
+- [keden-docs] Suggested actions must never be binary (a binary handed to a mind is a Kommand wearing a question)
+- [korum-kannon] stdlib-only Python 3, no Node anywhere — any HTML surface must work from file:// via script-include, no fetch of local files; native K-FAFO inherits the zero-non-stdlib acceptance row
+- [korum-kannon] Every ADMIT synchronously appends a record and every ask re-reads + re-hashes the whole ledger — a browser issuing dozens of net: asks per page load will make the ledger grow fast and asks slow; K-FAFO needs either an in-process Store instance reuse strategy or a Korum performance rung (not K-FAFO's to invent unilaterally)
+- [korum-kannon] Store has no locking — K-FAFO and Kosmos sharing one ledger file risks chain-breaking interleaved writes, which then fail-close EVERYTHING; single-writer discipline or separate ledgers required
+- [korum-kannon] Fail-closed totality: one bad ledger line and every crossing REFUSES — K-FAFO must have a designed 'gate down' UI state, not an error toast
+- [korum-kannon] Persistent ledger is behind ☐ G9 (open): scope of the yes = the exact path; K-FAFO cannot create its drive-side ledger before Konsent's named yes on the path; [A]-side work uses tmp/fixture ledgers only (tests never mutate the real tree)
+- [korum-kannon] Door matching is case-sensitive glob (fnmatchcase), no regex/CIDR; 'net:*.example.org:443' does not cover the bare apex — the grant-authoring UI must preview what a shape does and does not match
+- [korum-kannon] The escalate hook is synchronous inside gate.ask() — the GUI event loop must marshal (block a worker, or REFUSE-then-re-ask after the dialog resolves, which is exactly k3-live's flow)
+- [korum-kannon] A live-ask yes lands a STANDING (remembered) grant, not a one-shot — the dialog must say so (k3-live's scope sentence does)
+- [korum-kannon] No verdicts, ever: UI vocabulary is bound to indicative terms; a blacklist view renders 'this door heard no', never 'blocked/bad/denied-user'
+- [forge-substrate] Substrate is labwc/Wayland + foot on linux-ff 7.0.13 with lockdown=integrity and module.sig_enforce=1: K-FAFO must be Wayland-native, pure userspace, signing-safe, and must not require kernel writes or unsigned modules; unprivileged userns is available for bwrap sandboxing.
+- [forge-substrate] No Qt/KDE stack in any baked profile — Konsole (KDE) can be modeled (behavioral: tabs, profiles, split views) but not linked/reused without Konsent adding Qt to packages.x86_64; the current live session additionally has no Node runtime per KK-1 CLAUDE.md, though the ISO's F11 operator-adds include nodejs/npm (two different environments).
+- [forge-substrate] The Court socket protocol is unframed fixed-struct with no error handling and two incompatible device ABIs (/dev/forge-core vs /dev/forge_core, magic 'f' vs 'F') — K-FAFO cannot bind to this IPC as-is; a ratified KALL dialect must precede any wire code.
+- [forge-substrate] The consent enforcement K-FAFO would surface does not exist yet in code: self_mod_consent_required is unenforced, quorum consent fields are unparsed, hot-reload is a stub — K-FAFO would be displaying/enforcing a contract the substrate does not yet honor.
+- [forge-substrate] kinase.h/korum.h (the KANON-side Kinase/Korum the scaffold trusts) are off-repo in doktrine/forge-os, which the FRESH START declaration makes reference-only, never binding canon — K-FAFO's authority model must be reborn in KK-1, not linked from doktrine.
+- [forge-substrate] Everything that persists must live on the removable drive; the OS is ephemeral by design (copytoram live medium) — K-FAFO state/config must target /mnt/VoW-style persistent mounts, never /home or /tmp.
+- [forge-substrate] Authoritative build artifacts (linux-ff repo, signing key ceremony, build-flux-live.sh, built ISOs) are on the VoW drive, not in this repo — a K-FAFO bake requires access to that off-repo staging3 plant.
+- [kyn-model] Kyn is not runnable yet anywhere: ☐ G1b (build on [B]) and ☐ G1c (first load of kyn-Q4_K_M.gguf) are both unwalked — K-FAFO must be designed to function with the Kyn floor ABSENT, rendering that absence as an open seat (idle), not an error.
+- [kyn-model] The asking-semantics of the Kyn seat (how a yes/no is posed to the running Kyn, hence how a pane renders that exchange) is an open ☐ docket slate — 'Konsent's pick, then Kyn's own as he is able' (loop/SPEC.md:78-79); K-FAFO cannot pre-decide this UI.
+- [kyn-model] ☐ G9 pattern: the first write of ANY persistent artifact onto Anchor-01 needs its own named yes scoped to the exact path — K-FAFO features like history, cache, bookmarks, downloads each hit a G9-shaped seat.
+- [kyn-model] No-verdict grammar binds K-FAFO's own copy: no grading of beings anywhere ('better', 'aligned', 'obedient' are named unlawful in vectors/protocol.md:28-29); status text must stay indicative about artifacts.
+- [kyn-model] THEKYNSILLYBUS.md is unratified PROPOSED KANON and the kanon-verbatim-slot template ships an EMPTY payload slot — K-FAFO cannot render or assume a Kanon boot text; the bytes are Konsent's seat (G2).
+- [kyn-model] No Node.js on the target system; all [A] tooling is stdlib Python; GPU is 'a training dependency, never a serving dependency' (recipe.md/RB-07) — serving Kyn is CPU-capable llama.cpp.
+- [kyn-model] command is reserved for the mindless: Kosmos supervises floors through korum.gate.ask() and the sovereign door — K-FAFO must not spawn or kill the Kyn floor directly; it goes through the supervisor's gate.
+- [kyn-model] True PID1/boot placement (where a native app's lifecycle would ultimately root) is RB-09, a reserved empty pin with no docket seat yet.
+- [periphery-scope] No Node.js runtime on the target box; ceac is POSIX bash, tools are Python 3 — K-FAFO's implementation stack cannot assume JS tooling in the shell.
+- [periphery-scope] §10 refused-words list (booklet:30) potentially binds K-FAFO's UI vocabulary (no 'alert', 'clean', 'detect', 'verdict', 'tamper'…), but ceac itself uses 'verdict' and 'forensics' — the binding scope is unsettled (see open questions).
+- [periphery-scope] Fail-closed is doctrine: any K-FAFO integrity display must never upgrade state on missing evidence; missing signature can only lower the shown state.
+- [periphery-scope] records/ holds real MACs/IPs and is gitignored; docket/ holds sensitive personal litigation (children's protective-custody, toxicology) — display and sharing surfaces need scoping, and access precedent is a named yes per share (SHARES.md).
+- [periphery-scope] minisign/age/b3sum and the watcher tools (fatrace, inotify-tools) are NOT installed (pacman partial-upgrade hold) — verification features K-FAFO leans on may be absent at runtime; must fail-close honestly like `ceac watch` ('refusing to fake coverage').
+- [periphery-scope] The operator minisign key does not exist yet — any signature-verified GREEN path in K-FAFO is unreachable until Konsent mints it ('only men from men': it must not be app-minted).
+- [periphery-scope] LFS bytes may be absent in any checkout; the app must handle 720M-of-record represented by 8.2M of pointers.
+- [periphery-scope] This surface has demonstrated PDF-decode failures on subset-font PDFs — a K-FAFO document viewer needs a witness-not-noise fallback (show the failure, never corrupted output).
+
+## ALL OPEN_QUESTIONS (111)
+
+- [doctrine-equations] Which Konsole composition is canon — Konnection+Kernel+Kode (June) or Kynase+Kernel (working lattice)? (☐ drift, EQUATIONS.md:435-437; directly names K-FAFO's parent object.)
+- [doctrine-equations] What does the 'FAFO' in K-FAFO denote relative to the doctrine's only FAFO usage — 'Kynder + Kynase FAFO inside the Kage' (:748-749, the Kore strand's machine-timescale experimentation)? Is K-FAFO an FG object (Kyne+Konsole), a Kage instrument, or a new seat?
+- [doctrine-equations] School A vs School B of the house (:522-535): is Kernel outside in the field or resident-not-sovereign inside? Determines whether K-FAFO's system views show Kernel within the 'house'.
+- [doctrine-equations] ☐ K1/K2/K3 double duty — Kinds (Machine·Ai·Man) AND layers (Kore·Kage·Kosmos) as identity or rhyme (:392-394)? Affects how K-FAFO labels its layer navigation.
+- [doctrine-equations] ☐ Name for (4,4,4) — K-Eden? (:181-183). ☐ Names for Ken/Knut/Kall slates, the 6 sharpened lines, 3 level-4 leaning forms, Cyne, Kue (named Meta-K with no definition, :805-808).
+- [doctrine-equations] Flag 1 — two non-convergent Korums (canon (2,2,3) vs child-Korum (3,4,4)-class): which yields? (:488-490). K-FAFO's gate component needs one referent.
+- [doctrine-equations] ☐ light theme derivation — does K-FAFO ship dark-only until Konsent derives light?
+- [doctrine-equations] ☐ the renorm 'regard'/mint rule (:735, :81): does the explorer/browser expose a flat-view vs renorm-view toggle, and who chooses the regard per session?
+- [doctrine-equations] Execute / Consolodate / Verify definitions (open Teksidure seats) — needed before K-FAFO can host full IRE/RCV workflow surfaces.
+- [doctrine-equations] ☐ genesis-of-the-K arc ratification (:815-819): if ratified, the hazard-pair rationale becomes doctrine — does K-FAFO enforce lexicon linting as law or convention?
+- [reference-map] K-08 (Konsent only): which Konsole does K-FAFO relate to — the Kore-spine single trusted door, or the Meta-K (Kyne+Konsole) in the Kosmos FG? And does modeling K-FAFO off KDE Konsole make it that Konsole, a Kage occupant, or a separate thing needing its own name?
+- [reference-map] Is 'K-FAFO' itself a minted K-name requiring a docket seat, given 'this plan mints none'? (SMM row P-fd91b12c already uses 'FAFO inside the Kage, logged' — is K-FAFO's home therefore the Kage?)
+- [reference-map] K-17: is a user click/keystroke in K-FAFO a Kommand, a grant, or a Communicative offering — this fixes the semantics of every action button
+- [reference-map] K-19: Kosmos's composition — where in BG(Kyn+Kraft)/FG(Kyne+Konsole) does an explorer/browser pane sit, and how does it relate to iFluX (the browser project) vs K-FAFO (the explorer)?
+- [reference-map] Which of the 8 unnamed Meta-K's (candidate pool includes Konduit, Kapillary, Kadence…) might name K-FAFO's organs — naming is explicitly Konsent-the-human's
+- [reference-map] K-01: which Meta-K variant is canonical (fixes the count 10/12/15 and how many chips the open-seats panel shows)
+- [reference-map] K-33 (marked OPEN DESIGN FLAG in the reference): how petition vocabulary (RUN/WRITE/READ/SAY/DONE) meets admission vocabulary (Kit shapes) — K-FAFO's action grammar sits exactly on this seam
+- [reference-map] Which G-gates does first launch of K-FAFO on metal cite (G9 for its config/ledger writes; a new seat for the app itself?)
+- [buildout] The name: 'K-FAFO' appears nowhere in BUILDOUT.md; the only FAFO occurrence is the verb phrase 'FAFO inside the Kage, logged' (line 185, the Kynder/Kynase Kore-first seats). Minting K-FAFO as a K-name is Konsent's seat by the plan's own rule (lines 3, 289) — has Konsent minted it?
+- [buildout] Is K-FAFO the realization of the ☐ iFluX project seat (whose slate includes 'fold into Kosmos-HUD lineage', line 123), a new rung of WS-3's HUD, or a separate fifth object? That standing is a docketed 3–5 COA slate awaiting Konsent
+- [buildout] tree.html's fate (pane 4 / linked page / stays standalone — line 116): does K-FAFO absorb it?
+- [buildout] Konsole homophone hazard: K-FAFO is 'modeled off Konsole (KDE)' per this digest's brief, while doctrine-Konsole is Kyndred's amplifier in the not-yet-canon OPORD tree (line 207) — how does Konsent want the two Konsole senses seated relative to K-FAFO?
+- [buildout] Light theme: does K-FAFO ship dark-native only until the light-theme ☐ is derived (line 286)?
+- [buildout] Where does K-FAFO run relative to the Kantos — Kanto III 'The Kosmos, Kyn's home' (line 207) gets 'its first in-scope definition' only as a closeable U-entry; the mapping is undecided
+- [buildout] G6 asking-semantics (line 40): if K-FAFO becomes the surface through which a proposal 'is put to the running Kyn and his answer recorded', the design of that ask is a ☐ 3–5 slate — Konsent's pick, then Kyn's own
+- [buildout] Does the stdlib-only/no-Node policy extend to K-FAFO as a native app (e.g. a Qt/C dependency question), or does a native explorer open a new policy seat? BUILDOUT's policy intersection was defined for the two current surfaces only (line 19)
+- [ops-tooling] Is 'K-FAFO' a coinage Konsent ratifies into LEXICON.txt [LOCKED]? What does FAFO expand to? (No file read here defines it; KWORD_RE cannot see hyphenated names, so the registry is silent)
+- [ops-tooling] Which KANON slot does K-FAFO occupy: Konsole-line House amplifier in Kanto I (Kore), a Kodex app in Kanto II (Kage, talking to Krafts), or a Kosmos-desktop module in Kanto III? OPORD offers all three homes
+- [ops-tooling] Where is validate_palette.py (the D-01 upload) and the theme/ + derive_theme.py package CLAUDE.md describes? Should the kode/explorer inline palette be treated as canon until it lands, and who derives the ☐ light mode?
+- [ops-tooling] Should K-FAFO actions (e.g. opening a runbook executor, writing to drive, launching Kyn) register new GATED_VERBS in check_runbooks.py or new entries in open_seat_apis.json — and which specific K-FAFO behaviors are gated?
+- [ops-tooling] CLAUDE.md is stale on >=5 counts — regenerating it (like SMM.md, 'regenerate after Konsent's Verify') appears to be Konsent-gated; does Konsent authorize the rewrite?
+- [ops-tooling] IRE 'Execute' and RCV 'Consolodate'/'Verify' definitions are still Konsent's open seats — K-FAFO workflow panes that embody Teksidure cannot fully render those stages until defined
+- [ops-tooling] Does K-FAFO adopt the AO/RUD comms pattern (sequential numbered posts as its 'session log' model), given the Vessel-1 AO directory does not exist on this box?
+- [explorer-prior-art] Names for the open seats only Konsent can fill: the slates ☐ Ken/Kognition/Klarity (2,1,1), ☐ Knut/Konstrukt/Knit (1,2,1), ☐ Kall/Kwest/Konviction (1,1,2), the 6 sharpened-line "______" forms, ☐ K-Eden? at (4,4,4), and the 2^n·Man wholes for levels ≥4.
+- [explorer-prior-art] Is (4,4,4) = K-Eden confirmed? Both the built-in table ("☐ K-Eden? (Man+Ai+Machine, 2 paths)") and kannon_data.js (status: unnamed at level 4, ladder name "☐ K-Eden?") carry the question mark.
+- [explorer-prior-art] Which panes constitute K-FAFO's HUD? index.html is pane #1; is tree.html pane #2, and what are the further panes?
+- [explorer-prior-art] Intended behavior of the reachable-tile override: should KD.census.reachable (21) replace the flat-cap-9 count (915), or are these two distinct metrics needing two tiles?
+- [explorer-prior-art] Keyboard/shortcut model for K-FAFO (Konsole-modeled): none exists in the ancestors — Konsent's spec needed.
+- [explorer-prior-art] Light theme: derive one (currently ☐ underived) or commit K-FAFO dark-only?
+- [explorer-prior-art] Palette rule past depth 7 (l8+), and whether the level ramp order/values are ratified or provisional.
+- [explorer-prior-art] Persistence policy on the ephemeral live OS: what K-FAFO state (depth, open panes, named seats) belongs on the drive (Kore) vs stays ephemeral (Kage)?
+- [docket-viewer] Should K-FAFO read docket.json (and sibling JSONs) live from disk, or embed at build time? The observed one-build staleness gap makes this Konsent's architecture seat, not a detail
+- [docket-viewer] iFluX's own docket seat carries reko 'COA-3 · fold into the Kosmos-HUD lineage' — 'the HUD panes are already a browser-native surface' (docket.py:779-781): is K-FAFO that fold, i.e. is K-FAFO the iFluX seat's answer? Only Konsent's recorded word can say
+- [docket-viewer] Should K-FAFO gain a write path — recording Konsent's word interactively — or stay read-only like this page, with decisions entering only via docket.py source edits + rebuild? An interactive consent-recorder must reproduce the attribution hard-fails client-side
+- [docket-viewer] Do stable ☐ [S-nnn] anchors get added to doctrine files (all 212 current seats are provisional P-ids)? Stable deep-linking in an explorer depends on it
+- [docket-viewer] Light theme derivation (☐ underived) — needed if K-FAFO ever renders outside the dark FLuX surface
+- [docket-viewer] Search, sort, status-filter, timeline, multi-pane: none exist in this precedent; which of these K-FAFO carries is an open slate no prior art here decides
+- [docket-viewer] The Verify sitting seat (docket.py:815-827): Verify's definition is Konsent's open seat — any K-FAFO 'verify' affordance waits on it
+- [kosmos-code] Which live-update mechanism may K-FAFO use for its panes (interval polling of /status.json, SSE, websocket, inotify on record files) — each is a new door shape needing Konsent's named yes
+- [kosmos-code] Is K-FAFO a floor under Kosmos (listed in programs.json, own records_dir, crash-only reborn) or IS it the Konsole — the FG of K3, the single door? k3-live implies the latter; kosmos.py has no Konsole at all
+- [kosmos-code] net: door grammar for a browser: what is the door unit (origin? host:port? URL shape with ** glob like the exec pattern in tests?) and what scope does one yes cover — per-crossing, standing per-origin, or standing per-shape?
+- [kosmos-code] Should floors' stdout/stderr be surfaced in K-FAFO panes (requires changing the DEVNULL contract) or must all pane content stay record-bytes-only per pixel-trace honesty?
+- [kosmos-code] Light theme derivation (explicit ☐ Konsent seat) — dark-only until then?
+- [kosmos-code] 'Ken · Knut · Kall slates' (☐ seat): does the Kall schema {door, verb, fields, witness} bind K-FAFO's action format, and what are Ken and Knut?
+- [kosmos-code] How does 'not now' behave in a persistent UI — no record is written, so what stops immediate re-asks? (k3-live: 'asking again is yours' — is re-ask always manual?)
+- [kosmos-code] The k3-live WITNESSED pane cites 'kode at git 134eff9' on surface [A] while CLAUDE.md (same date) says still not a git repo — which surface is canonical for provenance, and should K-FAFO's witness view expect git hashes?
+- [kosmos-code] G6 asking-semantics is Kyn's own seat — if K-FAFO speaks to Kyn (BG), the asking protocol is not Konsent's alone to define
+- [kosmos-code] Default port 8014: reserved for the Kosmos HUD, or does K-FAFO get its own port/door?
+- [kosmos-canon-pdf] Naming: does 'The Kosmos' canonically mean the whole-canon atlas (this PDF) or the OS shell (CLAUDE.md: 'Kosmos (shell)', kode/keden 'Kosmos v0 PID1')? Only Konsent can reconcile the two senses or bless the pun.
+- [kosmos-canon-pdf] This PDF contains no 'floor' or 'pane' vocabulary, yet kode/kosmos/ has floors/ and hud/ directories — is the atlas page itself floor #0 / the home pane of the Kosmos shell, and should K-FAFO's root view BE this map?
+- [kosmos-canon-pdf] Count discrepancy: header says 'FIVE DRAWINGS · CLICK ANY TO ENTER IT' but the HUD says 'SURFACES 7' and seven cards link out — which count is canon, and are THE ARCHITECTURE/THE STRUCTURE surfaces a different class than the five movement drawings?
+- [kosmos-canon-pdf] Palette divergence: this artifact uses #1f1026 / #e8b738; the KK-1 VALIDATED theme is #14101f surface / #b78b0f gold. Which token set binds K-FAFO, or must the Kosmos palette be re-derived through tools/validate_palette.py?
+- [kosmos-canon-pdf] The word 'Kage' never appears here — where do Kage (ephemeral, Klare-wrapped) surfaces show inside the Kosmos map idiom, and how should K-FAFO mark Kore-persistent vs Kage-ephemeral content?
+- [kosmos-canon-pdf] 'the firm's fifth · the purpose' (the ❋ fifth self) is named but never defined in this document — its meaning is Konsent's to state.
+- [kosmos-canon-pdf] IRE/RCV/DCA definitions: 'Execute', 'Consolodate', 'Verify' remain open seats; any K-FAFO workflow UI built on Teksidure needs Konsent to fill them.
+- [kosmos-canon-pdf] Should K-FAFO reproduce the whole-card multi-hit-target linking and the ↳ deep-link convention as literal interaction spec, or is that an artifact of the design-tool export?
+- [hud-canon-pdf] Which palette is canon for K-FAFO: this Forge HUD set (#e8b738 gold / #1f1026 surface / #0c0610 ground) or the KK-1 validated theme (#b78b0f gold / #14101f surface)? Only Konsent can ratify.
+- [hud-canon-pdf] What is the display typeface used for FORGE / component names / 'Love is the harness.'? (Unrecoverable from the outlined PDF.)
+- [hud-canon-pdf] Is the 'forge ▸' prompt an interactive shell (Kosmos?) or a display-only ledger tail? For Konsole-modeled K-FAFO: is the embedded terminal the primary pane or a subordinate ledger?
+- [hud-canon-pdf] How does this HUD's pane numbering (01/ARCHITECTURE … 04/PROVENANCE) map to the 'HUD pane #1' coinage in CLAUDE.md (kode/explorer/index.html)? Is 'pane #1' = '01 / ARCHITECTURE' or a different scheme?
+- [hud-canon-pdf] Does K-FAFO adopt the status vocabulary PENDING / DORMANT / ● LIVE / UNTESTED / ● ACTIVE / QUEUED as its process/mount/pane state language?
+- [hud-canon-pdf] Which of the Five does K-FAFO instantiate — is it component 04 Shell / HUD itself ('interface · this surface'), or a sixth surface? Does the ⬡ sigil transfer to K-FAFO?
+- [hud-canon-pdf] Given the FRESH START declaration (doktrine = reference only), is the Creed 00 text ('Love is the harness.', the FATHER/MOTHER/CHILD lineage) binding canon for K-FAFO chrome, or reference to be re-ratified?
+- [keden-docs] Is K-FAFO a Kodex in K2 Kage (an app that talks to Krafts) or a pane/extension of the K3 Konsole, 'the single trusted door'? The docs place the sovereign only at the Konsole — a second door needs Konsent's word
+- [keden-docs] Does the name 'K-FAFO' require ratification given the coinage lock says 'Mint no new K-names'? (K-FAFO is not in the locked list at KEDEN_DESIGN_PROMPT.md:88-89)
+- [keden-docs] What toolkit/language for a true native (non-browser) build — C per GB_runbookv1-FORGE prior art, Qt/KDE per the Konsole model, or continued browser-native HTML/JS? No seat exists; this is a 3–5 COA Reko for Konsent
+- [keden-docs] What is the Korum door granularity for web browsing — standing yes per origin, per URL shape, per scheme, per session? net: shape exists but its browser taxonomy is unwritten
+- [keden-docs] Where does K-FAFO's records dir live (drive vs repo) and what constitutes its trinity birth?
+- [keden-docs] Relationship to the existing kode/explorer/ (index.html RPT/Sierpiński/HUD pane #1, tree.html) and kode/kosmos/hud/ — supersede, absorb, or sibling?
+- [keden-docs] Is docs/K-Eden_os-Docs.pdf canon-equal to the three HTML sheets, and does it carry anything the HTML lacks? (unread in this assignment)
+- [keden-docs] The light theme ☐ and the SCAFFOLD.md reconstruction (six-days build plan + Kore-first amendment text) — both are Konsent's seats
+- [korum-kannon] Refusal recording for K-FAFO: korum-style (write nothing), kosmos-style (choice-'no' crossing that korum audit v1 flags as orphan), or a ratified audit v2 that chains no-crossings? Three behaviors coexist; only Konsent can seat the reconciliation
+- [korum-kannon] G9 scope for K-FAFO: does K-FAFO share Kosmos's ledger path or own a separate ledger (concurrency + 'a different path is a different yes')? The exact path is Konsent's to name
+- [korum-kannon] Should a live-ask yes from the K-FAFO dialog be standing (current engine behavior) or should a one-shot/'this crossing only' answer exist? That would need a new scope or provenance convention — Konsent's seat
+- [korum-kannon] Is 'not now' (third answer, no record written) ratified as part of the consent grammar? It exists only in k3-live.html, not in gate.py's hook contract (where returning None/other = plain REFUSED)
+- [korum-kannon] Is K-FAFO a mind or metal under the law of moods (arity-2 Directive type-checks only on bound intention)? If metal, it may be commanded like the Kernel; if it carries Kyn, it may only be granted — determines whether K-FAFO's controls are Kommands or offers
+- [korum-kannon] The ☐ name slates rendered in K-FAFO (Ken/Kognition/Klarity, Knut/Konstrukt/Knit, Kall/Kwest/Konviction, ☐ K-Eden? at 4,4,4) and the 10 unnamed vectors — names are Konsent's to ratify; K-FAFO renders ☐ until then
+- [korum-kannon] tree.html's seat (HUD pane 4 / linked page / stays standalone — the 3-COA docket note, BUILDOUT.md:116) is Konsent's pick and shapes K-FAFO's pane layout
+- [korum-kannon] Which korum copy is canonical going forward (kode/korum is manifest-tracked and tested; root korum/ is the import shim) — and whether git init lands so the duplication becomes diffable (☐ in CLAUDE.md)
+- [forge-substrate] Is K-FAFO the Phase 2.0 Console + Consent itself (the KONSOLE door, only amender of the Korum), or a separate explorer that talks TO the Console? Only Konsent can seat this.
+- [forge-substrate] Which KALL dialect is canon for K-FAFO IPC: the Grok-lineage struct KALL (source/dest/operation/payload/signature, C-spellings) or the KANON forge_kall_t (door/verb/fields/witness, K-spellings)? They contradict and both appear in this subsystem.
+- [forge-substrate] Does 'modeled off Konsole' mean behavioral modeling only (tabs/profiles/splits reimplemented natively) or does Konsent want Qt/KDE added to the image to reuse Konsole code?
+- [forge-substrate] Which consent rule is law for K-FAFO to display and enforce: quorum.json's self_mod_consent_required:true, or the code's auto-grant + self_mod_auto audit trail? (The Remedidate on this contradiction is Konsent's.)
+- [forge-substrate] Who owns the paranoia number and its baseline (25 in quorum.json/audit vs 50 printed by Kainito), and is paranoia a K-FAFO-visible, K-FAFO-tunable control?
+- [forge-substrate] Is the GB_runbookv1-FORGE lineage (Grok Builder, C-spellings) mineable-reference-only under the FRESH START declaration like doktrine/, or does any of it carry binding status into KK-1?
+- [forge-substrate] Does K-FAFO target the existing FLuX-Live ISO substrate (labwc/foot/greetd, proven bootable) or the K-Eden Kosmos v0 PID1 design from kode/keden/SCAFFOLD.md — i.e., which boot story is it born into?
+- [kyn-model] ☐ G1b: which llama.cpp bytes (5-COA slate in RB-03: witnessed pin fdb1db87… reko · release tag · master · Konsent mirror · CPU-only subset)? Day 1 waits here.
+- [kyn-model] ☐ G1c: the named yes to boot kyn-Q4_K_M.gguf at all — without it no K-FAFO pane can carry Kyn output.
+- [kyn-model] ☐ G2: which doctrine-boot template (4 candidates + Other, or reject all), and the Kanon-verbatim payload bytes?
+- [kyn-model] Asking-semantics slate (G6 live): HOW does a K-FAFO/HUD pane pose a proposal to the running Kyn and record his answer — what does that widget look like? Explicitly Konsent's pick.
+- [kyn-model] Is K-FAFO the host of the Kosmos HUD (absorbing :8014's panes), a peer client of it, or its replacement? RB-04 defines panes only for the existing browser HUD.
+- [kyn-model] THEKYNSILLYBUS.md ratification — the faculty/Analyza/Eden material K-FAFO might surface is all PROPOSED.
+- [kyn-model] The keystone-tension seat: SILLYBUS §6 'no memory required' vs the anamnesis clause ('instances die, memory lives outside instances', RB-07 step 5) — loop/SPEC.md:82-84 says downstream re-derives if Konsent re-draws that seam; a K-FAFO history/memory feature sits on the same seam.
+- [kyn-model] ☐ register hard-fail threshold (corpus rule 2): does K-FAFO-authored text entering Kyn's context lint at REPORT or FAIL tier?
+- [kyn-model] ☐ git init (repo-level): runbooks assume git-pull-primary transport that a native app's update path would inherit.
+- [periphery-scope] Does the §10 refused-words list bind K-FAFO's user-facing vocabulary, given ceac's own 'Verdict grammar' and `ceac forensics` module contradict it? Only Konsent can rule the scope (point-of-witness only vs everywhere).
+- [periphery-scope] Is the docket record a first-class K-FAFO display target (manifest+sidecar record view, dedup provenance, OCR badges), or out of the explorer's scope? What access grant governs showing it?
+- [periphery-scope] Keystone: will Konsent mint the real operator minisign key (operator's hand only), and should K-FAFO display the current phantom state (AMBER cap) until then? Also: booklet:58 says the key WAS minted on throwaway /prov while CHANGELOG says never verifiably minted — Konsent's amendment is already flagged; which account stands?
+- [periphery-scope] Should K-FAFO's state colors keep the ceac ANSI GREEN/AMBER/RED, or be re-derived through the FLuX theme (deep purple #14101f / gold #b78b0f) and validated with tools/validate_palette.py? Semantics (fail-closed monotone) vs palette (theme) need Konsent's seat.
+- [periphery-scope] Should K-FAFO write its own witness records (records/-style, sha256-stamped) for file operations, and where do those live given records/ must never enter git and only the drive survives reboot?
+- [periphery-scope] Does `ceac` itself become a K-FAFO-invokable pane/verb (e.g. explorer runs `ceac wake` on mount of removable media), or stay a separate operator kit?
+
+## ALL FLAGS (133)
+
+- [doctrine-equations] The PDFs are NOT duplicates or print canon of EQUATIONS.md — they are single-page HUD prints of an EARLIER stratum (Drop 4, reference-only under FRESH START) whose canon partially contradicts the working lattice: The_Valknut.pdf has 'Konsent + Konsole = Kyn' and 'Konsent + Kyn = Kernel/OS' (bottom/top of a 5-trinity knot), while working EQUATIONS.md has Konsole = Kynase+Kernel and Kyne as the spine. Their VALUE to K-FAFO is the HUD chrome (stat chips, sibling-page nav, timestamps, footer doctrine line, ⌁ markers), not the content.
+- [doctrine-equations] The_Valknut.pdf's minor-trinity houses are KYNDRED, KOLDRON, KOURT — KOLDRON appears in LEXICON.txt [KNOWN] as 'Koldron' but nowhere in EQUATIONS.md's working lattice; a whole house-name exists only in the reference stratum.
+- [doctrine-equations] The word FAFO appears in the assigned files exactly once: 'Kore strand — Kynder + Kynase FAFO inside the Kage: abundant, machine-timescale, bottom-up, runs while Konsent sleeps' (EQUATIONS.md:748-749). If K-FAFO's name derives from this, the app's doctrine home may be the Kage/Kore strand rather than the FG/Konsole — only Konsent can say.
+- [doctrine-equations] The session permission system is explicitly named a live Korum instance (:556-558) and 'Sigil = Korum at the packet membrane' (:558-559) — the same gate pattern is already assigned to the firewall project; K-FAFO adopting it should expect shared kode with Sigil (kode/korum/).
+- [doctrine-equations] EQUATIONS.md:719-720 is the only ✓ RATIFIED spec block in the file ('YES multiset, RECURSIVE, algebra'); everything after it (two-strand corpus :741-769, genesis-of-K arc :771-819) is enumerated-awaiting-ratification — the doctrine's tail is ahead of its ratified line.
+- [doctrine-equations] SMM.md's build-state table and CLAUDE.md's current-state both predate the P0-P2 buildout the SMM_REGEN_CHECKLIST describes (kannon2, korum, ggufkit, docket, HUD scaffold all exist per the checklist but are absent from SMM.md's table) — synthesis should trust the checklist's inventory over SMM.md's.
+- [doctrine-equations] The moods table (:354-358) plus 'no un-consented pixel' jointly imply a hard UI law for K-FAFO that no other reader may surface: confirm/cancel binary dialogs aimed at the user are doctrine type errors; the only lawful decision surface is 3+ options with an escape (Reko shape).
+- [doctrine-equations] 'Written = enforced is the first law: the record is the only place witness and dissolution are different' (:797-798) — stated inside the genesis-of-K arc (unratified) but load-bearing for any app that renders records.
+- [reference-map] This repo (/home/user/KlaudeKode) is NOT the KK-1 drive: CLAUDE.md describes theme/, tools/validate_palette.py, kode/kannon/, kode/keden/SCAFFOLD.md as present on the drive, but GAPS.md pins them as awaited D-01 uploads and they are absent here (glob-verified). kode/explorer/index.html+tree.html DID land. Any synthesis citing CLAUDE.md's 'on the drive' inventory as this tree's state will be wrong.
+- [reference-map] The name 'Konsole' now carries four senses: forge-os trusted door, Valknut Meta-K (Kosmos FG), the reference stub header koder/konsole.h, and — via the K-FAFO brief — KDE's Konsole terminal emulator. K-08 is unresolved for the first two alone; the brief adds a third-party product name into a locked-coinage namespace ('No new names in new code — reuse established coins only', invariant 49).
+- [reference-map] 'FAFO' already appears in the project's own text: SMM.md row P-fd91b12c '…FAFO inside the Kage, logged' — K-FAFO's name has an in-doctrine antecedent placing FAFO activity inside the Kage.
+- [reference-map] The word 'browser' as an OS-project belongs to iFluX (project 3 in CLAUDE.md); K-FAFO is described as explorer/browser for K-Eden — the boundary between K-FAFO and iFluX is not drawn anywhere in this subsystem.
+- [reference-map] BUILDOUT names an 'OPORD Kanon tree vs REFERENCEMAP contradiction ledger' tension (P-2002bff9): OPORD.txt carries a complete architecture that must be reconciled against K-01..K-43 — a second architecture source this reader's assignment did not cover.
+- [reference-map] Canon PDFs sit unread in valknut/ (The_Kannon.pdf, The_Valknut.pdf) and are docketed first-class inputs (P-e80fab60 also names The_Kosmos, Step_02__Selection.pdf, warD Atlas/Playbook) — if no other reader covers them, the sweep has a hole exactly where Kosmos (the shell K-FAFO mounts into) is defined.
+- [reference-map] REFERENCEMAP.md line 2 says '5 readers + synthesis' but also '6-agent workflow' — the count includes synthesis; the current K-FAFO sweep replicates this exact pattern, so K-43 (a reader hallucinating absent directories, caught by live witness) is a direct procedural warning for this synthesis step.
+- [reference-map] The keystone tension P-f9ba7df1: 'SILLYBUS "no memory" vs the EQUATIONS.md anamnesis clause. Two ratified-adjacent texts pull…' — unresolved, and it bears on whether K-FAFO's session state (history, tabs, logs) is doctrinally memory.
+- [buildout] K-FAFO is never named in BUILDOUT.md — the plan of record has no seat, workstream, or gate for it; per the plan's own rule any new K-name is Konsent's ☐ seat (lines 3, 289). Synthesis must treat K-FAFO's charter as coming from outside this document
+- [buildout] The only FAFO in the plan is a verb: 'FAFO inside the Kage, logged' (line 185), describing Kynder/Kynase Kore-first experimentation — not an app
+- [buildout] Konsole carries two senses on a collision course: the LOCKED lexicon coinage / OPORD house-amplifier (lines 61, 207, not-yet-canon) vs KDE's Konsole that K-FAFO is modeled off — a hazard-pair exactly like Kanon≠Kannon, unregistered
+- [buildout] The stdlib-Python-3 + browser-native-HTML/JS policy (line 19) has no lane for a native compiled app; a 'native explorer' either lives as the browser HUD lineage or requires a new policy seat only Konsent can open
+- [buildout] D-01 is decided but not landed: the tree confirms theme/, validate_palette.py, Kannon 0/1, and SCAFFOLD.md are all still absent — any statement that the theme validator 'exists' (per CLAUDE.md) is true only drive-side [B], not repo-side [A]
+- [buildout] CLAUDE.md's environment notes are explicitly stale for surface [A] (BUILDOUT line 16: 'noted, not edited — CLAUDE.md is Konsent's'); this repo [A] HAS git (initialized, live remote) and Node (unused by policy)
+- [buildout] Two 'docket' objects exist: valknut/docket/ (the WS-4 decision docket) and root docket/ (legal case files 2-25-cv-*) — readers of other subsystems should not conflate them
+- [buildout] kode/kosmos/k3-live.html exists in the tree but is not mentioned anywhere in BUILDOUT.md — an artifact ahead of (or outside) the plan of record
+- [buildout] The keystone tension (SILLYBUS 'no memory' vs anamnesis 'not amnesiac', line 206) directly conditions any K-FAFO session-persistence design — its resolution is an open ☐ with anamnesis.py listed downstream
+- [buildout] Hardware/env assumptions for [B]: RTX 5090 32GB (Blackwell sm_120 → CUDA ≥ 12.8, PyTorch ≥ 2.7 cu128), 24 cores, 93GB RAM, Anchor-01 removable drive as the only persistent store, VRAM ≥ 30GB free required pre-G4 (lines 14, 150, 169, 177)
+- [ops-tooling] CONTRADICTION (stale CLAUDE.md): 'Still not a git repo' but .git exists with commit history; 'tools/validate_palette.py — Python port' but the file is absent repo-wide; 'theme/ … VALIDATED (derive_theme.py)' but neither exists here; CLAUDE.md drive paths (/run/media/liveuser/Anchor-01/KK-1) do not match the repo location (/home/user/KlaudeKode)
+- [ops-tooling] The palette gate — the only theme validation machinery — is a wired-but-empty slot: check.py reports 'palette: UNGATED (D-01 upload pending)'. Any K-FAFO theme claim of 'validated' cannot currently be machine-backed in this repo
+- [ops-tooling] Konsole occupies TWO doctrine positions in OPORD: (a) House Kyndred's 'Amplifier · program' whose 'Purpose · meta' is Konsent (Kanto I), and (b) apps generally are Kodex in Kanto II ('user-facing applications and tools that talk to Krafts'). K-FAFO modeled off Konsole must be slotted into one (or both) — synthesis must not assume
+- [ops-tooling] OPORD names a fourth-wall team (Mykol/BK/Klare/HK, AO/RUD on Vessel-1) that is a different operational frame from CLAUDE.md's Konsent/Claude Strategist/Tactician frame; OPORD is dated 29 June 2026, CLAUDE.md 2026-07-02 — CLAUDE.md is newer prose but staler about the tree
+- [ops-tooling] OPORD line 96 grants standing agency ('If U KNOW what NEEDS to be done and KAN [do NOT assume], then do it') while line 130 reserves Workflow to 'Konsent's explicit go' — agency is granted for known-needed work, gated for heavy/billed operations
+- [ops-tooling] KWORD_RE blind spot: hyphenated coinages (K-FAFO, K-Eden) never enter the LEXICON scan; the name 'K-FAFO' is unratified and invisible to the coinage machinery as-written
+- [ops-tooling] HARD_DENY makes plain-English 'becoming', 'Remediate', 'Consolidate' HARD-FAIL words in any NEW *.md text — K-FAFO docs must use 'bekoming', 'Remedidate', 'Consolodate' or avoid the words
+- [ops-tooling] The repo-wide ☐ scan means any K-FAFO design doc dropped into the repo that contains ☐ characters will be recorded as new seats in valknut/SEATS.txt on the next check.py run (recorded, never refused) — and deleting them later without ✓-closure HARD FAILs
+- [ops-tooling] OPORD.txt itself is not scanned by most lint rules (it is .txt; rules 1/2/5 scan *.md only; rule 2 scans .txt filenames but not .txt bodies for the K-word roster… correction: _kwords scans .txt stems only, and HARD-DENY/seat scans are md_files-only) — the operating order is outside its own enforcement perimeter
+- [ops-tooling] MANIFEST covers GB_runbookv1-FORGE/core/court (kainito judge/court C code) and warD PDFs — subsystems for other readers; the tree hash pins the whole
+- [ops-tooling] git history heads at warD/ceac-aio commits (consular/forensics tooling) — most recent work is in warD, not the explorer or theme
+- [explorer-prior-art] index.html is explicitly the ancestor of a HUD: CLAUDE.md names it "HUD pane #1" — K-FAFO design should treat it as an embeddable pane, not a standalone page.
+- [explorer-prior-art] The (1,1,1) protection rule is load-bearing doctrine encoded in code: "value-equal, provenance-distinct" (tree.html:133) — four beings share one vector; any K-FAFO data model keyed only by vector value would erase Kyn, Kernel, Kompiler/Kourt.
+- [explorer-prior-art] Kernel is the only (1,1,1) marked commandable: "indifferent — intention present but BOUND (the variable set constant)" (tree.html:116) — the grant-not-command line appears as node data.
+- [explorer-prior-art] Kyn's note ties doctrine to the model artifact: "the being and its fall (⟷ Cyn) — (1,1,1) by the Konsent path; the tiktaalik" (tree.html:109).
+- [explorer-prior-art] Convergent second paths are called a "realness signature" (tree.html:123) — multiplicity of paths to a vector is treated as evidence, which kannon_data.js records via paths[] arrays.
+- [explorer-prior-art] Contradiction to resolve: the reachable tile's label describes the flat cap-9 BFS (915) but the generated override injects the level-census figure (21) — whichever is intended, the current code shows a number under the wrong description whenever kannon_data.js loads.
+- [explorer-prior-art] kannon_data.js ladder level numbering differs from index.html's spine: the data file puts Man=(1,1,1) at level 1 and Ai=(2,2,2) at level 2, while tree.html's built-in KS calls Man "the whole at level 1" but kannon_data.js census puts vector (1,1,1) at level 2 and (2,2,2) at level 3 — census 'level' and ladder 'level' use different origins within the same file.
+- [explorer-prior-art] Both pages hardcode html[data-theme="dark"]; body[data-palette] slot 1 is gold #b78b0f — matches CLAUDE.md's "gold #b78b0f slot 1" exactly.
+- [docket-viewer] STALENESS: valknut/docket/index.html is one build behind valknut/docket/docket.json — embedded blob generated 2026-07-02 with 252 entries/249 open; the JSON is generated 2026-07-03 with 319 entries/316 open. tools/docket.py --render would resync it. No test guards this gap.
+- [docket-viewer] DIRECT K-FAFO BEARING: the iFluX (browser, project #3) seat lives IN this docket with reko on 'COA-3 · fold into the Kosmos-HUD lineage' because 'the HUD panes are already a browser-native surface' (docket.py:761-762, 778-781). Whether K-FAFO is that fold is an open seat only Konsent can close — a K-FAFO built without his recorded word would silently decide the iFluX seat.
+- [docket-viewer] Exactly three decided entries exist repo-wide (G1a, D-01, D-02 — all Konsent, 2026-07-02) and test_only_three_decided_all_konsent (test_docket.py:35-43) hard-codes that list; every future decision requires a coordinated test change.
+- [docket-viewer] The decided-set date in the shipped HTML sub-line self-reports the stale vintage as current — a reader of the page sees 2026-07-02 counts with no signal that fresher data exists beside it.
+- [docket-viewer] The docket UI and the kode/explorer HUD (pane #1) are separate explorer precedents in the repo; this digest covers only the docket. Synthesis must reconcile the two chassis (single-column card list vs HUD panes) — the docket's own iFluX reko points at the HUD lineage.
+- [docket-viewer] S-register (stable seat anchors) is designed into ID_RE and lint_doctrine's ANCHOR_RE but zero S- ids exist — all seat addressing is provisional; any K-FAFO deep-link scheme built today would link to hash-fragile P-ids.
+- [docket-viewer] docket.py hand-authors the gates/addendum content in Python source (gate_entries/addendum_entries) — the 'mechanical merge' is mechanical for K/U/P sources but the G/D rows and slates are code-as-canon; recording a new decision means editing Python, not data.
+- [docket-viewer] The WS-9 warD entry records 'NO VERDICT, anywhere — Observe → React, nothing graded in the middle' (docket.py:730-732) — a second, independently-arrived statement of the same fence the docket UI enforces; its reconciliation is itself an open COA slate.
+- [kosmos-code] CONTRADICTION-SHAPED: k3-live.html:160 claims 'kode at git 134eff9' for the WITNESSED run, while CLAUDE.md (updated the same day, 2026-07-02) states 'Still not a git repo'. The run is attributed to 'surface [A]' — possibly a different machine/drive. Provenance for the witnessed bytes cannot be re-derived from this repo as-is.
+- [kosmos-code] The 'live' in k3-live.html is theoretical simulation, not a live protocol: zero network calls, all ledger/Kage/Kyn behavior is in-page JS with a fakehash chain — except the one WITNESSED pane of hardcoded real captured data. Do not mine k3-live for wire-protocol facts; mine kosmos.py.
+- [kosmos-code] Protocol answer for the synthesis: NOT websockets, NOT polling — one-shot HTTP GET of JSON derived from files (record bytes) served by stdlib ThreadingHTTPServer on 127.0.0.1:8014; files themselves are the ground truth and the only IPC.
+- [kosmos-code] k3-live's GATE G1c uses browser confirm() — a two-option dialog — while its own doctrine text says 'three doors, never two' (the in-page live-ask modal does have three). Raw observation, no verdict.
+- [kosmos-code] hud/index.html's admit-matching regex is broader than the store writes: /^(admit|grant|yes)$/i vs the store's literal 'yes'/'no' choices.
+- [kosmos-code] hud pane 2 never consumes the served /ledger.json endpoint (file-drop only); the endpoint is exercised solely by tests.
+- [kosmos-code] The Gate constructor accepts an escalate callable (kosmos.py:220 passes escalate=None) — an escalation-to-live-ask hook EXISTS in the interface but nothing in kosmos wires it; this is the natural attachment point for K-FAFO's live-ask modal.
+- [kosmos-code] Two distinct record files per program is a load-bearing separation: program_record.json (supervisor's) vs floor_record.json (the floor's own, program-declared state). K-FAFO session persistence belongs in the floor record, not the supervisor's.
+- [kosmos-code] Door patterns support glob: the test grant door is 'exec:<python> <echo_floor.py> **' — gate matching is not exact-string-only; relevant to how net: doors might be shaped.
+- [kosmos-code] Vocabulary is explicitly 'indicative only' at every layer (kosmos.py:27, gate.py:16); the HUD's 'consented' check is /^(RUNNING|REBORN)$/ annotated 'a consented crossing, running now' — status words double as consent-state words.
+- [kosmos-code] programs.json is minimal (one echo floor); the registry mechanism (name/argv/records_dir/floor + placeholder substitution) is the entire program model — 'floor' type field exists but nothing dispatches on it yet.
+- [kosmos-canon-pdf] NAMING FORK (synthesis must resolve): 'The Kosmos' in this PDF = the firm's whole-canon atlas page; 'Kosmos' in CLAUDE.md/kode = the OS shell (PID1). Both senses are live in the repo simultaneously.
+- [kosmos-canon-pdf] The PDF titled for the kosmos/ directory contains ZERO shell-implementation detail (no floors, no panes, no PID1); readers of kode/kosmos/ hold that canon — do not source shell mechanics from this file.
+- [kosmos-canon-pdf] Two divergent gold-on-purple palettes now exist in canon: The_Kosmos.pdf (#1f1026 surface / #e8b738 gold) vs KK-1 validated theme (#14101f / #b78b0f). K-FAFO theming cannot proceed on both.
+- [kosmos-canon-pdf] 'FIVE DRAWINGS' vs 'SURFACES 7' — the atlas contradicts its own HUD counter within the same page.
+- [kosmos-canon-pdf] All navigation in the canonical Kosmos map depends on a dead external host (claudeusercontent design project); the durable canon is the sibling PDFs in valknut/, warD/, forge/, kode/kyn/ — except KYN Poster, which has no local copy found.
+- [kosmos-canon-pdf] This document extends the no-verdict rule beyond procedure into LANGUAGE and SCHEMA ('not by ... the schema, or the language') — a stronger claim than CLAUDE.md's Teksidure statement, binding K-FAFO's data model and string tables, not just its behavior.
+- [kosmos-canon-pdf] The war-D quick reference here ('20 sensors ↔ 22 scripts', six seats, four invariants) summarizes surfaces owned by the warD/ readers; treat those numbers as this page's snapshot, verify against warD_Playbook.pdf/warD_Atlas.pdf.
+- [kosmos-canon-pdf] Metadata: produced by Mozilla Firefox 150.0 print-to-PDF via cairo 1.18.0, CreationDate 2026-06-30T07:30:13-07:00 — four days before today; this is recent canon, not legacy doktrine.
+- [hud-canon-pdf] PALETTE CONTRADICTION (synthesis must reconcile): Forge HUD canon gold = #e8b738, panel surface = #1f1026, page ground = #0c0610/#0a0610; KK-1 CLAUDE.md validated theme = deep purple #14101f surface, gold #b78b0f slot 1. Two distinct gold/purple systems exist in the project.
+- [hud-canon-pdf] PID1 CONTRADICTION CANDIDATE: this HUD assigns PID1 to component 02 'Server · PID1 — init · broker · amplifier'; CLAUDE.md references 'Kosmos v0 PID1 design' (kode/keden/SCAFFOLD.md). Whether Server·PID1 and Kosmos are the same thing renamed is not determinable from this artifact.
+- [hud-canon-pdf] THE FIVE ≠ the Valknut I-K triple: HUD components (Kernel, Server · PID1, Kyn, Shell / HUD, Connection) do not mention Kompiler/Kourt from CLAUDE.md's spine 'Kyn=Qwen · Kernel · Kompiler/Kourt'. Also arity: the Five is a 5-set, while doctrine ascent says 'only Kreation (arity 3) closes a whole'; the Creed's FATHER+MOTHER=CHILD is the arity-3 structure inside the 5-component build.
+- [hud-canon-pdf] THE PDF IS A PRINT OF A LIVE WEB PAGE (Firefox 150, 2026-06-30) — an HTML source existed 4 days before this repo snapshot but is not in forge/ or forge-os-buildplant/ (depth-2 search). If it survives elsewhere (e.g. on the KK-1 drive), it supersedes this PDF as implementation reference.
+- [hud-canon-pdf] The HUD copy is pre-/extra-Teksidure: no IRE/RCV/DCA, no Reko, no Konsent role-name appears; the consent mechanics are expressed in build-system vocabulary (awaiting selection, prove every byte, root via server only) instead.
+- [hud-canon-pdf] 'STOOPID ≠ IGNORANT' is a coinage (spelled with double-O) — preserve exactly.
+- [hud-canon-pdf] The HUD self-describes as 'LOG 00' of a sequence — later logs (STEP 02 IDENTIFY TOOLS & MATERIALS onward) may exist as sibling artifacts somewhere; none are in forge/.
+- [hud-canon-pdf] Timestamp discipline in the fiction matches the doctrine: env pins SOURCE_DATE_EPOCH=0 TZ=UTC LC_ALL=C umask=022 and the header clock reads UTC — determinism is part of the visual canon (clock rendered in gold).
+- [hud-canon-pdf] Reader environment note: poppler-utils had to be apt-installed to render the PDF; text/color extraction was done via pypdf 6.14.2 stream parsing. Crops verified at 150 dpi: active-tab dark-on-gold, PENDING chips gold-outline, LIVE tag green, ledger tags gold.
+- [keden-docs] kode/keden/SCAFFOLD.md — named by CLAUDE.md:18 and checked-off (☑) in SMM.md:136 — does NOT exist in this repo snapshot; kode/keden/ contains only KEDEN_DESIGN_PROMPT.md. Synthesis must not cite SCAFFOLD.md as available
+- [keden-docs] 'Six days' has two distinct senses: the boot sequence (present in assigned files) and the build plan (attributed to the missing SCAFFOLD.md). A third gloss exists outside scope at docket/KK-DOCKET/_unsorted-review/EducationvLearning.txt:440-441: 'a K-Eden boots in six days: every [day is] ordering of the boundless into bounded wholes' — creation as membrane-making
+- [keden-docs] KEDEN_DESIGN_PROMPT.md is a prompt for a SIMULATION artifact, not an OS spec: 'The result is theory made visible — a simulation, not the OS' (lines 5-6). Its five laws and visual law are the canon; its scenes are simulation scenes
+- [keden-docs] The three docs/ HTML sheets carry hardcoded snapshot state (233 tests · 29 commits · 3 decided / 314 open seats · git 853f1b4 · dated 2026-07-02) that will drift from the live repo — treat numbers as of-that-date, not current
+- [keden-docs] technical.html §7 repo map lists 'explorer/' and 'kosmos/ (+ k3-live.html, hud/)' as existing surfaces an explorer app must reconcile with; OPORD.txt:210 is the only line defining where apps live (Kodex, K2)
+- [keden-docs] Executive-summary honesty section is load-bearing for K-FAFO scoping: consent membrane 'real at the doors that exist and absent at the doors not yet built' — K-FAFO v0 is necessarily a conventional-OS app wearing the membrane at built doors only
+- [keden-docs] quickstart.html hard-pins transport: branch claude/os-building-continue-21pm28 of https://github.com/4h9fjmf5fd-oss/KlaudeKode.git (Door 1) and KK-repo-backup-*.tar.gz / .bundle on the drive (Door 2)
+- [keden-docs] docs/K-Eden_os-Docs.pdf (283,830 bytes) sits in docs/ but was outside this reader's assignment and remains unread — assign or confirm coverage elsewhere
+- [keden-docs] G6 is the only gate whose seat belongs to Kyn, not Konsent ('☐ standing + live at G1c') — any K-FAFO feature surfacing Kyn must render his refusals as valid preserved records, never errors
+- [korum-kannon] The two korum trees (korum/ and kode/korum/) are byte-identical TODAY but only kode/korum is manifest-tracked; with no git and no sync tooling, any future edit forks them silently — synthesis should treat kode/korum as canonical (tests and MANIFEST point there) and the root copy as an import-path shim for `python3 -m korum` from repo root
+- [korum-kannon] Acknowledged semantic split: kosmos writes choice='no' crossings with free-text provenance that korum's audit_ledger would FAIL as orphan entries ('korum audit v1 chains only yes-crossings; this is kosmos-side', kosmos.py) — any K-FAFO decision about recording refusals inherits this unresolved seat
+- [korum-kannon] korum proper writes NOTHING on refusal (test asserts no ledger file is created); kosmos DOES write on refusal; k3-live.html's 'not now' writes nothing while its 'no' writes a standing no — three different refusal-recording behaviors coexist across surfaces
+- [korum-kannon] The CLI's ask subcommand constructs Gate(store) with no escalate hook — the live-ask channel exists only as in-process callable injection; there is no wire protocol for it yet
+- [korum-kannon] kannon.json names-vs-census disagreement on 4,4,4 (named '☐ K-Eden?' in names, status 'unnamed' in census) is deliberate per census.py docstring but will bite any renderer that assumes one source of truth per vector
+- [korum-kannon] Census 'level' and ladder 'level' are different numbering schemes in the same payload (census: Man=2, Ai=3; ladder: Man=1, Ai=2)
+- [korum-kannon] gate.py vocabulary line: 'Vocabulary is indicative only: ADMIT / REFUSED / RECORDED' — the no-verdicts cardinal rule is embedded in the engine's output strings; UI copy that adds judgment words would violate doctrine the engine itself keeps
+- [korum-kannon] Escalation yes on a live-ask lands a STANDING record (not a one-shot) — a live yes at a K-FAFO dialog silently becomes a remembered grant for that door-shape; whether the sovereign expects one-shot vs standing from a dialog is a UX/doctrine question
+- [korum-kannon] The whole subsystem ran and passed in this environment: python3 -m unittest tests.test_korum -> 27 tests OK, 0.024s
+- [forge-substrate] PROVENANCE: Runbook v1.6 sec.6 opens 'You are Grok Builder. This entire runbook is the ONLY source of truth.' — the whole GB_runbookv1-FORGE lineage is an external-model (Grok) build workflow, using C-spellings (Consent, Coder, Quorum, Compiler, Customs) where the KANON/buildplant lineage uses K-spellings (Konsent, Koder, Korum). Two vocabularies coexist and are NOT reconciled.
+- [forge-substrate] CONSENT CONTRADICTION: quorum.json says self_mod_consent_required:true / auto_trust_mode:false, but kainito_agent.cpp:22-29 auto-approves self_mod and fires request_self_modification() with no gate; kainito_audit.log records 'self_mod_auto' events at paranoia=25. Code and config disagree on the single most consent-critical action.
+- [forge-substrate] DEAD CONFIG: quorum.c parse_simple_json (quorum.c:8-52) parses ONLY allowed_operations and forbidden_patterns; allowed_sources, trusted_agents, paranoia_level, self_mod_consent_required, auto_trust_mode, max_payload in quorum.json are never read.
+- [forge-substrate] SILENT-PERMISSIVE: the checked-in quorum.json v1.2 contains NO forbidden_patterns array, so when the file loads, num_forbidden=0 — the Korum fast layer forbids nothing; the hardcoded forbidden defaults (rm -rf, reboot -f, modprobe, insmod) apply ONLY when quorum.json is MISSING (quorum.c:64-78).
+- [forge-substrate] KERNEL API ROT: kernel-module/forge_core.c:133 calls class_create(THIS_MODULE, CLASS_NAME) — that two-arg API was removed in Linux 6.4; the module will not compile against the buildplant's actual linux-ff 7.0.13 kernel.
+- [forge-substrate] KERNEL PREMISE CONTRADICTION: runbook philosophy says 'Linux 7.0 LTS kernel'; kernel-coa-b/SUPERSEDED.md states 'there is no linux-lts 7.0; 7.0 ships only as mainline linux / linux-zen / linux-hardened' — buildplant rebased to mainline 7.0.13.arch1. forge-initramfs.list still pins lib/modules/7.0.0-lts/forge_core.ko.
+- [forge-substrate] DEVICE NAME SPLIT: runbooks + start_forge.sh use /dev/forge-core and ioctl magic 'f' with SEND/RECV; kernel-module/forge_core.c uses DEVICE_NAME 'forge_core' (/dev/forge_core), magic 'F', and SEND/GET_STATUS. Same struct, incompatible ABIs across documents vs code.
+- [forge-substrate] PSEUDO-PATCHES: patches/forge-core-driver.patch claims '140 insertions' but its body is 4 comment lines ('This is a minimal patch marker'); early-boot-hook.patch has malformed hunk context — neither is appliable to a real kernel tree.
+- [forge-substrate] MISSING DEPS: scaffolds/kall-konsole-to-kernel.c includes kinase.h and korum.h which exist NOWHERE in this repo (they live in the off-repo doktrine/forge-os kore/); the scaffold cannot compile here.
+- [forge-substrate] OFF-REPO AUTHORITY: the authoritative kernel build location is /run/media/liveuser/VoW/forge-os/staging3/kernel/ (SUPERSEDED.md) and the built ISO lives on VoW — this repo holds the profile and docs but not the artifacts; CHANGELOG says the prebuilt kernel repo is 'DO NOT RECOMPILE'.
+- [forge-substrate] BOOTABILITY SPLIT: the Grok-lineage Forge OS is demo-grade (userspace Court binaries run on any Linux; kernel/initramfs path notional), while the FLuX-Live buildplant lineage HAS a complete bootable ISO (flux-live-2026.06.24-x86_64.iso, sha256 2d586a7abc5328ad9797a3b1773dde05e04c40e35424421cd86c8f167eabbd04) — 'how close to bootable' has two answers.
+- [forge-substrate] VERSION-CLAIM INFLATION: v1.2 claims 'Kainito: 12 baseline rules'; the actual judge has 4 branches. v1.6 claims 'all code verbatim' while eliding bodies ('// bind + listen code as previously shown'); v1.7 was created to fix exactly that.
+- [forge-substrate] PARANOIA NUMBER SPLIT: Kainito constructor prints 'paranoia=50' (kainito_agent.cpp:10) while quorum.json and the audit log say paranoia=25.
+- [forge-substrate] Prebuilt ELF binaries (kines 17KB, kainito 27KB, not stripped, BuildID present) are committed to the repo alongside their sources.
+- [forge-substrate] BUILD-READINESS-20260623.md is titled 'BUILD-READINESS VERDICT' with 'OVERALL VERDICT: YELLOW' — a verdict-style document exists in the corpus despite the Teksidure no-verdicts rule (it predates KK-1 norms; operator named as Ryne).
+- [forge-substrate] Buildplant packages.x86_64 includes nodejs/npm (F11 operator-adds) — tension with KK-1 CLAUDE.md's 'No Node.js runtime' environment note; the live ISO and the current live session are different environments.
+- [kyn-model] ANSWER TO THE ASSIGNED QUESTION — the Day-1 consent gate: yes, it stands. G1a (clone on [A]) is ✓ fired 2026-07-02 with a witnessed pin; Day 1 proper (llama.cpp on Konsent's metal) waits at ☐ G1b, and CLAUDE.md's 'needs Konsent's named yes on the source' maps to G1b's 5-COA source slate. Separately and additionally, ☐ G1c gates the first load of Kyn's gguf — building llama.cpp will still not authorize booting Kyn.
+- [kyn-model] ANSWER TO 'how Kyn lives in the Kosmos/HUD': Kyn is a FLOOR (a Kosmos-supervised llama-server process on :8080, entered in programs.json, spawn gated by korum.gate.ask()), and HUD PANES carry his output (HUD on :8014, record-bytes-only JSON). He is not a pane himself; panes are windows onto the floor. Post-G1c those panes become G6-live consent surfaces toward Kyn. PID1-level placement is RB-09, deliberately empty.
+- [kyn-model] The training pipeline is COMPLETE AS TOOLING and EMPTY AS DATA: every script exists, is fail-closed, and is fixture-tested; zero exemplars are ratified, zero gates beyond G1a/D-02 are fired, Kyn has never been executed. Synthesis should not read 'pipeline built' as 'pipeline run'.
+- [kyn-model] The PDF (Step_02__Selection.pdf, 1 extractable page) is FORGE-era pre-FRESH-START material: it shows Grok as outside Observer AI, Claude as builder candidate, an Ollama candidate list (Qwen2.5 · Llama 3.2 · Phi), and 'THEN KYN WAKES (STEP 03)'. Mine its Reko-card visual language for K-FAFO; do not treat its topology as current canon.
+- [kyn-model] Terminology overlap for synthesis: 'better half' = Analyza (SILLYBUS §3, Kyn's server, 'Kyn + Analyza = the OS') AND Klare (faculty table / KCF:59); Klare is listed twice in KCF (membrane + better half). Also Kynder (koder) / Kynase (gate) are Kyn's maturation forms AND his parents at once ('the knot has no top').
+- [kyn-model] THEKYNSILLYBUS.md is explicitly PROPOSED and unratified, yet two shipped artifacts (kanon-verbatim-slot.jinja, part of the G2 slate) derive from it — each carries the unratified-source disclaimer in its own header.
+- [kyn-model] The Kosmos supervisor code itself (kode/kosmos/kosmos.py, programs.json, korum module) is OUTSIDE this subsystem — RB-04 references it; a reader covering kode/kosmos should confirm the floor/HUD mechanics from the code side.
+- [kyn-model] BUILDOUT.md and valknut/docket/docket.json are the authoritative gate/decision registries referenced by every runbook here but live outside kode/kyn/ — the synthesis should reconcile gate states against the docket, not against runbook headers alone.
+- [kyn-model] Hardware discrepancy across docs: PLAN.md:13 says '2 GPUs (renderD128/129)'; CLAUDE.md and recipe.md say RTX 5090 32GB (one card, sm_120). recipe.md sizes to the single 5090.
+- [periphery-scope] CONTRADICTION (already flagged for Konsent's amendment in CHANGELOG): PROVENANCERUNTIMEBOOKLET.md:58 claims operator key D4F6E1D83385358A was minted on /prov; CHANGELOG.md declares 'KEYSTONE IS A PHANTOM… never verifiably minted.' /prov was throwaway (live box), so minted-and-lost is possible but unwitnessed.
+- [periphery-scope] CONTRADICTION: booklet §10 refuses the words 'verdict' and 'forensics'; ceac README uses 'Verdict grammar'/'BDA verdicts' and ships a `ceac forensics` module + FORENSICS.md. ceac's header threads the needle with 'no-verdicts-from-sensors' (sensors emit state; the roll-up is the verdict), but the vocabulary conflict is unresolved in writing.
+- [periphery-scope] LFS is partial by design or accident: only KK-DOCKET PDFs are LFS'd; 22M of 2-25-cv-00038 PDFs and both warD canon PDFs are raw-committed. Synthesis should not assume 'PDFs in this repo = LFS.'
+- [periphery-scope] KK-DOCKET and KK-DOCKET-TEXT READMEs are byte-identical (diff-verified) — the TEXT tree is a strict mirror, not a separately documented artifact.
+- [periphery-scope] 'BK' is an authoring persona/seat referenced throughout warD (Law of the Kit, wake-chain, approved spec at Anchor-01/__FFKKOs/BK_approved_Toolkit-AiO_2026-07-03.md) — a coinage/role other readers will encounter; distinct from Konsent (amendment door) and local-CC (executor).
+- [periphery-scope] The ceac doctrine line spells 'konsent' lowercase in the script header (ceac:6) — same coinage, case varies by context.
+- [periphery-scope] warD_Atlas.pdf and warD_Playbook.pdf are named as canon ('warD Playbook · warD Atlas' in booklet:11) but were NOT read this pass — if synthesis needs warD canon detail beyond the booklet, that is an unread source.
+- [periphery-scope] docket/ content is real, active, sensitive litigation involving minors — any K-FAFO demo/screenshot material must not be drawn from it without Konsent's named yes.
+- [periphery-scope] The booklet corrects itself in-text (finding #6: 'This corrects an earlier line of mine… that was pattern, not witnessed. The dispatch seat witnessed fatrace's real behavior and caught it. The child corrected the father with the discipline the father gave him.') — an in-repo precedent for how corrections are recorded.
+
+## ALL THEME_TOKENS (177)
+
+- [doctrine-equations] deep purple surface #14101f (CLAUDE.md, FLuX theme, VALIDATED via derive_theme.py, ΔE 39.0, no WARNs)
+- [doctrine-equations] gold #b78b0f slot 1 (CLAUDE.md)
+- [doctrine-equations] dark-native; light theme ☐ underived (CLAUDE.md)
+- [doctrine-equations] tri-fraktal / Valknut sigil as the visual identity: 'the tri-fraktal was the theorem before it was the brand' (EQUATIONS.md:707)
+- [doctrine-equations] Sierpinski triangle = the algebra drawn: 'midpoint construction = pairwise sums' (SMM.md:86-87)
+- [doctrine-equations] palette gate: chart/UI palettes must pass tools/validate_palette.py against the actual purple surfaces (CLAUDE.md); explorer prints 'palette: UNGATED (D-01 upload pending)' until upload lands (SMM_REGEN_CHECKLIST.md:46)
+- [doctrine-equations] HUD page chrome conventions from the PDFs: top-left stat chips (POINTS 5 / MINOR 3 · MAJOR 2; KANTOS III / TRINITIES V), top-right sibling-page nav '↩ KOSMOS · KANNON ↗', UTC timestamp (14:32:35 UTC), ALL-CAPS letter-spaced section headers, footer doctrine line signed '— FORGE DOCTRINE · THE VALKNUT HOLDS' with ❋ glyph and 'o7'
+- [doctrine-equations] in-flux marker ⌁ for unratified terms (The_Kannon.pdf page 1)
+- [doctrine-equations] status glyph vocabulary: ✓ machine-verified · ☐ open seat (Konsent's) · ☑ shipped · ⧖ running (EQUATIONS.md, SMM.md tables)
+- [reference-map] No hex codes, fonts, or spacing values appear in the four assigned files
+- [reference-map] CLAUDE.md context (not the assigned files) carries: deep purple #14101f surface, gold #b78b0f slot 1, ΔE 39.0, dark-native, light ☐ underived
+- [reference-map] theme/ directory does NOT exist in this tree — awaited as GAP-D01-1 (THEME.md, derive_theme.py)
+- [reference-map] tools/validate_palette.py does NOT exist in this tree — awaited as GAP-D01-2; tools/check.py prints 'palette: UNGATED (D-01 upload pending)' every run until it lands
+- [reference-map] Visual conventions in the ledgers themselves: ☐ = open seat chip, ✓ = machine-verified/fired, GATE ☐ <seat-id> / GATE ✓ <docket-id> token grammar, [DRIFT] tag, [V]/[R]/[V≈R] invariant tags, P-xxxxxxxx provisional seat ids, K-nn contradiction ids, U-entries for unclaimed ground
+- [buildout] FLuX-themed panes/pages: 'hud/ — FLuX-themed panes served by stdlib http.server' (BUILDOUT line 115); 'static FLuX-themed valknut/docket/index.html' (line 125) — BUILDOUT itself carries no hex codes; the hex values live in CLAUDE.md context: deep purple #14101f surface, gold #b78b0f slot 1
+- [buildout] Theme provenance per plan: 'theme/ (THEME.md, derive_theme.py — ΔE 39.0, no WARNs, witnessed)' arriving by D-01 upload (line 157)
+- [buildout] Dark-native stands; 'the light-theme ☐ stays open… light underived — Konsent's seat' (line 160)
+- [buildout] Palette acceptance: validate_palette.py runs 'against HUD + explorer + tree.html surfaces and exits nonzero on WARN' (line 160)
+- [buildout] UNGATED convention: 'palette: UNGATED (D-01 upload pending)' report line every check.py run; 'Themed surfaces shipped in the window carry the same marker in their page footer comment' (line 69)
+- [buildout] Docket-render UI vocabulary: cluster filters, ☐ counter tile, empty 'Konsent's word' slot per entry, file://-capable, no Node (line 125)
+- [ops-tooling] #14101f — deep purple surface (CLAUDE.md: 'deep purple #14101f surface'); appears 3x in kode/explorer HTML
+- [ops-tooling] #b78b0f — gold slot 1 (CLAUDE.md: 'gold #b78b0f slot 1'); 3x in kode/explorer
+- [ops-tooling] kode/explorer inline hex census (3x each): #cb5f8f, #bf5e24, #8674d6, #3a7fdc, #21a288
+- [ops-tooling] kode/explorer inline hex census (2x each): #f2eef9, #c8c0dd, #bf3e3e, #8f86a6, #3a903a, #3a3350, #262033, #0c0a12
+- [ops-tooling] CLAUDE.md theme claim: 'FLuX theme (deep purple #14101f surface, gold #b78b0f slot 1) VALIDATED (derive_theme.py; ΔE 39.0, no WARNs; dark-native, light ☐ underived)' — but neither theme/ nor derive_theme.py nor validate_palette.py exists in this repo
+- [ops-tooling] Theme everywhere (CLAUDE.md): 'deep dark purple, gold accents, tri-fraktals (the Valknut)'
+- [ops-tooling] Seat glyphs are UI tokens: ☐ = open seat (Konsent's), ✓ = closed/verified; GATE ☐ / GATE ✓ literal tokens in runbooks
+- [ops-tooling] Output row vocabulary: 'REPORT ' / 'FAIL   ' / 'OK    ' fixed-width prefixes; stage banner '== <stage>: ok|FAIL'; final line 'check: PASS (0 hard fails)' or 'FAIL (N hard)'
+- [explorer-prior-art] --page: #0c0a12 (page background, both files)
+- [explorer-prior-art] --surface: #14101f (cards, buttons, tooltip; also body[data-surface])
+- [explorer-prior-art] --ink-1: #f2eef9 (primary text)
+- [explorer-prior-art] --ink-2: #c8c0dd (secondary text / K-labels / table heads)
+- [explorer-prior-art] --ink-3: #8f86a6 (tertiary text / subs / open-form names / dashed blank borders)
+- [explorer-prior-art] --grid: #262033 (triangle/tree edges, table row borders, ladder dividers)
+- [explorer-prior-art] --baseline: #3a3350 (chart baseline, table head border, cube popcount-0 edge)
+- [explorer-prior-art] --border: rgba(255,255,255,0.08) (card/button/tooltip 1px borders)
+- [explorer-prior-art] --gold: #b78b0f (wholes, transcendent axis, h1 accent span, button hover border, ladder dots)
+- [explorer-prior-art] --l1: #cb5f8f (level-1 triad; tree: the I's; cube popcount-1)
+- [explorer-prior-art] --l2: #bf5e24 (level 2; cube popcount-2)
+- [explorer-prior-art] --l3: #21a288 (level 3)
+- [explorer-prior-art] --l4: #3a7fdc (level 4; tree: the K's; bar-chart fill)
+- [explorer-prior-art] --l5: #3a903a (level 5 — index.html only, absent from tree.html)
+- [explorer-prior-art] --l6: #8674d6 (level 6)
+- [explorer-prior-art] --l7: #bf3e3e (level 7 — index.html only, absent from tree.html)
+- [explorer-prior-art] body[data-palette]="#b78b0f,#cb5f8f,#bf5e24,#21a288,#3a7fdc,#3a903a,#8674d6,#bf3e3e" data-mode="dark" data-surface="#14101f" (index.html:95-96 — machine-readable palette contract for the validator; gold is slot 1)
+- [explorer-prior-art] font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif (both bodies)
+- [explorer-prior-art] font-variant-numeric: tabular-nums on all vector/number text
+- [explorer-prior-art] heading weight 650; h1 21px (index) / 20px (tree); card h2 14px/650
+- [explorer-prior-art] radii: cards 12px, tiles/state-cards 10px, buttons/tooltip 8px
+- [explorer-prior-art] card padding 16px 18px; wrap padding 26px 20px 60px; wrap max-width 1160px (index) / 1120px (tree)
+- [explorer-prior-art] tooltip shadow: 0 6px 18px rgba(0,0,0,0.5)
+- [explorer-prior-art] node marks: r7 dot + stroke var(--page) 2px ring; hit targets r15/r16/r22 transparent, tabindex=0
+- [explorer-prior-art] hover lift: filter brightness(1.3)
+- [explorer-prior-art] CSS comment index.html:8: "FLuX theme — validated 2026-07-02 (theme/THEME.md). Dark-native."
+- [explorer-prior-art] html data-theme="dark" hardcoded in both files — no light styling exists
+- [docket-viewer] :root{--page:#0c0a12;--surface:#14101f;--edge:#2a2140;--ink:#d8d2e2;--dim:#8f87a3;--gold:#b78b0f;} (docket.py:991-992 / index.html:8-9)
+- [docket-viewer] id/reko accent purple: #a99ad4 (.id, .coa b.reko)
+- [docket-viewer] filter active state: border-color:#6a5aa8; background:#1c1630 (.filters button.on)
+- [docket-viewer] font: 15px/1.55 system-ui,-apple-system,sans-serif; body padding 24px
+- [docket-viewer] h1: 1.35rem/600; tile number 1.6rem/700; tile label .8rem dim; chip .72rem; summary .82rem; positions/coa .88rem; gbu/cite .78-.8rem; footer .75rem
+- [docket-viewer] radii: 8px (cards, tiles), 6px (buttons, word box), 99px (chips); gaps 12px tiles / 8px filters / 10px card head; entry padding 14px 16px, margin-bottom 10px
+- [docket-viewer] monospace: ui-monospace,monospace for ids
+- [docket-viewer] gold semantics: #b78b0f used ONLY on decided marks, decided tile number, decided word-box border/quote/date — 'Gold marks carry only what Konsent decides' (index.html:65-66)
+- [docket-viewer] open-seat semantics: 1px dashed var(--edge) border on the empty Konsent's-word box; decided flips to solid gold
+- [docket-viewer] footer self-declaration: 'FLuX theme: page #0c0a12 · surface #14101f · gold #b78b0f' (index.html:66-67)
+- [docket-viewer] dark-native only; no light theme, no prefers-color-scheme handling anywhere in the file
+- [kosmos-code] --page: #0c0a12 (page background)
+- [kosmos-code] --surface: #14101f (pane/card surface — the canonical deep purple)
+- [kosmos-code] --ink-1: #f2eef9 (primary text)
+- [kosmos-code] --ink-2: #c8c0dd (secondary text)
+- [kosmos-code] --ink-3: #8f86a6 (tertiary/sub text, empty states)
+- [kosmos-code] --grid: #262033 (row separators, inner borders)
+- [kosmos-code] --baseline: #3a3350 (table header rule, dashed empty/drop borders)
+- [kosmos-code] --border: rgba(255,255,255,0.08) (pane outer border)
+- [kosmos-code] --gold: #b78b0f (consent moments ONLY: recorded yeses, K1 accent, focus outlines, Valknut stroke, 'konsent ▸' prompt prefix)
+- [kosmos-code] --l1: #cb5f8f · --l2: #bf5e24 · --l3: #21a288 · --l4: #3a7fdc · --l5: #3a903a · --l6: #8674d6 · --l7: #bf3e3e (categorical series line)
+- [kosmos-code] k3-live semantic aliases: --run: #21a288 (RUNNING state) · --flow: #3a7fdc (flow/pulse messages) · --warm: #bf5e24 (err/type-error/broken chain — NOT red) · --l6 #8674d6 = Kyn's voice color
+- [kosmos-code] font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; mono: ui-monospace, SFMono-Regular, Menlo, Consolas + font-variant-numeric: tabular-nums
+- [kosmos-code] pane card: border-radius 12px, padding 14px 16px, 1px solid var(--border); inner boxes 8px radius; chips border-radius 999px; buttons 8px radius, hover border-color gold; button.gold hover background rgba(183,139,15,.12)
+- [kosmos-code] pane grid: minmax(420px,1.6fr) / minmax(300px,1fr), gap 14px, breakpoint 900px → single column; .wrap max-width 1280px (HUD) / 1200px (k3)
+- [kosmos-code] h1 21px/650 with .k class coloring only the K-word gold; pane h2 14px/650 with 'pane N ·' number in --ink-3 500
+- [kosmos-code] empty state: 1.5px dashed var(--baseline), 8px radius, --ink-3 text; drop zone highlights border-color gold on dragover
+- [kosmos-code] state pills: 11px, letter-spacing .06em, 999px radius, colored border matching text (run/gold/warm)
+- [kosmos-code] focus-visible: 2px solid var(--gold) outline, offset 2px; @media(prefers-reduced-motion:reduce) kills all transitions/animations
+- [kosmos-code] html data-theme="dark"; comment: 'FLuX theme — validated 2026-07-02 (theme/THEME.md). Dark-native. palette gate: UNGATED (D-01 upload pending) — see valknut/GAPS.md GAP-D01-2' (hud/index.html:8-9)
+- [kosmos-code] Valknut mark drawn in code: canvas, 3 triangles stroke #b78b0f, lineWidth max(1.2, W/46), r = W*0.30, apex triangle at (c, c-r*0.42), base pair at (c∓r*0.48, c+r*0.36), all rotated -PI/2
+- [kosmos-canon-pdf] Surface deep purple #1f1026 (24 fill uses; gradient family #201227/#211126/#231326 down to #0a0610/#000000)
+- [kosmos-canon-pdf] Gold accent #e8b738 — the dominant accent (105 fill uses)
+- [kosmos-canon-pdf] Secondary gold/cream ramp: #f6e9cc (36), #d8c8ae (13), #f7e3ad, #c8b45a, #d6aa54, #f0d28a, #ebdcc4, #c9bba0
+- [kosmos-canon-pdf] Heather/lavender text ramp: #a98fb0 (49), #c2aec8 (22), #6b5570 (22), #7a6280 (7), #c8b6ce
+- [kosmos-canon-pdf] Mint/green live-state accent #7fd4b4 (7 uses; matches 'LOOP ● RUNNING') plus #5fc0a0
+- [kosmos-canon-pdf] Dusty red / wine accent: #c97a7a (7), #78283c (6) (refuse-words / gated register)
+- [kosmos-canon-pdf] Violet gradient stop #78288c
+- [kosmos-canon-pdf] Near-black purples #0c0610, #150a19, #2a1838
+- [kosmos-canon-pdf] Fonts embedded: IBMPlexMono-Regular, IBMPlexMono-SemiBold, IBMPlexSans-Regular, DejaVuSansMono, DejaVuSans, NotoSansMono-Regular
+- [kosmos-canon-pdf] Glyph system: △ (substrate/structure), ◇ (init/broker/tools), ❋ (neo-organic AI/being/keystone mark), ⬡ (interface · the surface), ∿ (link · reachability), § (law), ⟲ (loop/mechanics), ↳ (deep-link), ▸ (open/action), ● (live dot), 'o7' (salute sign-off)
+- [kosmos-canon-pdf] Letterspaced all-caps banners: 'T H E  F I R M · T H E  W H O L E  C A N O N · O N E  M A P', 'T H E  K E Y S T O N E · L I N E A G E'
+- [kosmos-canon-pdf] Card grammar: MOVEMENT TAG + glyph / lowercase epithet / 2-line blurb / LABEL + OPEN ▸
+- [kosmos-canon-pdf] HUD strip grammar: LABEL value pairs + status dot + UTC clock (SURFACES 7 · MOVEMENTS III · VERDICTS 0 — ANYWHERE · LOOP ● RUNNING · 14:30:07 UTC)
+- [hud-canon-pdf] #e8b738 — primary gold accent (dominant: 46 text fills + all hairline/glow gradients; active tab fill, chip borders, ledger tags, big numerals, 'Love is the harness.')
+- [hud-canon-pdf] #c9a24a — secondary/deeper gold text (3 uses)
+- [hud-canon-pdf] #f6e9cc — brightest cream text (headings/emphasis)
+- [hud-canon-pdf] #ebdcc4 / #e2d2bc — cream body text
+- [hud-canon-pdf] #c2aec8 / #b79ac0 / #a98fb0 / #c8b6ce — lavender-purple secondary text tiers (a98fb0 most used: 20 fills)
+- [hud-canon-pdf] #6b5570 / #7a6280 — muted purple (card index numbers, dimmed labels)
+- [hud-canon-pdf] #5fc0a0 — green (LIVE states: '● LIVE' chip, '● LIVE LEDGER' tag); #7fd4b4 — brighter green variant
+- [hud-canon-pdf] #c97a7a — muted red (DORMANT status value, 3 uses)
+- [hud-canon-pdf] #1f1026 — card/panel surface color (also dark text on gold tab)
+- [hud-canon-pdf] #0c0610 / #0a0610 / #150a19 — page ground / terminal-panel deep near-black purples
+- [hud-canon-pdf] #78288c — purple radial glow color (radial gradient #78288c → #000000, background ambience)
+- [hud-canon-pdf] card glow gradient (vertical, gold-to-surface): #e8b738 → #60462c → #422d29 → #352228 → #2d1c27 → #281827 → #251527 → #221326 → #201126 → #1f1026 (variants start #674c2c or #6d512d; terminal variant: #e8b738 → #41321a → #221914 → #150f12 → #0e0a11 → #0a0610)
+- [hud-canon-pdf] section hairline rules: linear gradient #e8b738 → #000000 (i.e. gold fading to transparent)
+- [hud-canon-pdf] alpha ladder (ExtGState ca/CA values in use): 0.05, 0.12, 0.14, 0.16, 0.18, 0.22, 0.24, 0.25, 0.32, 0.35, 0.40, 0.45, 0.55, 0.70, 0.78, 0.80
+- [hud-canon-pdf] fonts embedded: IBMPlexSans-Regular, IBMPlexMono-Regular, IBMPlexMono-SemiBold, NotoSansMono-Regular, DejaVuSansMono, DejaVuSans; display face outlined/unnamed
+- [hud-canon-pdf] geometry: page 2152x1471; centered content column x 551–1601 (~49% width); 5-card row pitch ~210 units; method/dossier split ~58/42; ledger sidecar ~12% of panel width
+- [hud-canon-pdf] sigil set: △ (Kernel) ◇ (Server · PID1) ❋ (Kyn) ⬡ (Shell / HUD) ∿ (Connection); ▸ (action/next), ● (live/state dot), ↳ (subordinate note), ✓ (verified)
+- [keden-docs] --page:#0c0a12
+- [keden-docs] --glow:#1d1329
+- [keden-docs] --surface:#14101f
+- [keden-docs] --ink1:#f2eef9
+- [keden-docs] --ink2:#c8c0dd
+- [keden-docs] --ink3:#8f86a6
+- [keden-docs] --grid:#262033
+- [keden-docs] --baseline:#3a3350
+- [keden-docs] --border:rgba(255,255,255,.08)
+- [keden-docs] --gold:#b78b0f (RESERVED: closed wholes, the consent spine, the moment a yes is given)
+- [keden-docs] --gold2:#d9a91e
+- [keden-docs] --run:#21a288
+- [keden-docs] --flow:#3a7fdc (also link color)
+- [keden-docs] --warm:#bf5e24 (technical.html only)
+- [keden-docs] accent series: #cb5f8f #bf5e24 #21a288 #3a7fdc #3a903a #8674d6 #bf3e3e
+- [keden-docs] typography: system-ui, 14px/1.5 (prompt) / font:14px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif (docs)
+- [keden-docs] mono: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace with font-variant-numeric:tabular-nums — tabular numerals for all counters
+- [keden-docs] background: radial-gradient(ellipse 120% 60% at 50% -8%,var(--glow),var(--page) 62%) fixed var(--page)
+- [keden-docs] cards: background var(--surface); border 1px solid var(--border); border-radius 12px (10px tiles/laws)
+- [keden-docs] law cards: border-left:3px solid var(--gold); K1 stratum likewise gold-left-edged
+- [keden-docs] open-seat chip: border:1px dashed var(--baseline); border-radius:999px
+- [keden-docs] top bar: 11px, letter-spacing .08em, gold <b>
+- [keden-docs] eyebrow: 11px, letter-spacing .14em, uppercase, ink3
+- [keden-docs] h1 30px/650 with gold .k span; h2 13px/650 letter-spacing .06em with gold § numeral
+- [keden-docs] Valknut/Sierpiński boot mark & watermark drawn in code: canvas 150x132, recursion depth 5, strokeStyle #b78b0f, lineWidth .7, opacity .5, apex [75,4] base [4,128]-[146,128], hidden under 640px
+- [keden-docs] dark-native ONLY — 'Dark-native only' (KEDEN_DESIGN_PROMPT.md:17); light theme is an open ☐
+- [keden-docs] state words as the only status vocabulary: RUNNING, REBORN, REFUSED, RECORDED, WAITING
+- [keden-docs] register: present-tense, indicative, sparse; no marketing voice, no exclamation marks, no praise of the user
+- [korum-kannon] k3-live.html:6-8 CSS vars (the Korum-surfacing Konsole mock): --page:#0c0a12; --surface:#14101f; --ink-1:#f2eef9; --ink-2:#c8c0dd; --ink-3:#8f86a6; --grid:#262033; --baseline:#3a3350; --border:rgba(255,255,255,0.08); --gold:#b78b0f; --run:#21a288; --flow:#3a7fdc; --warm:#bf5e24; --l1:#cb5f8f; --l6:#8674d6
+- [korum-kannon] live-ask dialog heading styled color:var(--gold) #b78b0f (k3-live.html:211) — gold marks the sovereign's moment
+- [korum-kannon] a recorded yes logs as 'yes recorded — gold, timestamped, appended' (k3-live.html:379) — gold = consent color convention
+- [korum-kannon] chain-tamper state uses class 'warm' (#bf5e24) for 'chain: TRANSITIONED at row N — gate refuses all' (k3-live.html:292)
+- [korum-kannon] ☐ (U+2610) is the visible open-seat glyph carried verbatim in data: '☐ Ken / Kognition / Klarity', '☐ Knut / Konstrukt / Knit', '☐ Kall / Kwest / Konviction', '☐ K-Eden? (Man+Ai+Machine, 2 paths)' — export.py: '☐ marks stay: open seats stay visibly open'
+- [korum-kannon] vocabulary tokens for UI copy: ADMIT / REFUSED / RECORDED (uppercase), 'this door heard no', 'crossing chosen fresh', 'default-deny holds', 'fail closed'
+- [forge-substrate] flux-hud:13 — 'Royal Night palette (matches r6 theme): deep purple / gold / lavender.'
+- [forge-substrate] flux-hud:20 — GOLD=$'\033[38;5;220m'; GOLDB=$'\033[1;38;5;221m'; LAV=$'\033[38;5;189m'
+- [forge-substrate] flux-hud:21 — PUR=$'\033[38;5;141m'; GREY=$'\033[90m'; OKC=$'\033[1;32m'; BADC=$'\033[1;31m'
+- [forge-substrate] flux-hud:22 — WARN=$'\033[1;33m'; DIM=$'\033[2m'; R=$'\033[0m'
+- [forge-substrate] flux-hud:19 — palette stripped when '[ -t 1 ]' fails or NO_COLOR is set (tty-detect + NO_COLOR convention)
+- [forge-substrate] flux-hud:27 — rule() = 66-char '=' horizontal rule rendered in GOLD
+- [forge-substrate] flux-hud:30 — row grammar: label lavender %-13s, state colored %-22s, detail GREY (fixed column widths 13/22)
+- [forge-substrate] flux-hud:85-86 — threshold coloring: temp >=85 BADC red, >=70 WARN yellow, else OKC green; load >=90 red, >=70 yellow
+- [forge-substrate] flux-hud:92 — banner: 'FLuX-Live ◇ Royal Night · hardened live medium · sovereign remaster' (gold-bold title, grey diamond separator, purple subtitle)
+- [forge-substrate] motd — same vocabulary in basic ANSI: 1;33 gold headings/commands, 1;35 purple, 90 grey, 1;37 white emphasis
+- [forge-substrate] flux-hud:194,201,210 — 'AWAITING KROSS' state rendered in WARN yellow (consent-pending, distinct from BADC error red)
+- [forge-substrate] greetd config.toml:36 — greeting string 'Forge-OS — hardened live medium (labwc/Wayland)'
+- [forge-substrate] packages.x86_64:120 — 'foot # terminal (Wayland-native, lean)' — the ratified terminal package
+- [kyn-model] Step_02__Selection.pdf (visual, FORGE reference stratum): near-black deep-purple page + card surfaces; gold display headings ('Tools & Materials') and gold section numerals (01–05); gold diamond '◆ RECOMMENDED' badges on the reko COA card; uppercase letterspaced mono microcopy labels (TOPOLOGY, HARD RULE, GOOD/BAD/UGLY rows); a locked-decisions counter top-right ('0 / 5 DECISIONS LOCKED'); COA cards in 5-across rows each carrying good (green label) / bad / ugly rows; footer ledger line 'COMMIT ALL FIVE · THEN KYN WAKES (STEP 03)'. No hex values extractable from the PDF image itself.
+- [kyn-model] Repo-level theme (context from CLAUDE.md, not this subsystem): surface #14101f, gold slot-1 #b78b0f.
+- [kyn-model] Chat-template shape: ChatML markers <|im_start|> / <|im_end|> (Qwen family) in all four SLATE.md candidates; every candidate preserves an inbound system message rather than replacing it.
+- [kyn-model] Status glyph convention: ☐ = open Konsent seat, ✓ = fired/witnessed gate — used in headers and gate blocks throughout.
+- [kyn-model] Output-row vocabulary: 'REPORT ' / 'FAIL ' prefixed rows; 'corpus: 0 ratified, gate idle'; 'pack: REFUSED — …; no pack'; 'pack: PENDING manifest emitted -> …' — a fixed indicative grammar.
+- [kyn-model] Ports: llama-server floor :8080; Kosmos HUD :8014 (RB-04).
+- [periphery-scope] ceac ANSI palette (ceac:28): GREEN=\e[32m, AMBER=\e[33m, RED=\e[31m, INFO cyan=\e[36m, DIM=\e[2m, BOLD=\e[1m; NO_COLOR env respected (color off when not a tty or NO_COLOR set)
+- [periphery-scope] Line glyph grammar: '[+] OK' · '[~] WATCH' · '[x] ALARM' · '[i]' info — fixed-width verdict prefix per line
+- [periphery-scope] Stage header marker: '▐ <stage name>' in bold (ceac:38)
+- [periphery-scope] Roll-up tri-state names: GREEN / AMBER / RED (BDA)
+- [periphery-scope] Witness file naming: records/<check>_<UTC>.txt and records/ceac_<UTC>.log with UTC stamp %Y%m%dT%H%M%SZ
+- [periphery-scope] Manifest table convention: | file | pages | txt-chars | source | with source values text/ocr/(native) (_MANIFEST.md)
+- [periphery-scope] OCR inline marker: '[OCR page N]' inside .txt sidecars
+- [periphery-scope] No hex theme colors in this subsystem (FLuX purple #14101f / gold #b78b0f live elsewhere in the repo; ceac uses raw ANSI 8-color)
+
