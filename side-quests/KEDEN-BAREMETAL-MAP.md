@@ -245,6 +245,76 @@ kosmos.py for wire facts).
 | Kyn gguf (☐ G1b/G1c) | after install | on live + drive | ☐ host seat unwalked |
 | Ventoy tier (Valknut-Vtoy) | carrier | **carrier** | ISO source for (3a) |
 
+## 5.5 · Konsent's FYK (2026-07-04) — recorded, with the convergence enumerated
+
+Konsent's konsideration, on the record: *"the membrane inversion … is the same truth
+ceac encodes as on-box detection is not sole witness — a compromised host shapes its
+own diagnostics. Our AiOs run on EndeavourOS right now; they are below their own
+membrane. … the AMBER-not-GREEN posture and the wake-chain exist because of exactly
+this inversion."*
+
+**The convergence, enumerated (three independent derivations of one law):**
+1. warD invariant 04: *"Watch the substrate, not the marker — markers can lie"*
+   (The_Kosmos.pdf / warD band).
+2. ceac's operating law: on-box detection is not sole witness; hence the wake-chain
+   (serial-confirm before read), sealed WITNESS-SHA256SUMS, and the monotone
+   AMBER-not-GREEN roll-up that only demotes.
+3. This map's membrane inversion (Branch 3 LIMFACS): as an App, stranger-daemons
+   run below the membrane; the host can kill the supervisor.
+
+Same fence, three paths, none derived from the others — per the plan's own reading
+(WS-9), convergence is data. **The general form, enumerated:** the inversion
+recurses — even an installed K-Eden (Branch 1) sits above firmware; there is always
+a *below* until the substrate is owned, which is the seed/trust-root family's whole
+purpose (stage-0-measures-arms-nothing · the DDC/Thompson-gap). The corpus' standing
+answer everywhere it appears: **the witness stands outside the thing witnessed** —
+DRW re-witnesses the drives from off-drive · the ledger lives on Anchor-01 while the
+OS lives on the live medium (two-device posture) · M1's exit is the [A]↔[B]
+cross-surface witness · ceac's wake-chain witnesses the box from the drive. A
+standing posture note for every branch, and for this session itself: **the AiOs
+authoring this map are below their own membrane right now** — [A] is a hosted
+container; its self-reports carry AMBER weight, not GREEN.
+
+**Konsent's two flagged items, with slates (3–5 COAs, one reko, the pick is
+Konsent's):**
+
+**F-1 · The Ventoy vintage trap.** flux-live-2026.06.24 sits on Valknut-Vtoy
+predating the FRESH START — booting it expecting current K-Eden yields a membrane
+that does not compile. Slate:
+- **COA-1 (reko ✓):** next metal session, place a marker file beside the ISO on the
+  Ventoy tier (`VINTAGE-2026.06.24 — pre-FRESH-START; carries no Korum/Kosmos v0;
+  see KK-1`), a G9-scoped write to the exact path. *good:* cheapest honest witness,
+  reversible; *bad:* Ventoy menus don't show sidecar files — the marker may not be
+  seen at boot-pick time; *ugly:* a marker beside a trap is not a disarmed trap.
+- **COA-2:** rename the ISO itself with a vintage tag so the Ventoy boot menu shows
+  it. *good:* the warning IS the menu entry; *bad:* breaks any recorded sha256-by-
+  filename references; *ugly:* renaming a witnessed artifact muddies its provenance.
+- **COA-3:** rebake through the Assay and retire the old ISO to an archive dir.
+  *good:* removes the trap and closes the vintage gap in one act; *bad:* the full
+  VoW-plant + signing + Assay cost; *ugly:* a rushed rebake to fix a label is how
+  bakes go canonical unassayed.
+- **COA-4:** leave as-is; record the trap in the drive-side docket only. *good:*
+  zero risk to witnessed bytes; *bad:* the trap stays armed; *ugly:* a recorded
+  trap that still fires is a known-and-kept hazard.
+
+**F-2 · The nodejs/npm provenance drift.** `packages.x86_64` (F11 operator-adds)
+lists nodejs/npm against the stated no-Node policy — two environments, one name.
+Slate:
+- **COA-1 (reko ✓):** record the split as a docket/GAPS-class entry in KlaudeKode's
+  machinery (environment-name collision: the ISO's package set ≠ the KK-1 policy
+  surface), no edit to the buildplant. *good:* honest, zero touch to reference
+  stratum (FRESH START); *bad:* the drift persists in the bytes; *ugly:* recorded
+  drift accumulates if the rebake never comes.
+- **COA-2:** strip nodejs/npm from packages.x86_64 at the next rebake (fold into
+  F-1 COA-3). *good:* one policy, one byte-set; *bad:* waits on a rebake; *ugly:*
+  the F11 operator-adds were operator-chosen — silently stripping them un-chooses
+  a prior choice without its author's word.
+- **COA-3:** ratify the split as lawful — the ISO is its own environment; annotate
+  the policy line to scope it (*"no-Node = KK-1 kode policy, not ISO contents"*).
+  *good:* names the truth that two environments exist; *bad:* two Nodes-truths to
+  keep reconciled; *ugly:* policy-scoping by annotation is how drift becomes
+  doctrine.
+
 ## 6 · Seats this side-quest surfaces (☐, Konsent's)
 
 1. ☐ Canonical residence — is K-Eden's home form installed, live-ephemeral, or
@@ -257,3 +327,5 @@ kosmos.py for wire facts).
    branch question folded in: PID1 for which branch first?
 6. ☐ Enumerate the witnessed FLuX-Live boot's "few features failed" list on next
    metal session (OPORD:3 records the fact, not the list).
+7. ☐ F-1 — disarm or mark the Ventoy vintage trap (slate in §5.5).
+8. ☐ F-2 — reconcile the nodejs/npm provenance drift (slate in §5.5).
