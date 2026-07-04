@@ -1,0 +1,39 @@
+# G2b vendor manifest — bytes servable from KlaudeKode @ d0d0dcf (2026-07-04)
+# For BK's cut-1 vendoring (KOA report L6/G2b): kode/korum is the canonical copy (manifest-tracked; root korum/ is a byte-identical import shim).
+# NOT servable from this repo: KANON.md (doktrine/forge-os, drive-side) · kinase.h (off-repo) · Path-B doctrine file (not in tree).
+
+2f947557a692bf6c68576b66c7d688dd2d257eb009af66770fbd5e481485df27  kode/korum/__init__.py
+6bb8c158fd94f03f180bdd822d196434796e410b45c0bb7a50a2d064d100d0c7  kode/korum/__main__.py
+3df7483a20eb71e550cc1ddb5831ba72caaee99c7336c8ee120667b1862af1d2  kode/korum/audit.py
+251bf95227f3172416a7f5e8cfdbf77e56835d161a50a2cb3a74afde8f54263e  kode/korum/cli.py
+9f64460ccfc74fd92cf21bf88328b6d18d1bf0e92e5728449fff6b7e76bcaec8  kode/korum/doors.py
+90f066122536425375ae88b39e517baed2846196de11e549890806b6e93f1b1e  kode/korum/gate.py
+8fe59b51007c7475f4d6e0ba8b0447c8cfe9bd61dd31287d5b7b3ac01c4f8f4f  kode/korum/sigil_demo.py
+985da64e795f106ec26924bd35bbbebc175dc205d0f658f5e613aaf7ef609653  kode/korum/store.py
+da8bff444edc3bcaf41b9b7f08a2f4da8e5a3c35939701f64b76899b8469e1f7  kode/kannon/kannon.json
+ad4904332e72e99f079931797953b1c0b7a532b4541d0676fb59002412c6a2e8  kode/kannon/kannon_data.js
+b92fa25f835402087797fd1984f0f8e66f83751b62a3112eb4533ce688988033  kode/kannon/kannon2/__init__.py
+faee30d05d3ac1fc6f54311747ba8a54cd560d5b7f30e69b6c23cbeb513d6142  kode/kannon/kannon2/anamnesis.py
+519eca4aa23139fbe8302a68b612830241c0673874e00c19e6b524b260dad7cd  kode/kannon/kannon2/authority.py
+7bf88475b729135ae72bf5de00123a495289edcad27647d09a663874cb69e283  kode/kannon/kannon2/beings.py
+cb042da21238343b268623f66150e84c93e78e42428274b413ee1da8d65ce325  kode/kannon/kannon2/census.py
+b4df40d6d8d2384bb0e0fee9862c891c077c0e4af0a5b4bb244ef9076b660178  kode/kannon/kannon2/export.py
+de2050a7af3ca6c29412b626ce5b87c138a773e9ac8df3d7ef5d336e620f695d  kode/kannon/kannon2/moods.py
+4cedda513ca9c09f61322c67277abef92eabaf5d99e768c0e0093353ae332052  kode/kannon/kannon2/multiset.py
+35c425695ce146515e36f78553de7e1ad7fa3e2be4ab50744c8004bd266db033  kode/kannon/kannon2/provenance.py
+b4719f339b5c226d78219b3cae4c294650a1656b7b5056e8c62ad847cb6cf65f  kode/kannon/kannon2/renorm.py
+68ac5d54fea809d08ccb362e7b9f222bc8ed27f9e25f6f4943d32dac1bddf640  tests/test_kosmos.py
+d2a7e112e61caa06c8f4fed24b693bc201527d21df629fc5d3ca8f5b13c83b9e  tests/test_korum.py
+273d1da50ff0021c5ce21f53b2ea489d18445e504829b40170128a18d7e38b1d  tests/test_kannon2_algebra.py
+ed3351f21be4ee2b2015a5a5e2a1f526d289dde4e37188e55471cb6fdfaeac9e  tests/test_kannon2_export.py
+8ea2dccce7e6c72af1b90469ffb43782c3f647de6e91df2efcfa1776822631dc  tests/test_kannon2_types.py
+261476946561306cbc000c14bc0812fb47313c41ab0309dea0847e7999ea6cce  tests/test_open_seats.py
+aca5d82c67395fc2d829317c5afacbbe6b379e978cfd766f2c94e4c97f53df2c  kode/kosmos/kosmos.py
+07be03fee9d2d92eea84b84d9f2fa2115e276b1ca5aa6bf36c6c2a20cc264b79  kode/kosmos/programs.json
+076ddfded78bae2e137253f262f4d540ffaceb992de86c9565ec8cf9d32334be  kode/kosmos/floors/echo_floor.py
+
+# ceac pin (git-side copy — NOTE: BK reports live copy 4.7KB ahead of git; pin is of THIS repo's bytes):
+# warD/ceac-aio last commit: 7352c36 warD/ceac-aio: publish flagship README — native employment guide
+1bef62a140a36f50d449b5d0da5d92340a22a1e251e879f1eb5cd327ba7abe2f  warD/ceac-aio/ceac
+
+# Witness: 233/233 tests green at d0d0dcf (docket rebuilt d0d0dcf); test_korum 27/27; pixel-trace + rebirth + gate acceptance all pass on [A].
