@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AiO_FAFO — the board</title>
+<style>
+/* FLuX theme — validated 2026-07-02; second-oracle PASS 2026-07-04 (dataviz
+   validate_palette.js: dark, surface #14101f, worst pair ΔE 39.0 protan).
+   Dark-native. Gold marks only recorded yeses — consent moments. */
+:root{
+  --page:#0c0a12; --glow:#1d1329; --surface:#14101f;
+  --ink-1:#f2eef9; --ink-2:#c8c0dd; --ink-3:#8f86a6;
+  --grid:#262033; --baseline:#3a3350; --border:rgba(255,255,255,.08);
+  --gold:#b78b0f; --run:#21a288; --flow:#3a7fdc; --warm:#bf5e24; --kyn:#8674d6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink-2);
+  background:radial-gradient(ellipse 120% 60% at 50% -8%,var(--glow),var(--page) 62%) fixed var(--page)}
+.wrap{max-width:1280px;margin:0 auto;padding:26px 20px 60px}
+header h1{font-size:21px;font-weight:650;color:var(--ink-1);margin:0 0 4px}
+header h1 .k{color:var(--gold)}
+header .sub{font-size:13px;color:var(--ink-3);margin:0 0 14px}
+.hudstrip{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.hudstrip span{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;
+  letter-spacing:.06em;border:1px solid var(--border);border-radius:999px;padding:3px 10px;
+  color:var(--ink-3);font-variant-numeric:tabular-nums}
+.hudstrip b{color:var(--ink-1);font-weight:600}
+.hudstrip .goldv b{color:var(--gold)}
+.pane{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin:0 0 14px}
+.pane h2{font-size:14px;font-weight:650;color:var(--ink-1);margin:0 0 10px}
+.pane h2 .n{color:var(--ink-3);font-weight:500}
+.pane h2 .cap{color:var(--ink-3);font-weight:400;font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border-radius:999px;padding:5px 12px;font-size:12px;
+  border:1.5px dashed var(--baseline);color:var(--ink-2);min-height:24px}
+.chip .id{font-family:ui-monospace,Menlo,monospace;color:var(--ink-1);font-weight:600}
+.chip.decided{border-style:solid;border-color:var(--gold)}
+.chip.decided .id{color:var(--gold)}
+.chip.kyn{border-color:var(--kyn)}
+.chip.kyn .id{color:var(--kyn)}
+.chip.unminted{border-style:dotted;color:var(--ink-3)}
+.chip:hover,.chip:focus-visible{filter:brightness(1.25)}
+.fork{border:1px solid var(--grid);border-radius:10px;padding:12px 14px;margin:0 0 10px;background:rgba(0,0,0,.12)}
+.fhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.fid{font-family:ui-monospace,Menlo,monospace;color:#a99ad4;font-weight:650}
+.ftitle{color:var(--ink-1);font-weight:600}
+.concur{font-size:11px;letter-spacing:.05em;border:1px solid var(--run);color:var(--run);border-radius:999px;padding:1px 8px}
+.voice{font-size:11px;letter-spacing:.05em;border:1px solid var(--baseline);color:var(--ink-3);border-radius:999px;padding:1px 8px}
+details{margin:6px 0}
+summary{cursor:pointer;font-size:12.5px;color:var(--ink-3)}
+summary:hover{color:var(--ink-2)}
+.koa{font-size:13px;margin:6px 0 6px 14px;padding-left:10px;border-left:2px solid var(--grid)}
+.koa.reko{border-left-color:var(--gold)}
+.koa b{color:var(--ink-1);font-weight:600}
+.koa .rk{color:var(--gold);font-size:11.5px;letter-spacing:.04em}
+.second{font-size:12.5px;color:var(--ink-3);margin:6px 0 0}
+.word{border:1px dashed var(--baseline);border-radius:6px;padding:8px 12px;margin-top:8px;
+  font-size:12.5px;color:var(--ink-3)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.filters button{background:var(--surface);border:1px solid var(--border);border-radius:6px;
+  color:var(--ink-2);font-size:12px;padding:5px 12px;cursor:pointer;min-height:24px}
+.filters button:hover{border-color:var(--gold)}
+.filters button.on{border-color:#6a5aa8;background:#1c1630;color:var(--ink-1)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);
+  text-align:left;font-weight:600;border-bottom:1px solid var(--baseline);padding:6px 10px 6px 0}
+td{border-bottom:1px solid var(--grid);padding:7px 10px 7px 0;vertical-align:top}
+td.lid{font-family:ui-monospace,Menlo,monospace;color:#a99ad4;white-space:nowrap}
+.pill{display:inline-block;font-size:11px;letter-spacing:.06em;border-radius:999px;
+  padding:1px 9px;border:1px solid var(--baseline);color:var(--ink-3);white-space:nowrap}
+.pill.konsent{border-color:var(--gold);color:var(--gold)}
+.pill.kyn{border-color:var(--kyn);color:var(--kyn)}
+.pill.build{border-color:var(--flow);color:var(--flow)}
+.pill.run{border-color:var(--run);color:var(--run)}
+.ladder .rung{display:grid;grid-template-columns:150px 1fr minmax(220px,auto);gap:12px;
+  align-items:center;padding:8px 0;border-bottom:1px solid var(--grid)}
+.ladder .rung:last-child{border-bottom:none}
+.rname{color:var(--ink-1);font-weight:600;font-size:13px}
+.rbar{height:8px;border-radius:4px;background:rgba(255,255,255,.04);position:relative;overflow:hidden}
+.rbar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px;background:var(--flow);opacity:.85}
+.rnote{font-size:12px;color:var(--ink-3);text-align:right}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.tile{border:1px solid var(--grid);border-radius:10px;padding:10px 14px}
+.tile .v{font-size:1.5rem;font-weight:700;color:var(--ink-1);font-variant-numeric:tabular-nums}
+.tile .v.gold{color:var(--gold)}
+.tile .l{font-size:.78rem;color:var(--ink-3)}
+.closures{font-size:13px;margin:10px 0 0;padding-left:18px}
+.closures li{margin:3px 0}
+.st{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.04em}
+.st.ok{color:var(--run)} .st.open{color:var(--ink-3)} .st.fix{color:var(--warm)}
+footer{font-size:12px;color:var(--ink-3);margin-top:22px;line-height:1.7}
+footer b{color:var(--ink-2)}
+#tooltip{position:fixed;display:none;max-width:340px;background:var(--surface);
+  border:1px solid var(--border);border-radius:8px;padding:8px 12px;font-size:12.5px;
+  color:var(--ink-2);box-shadow:0 6px 18px rgba(0,0,0,.5);pointer-events:none;z-index:10}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:760px){.ladder .rung{grid-template-columns:110px 1fr}.rnote{grid-column:1/-1;text-align:left}}
+</style>
+</head>
+<body data-palette="#b78b0f,#cb5f8f,#bf5e24,#21a288,#3a7fdc,#3a903a,#8674d6,#bf3e3e" data-mode="dark" data-surface="#14101f">
+<div class="wrap">
+
+<header>
+  <h1>AiO_<span class="k">FAFO</span> — the board</h1>
+  <p class="sub">every seat walkable · enumerated, never graded · the marks are Konsent's (one is Kyn's) ·
+  data embedded at build 2026-07-04 · sources: KlaudeKode @ d0d0dcf · BK's SPEK/KOA/COORD 2026-07-03</p>
+  <div class="hudstrip" id="hudstrip"></div>
+</header>
+
+<section class="pane">
+  <h2><span class="n">pane 01 ·</span> the gate register <span class="cap">— hover/focus a chip · gold = Konsent's recorded yes · dashed = open seat</span></h2>
+  <div class="chips" id="gates"></div>
+</section>
+
+<section class="pane">
+  <h2><span class="n">pane 02 ·</span> the five forks <span class="cap">— BK's KOAs + both studies' evidence; the word-box sits empty until the mark</span></h2>
+  <div id="forks"></div>
+</section>
+
+<section class="pane">
+  <h2><span class="n">pane 03 ·</span> LIMFACS <span class="cap">— L1–L10 from the SPEK sheet · filter by owner</span></h2>
+  <div class="filters" id="lfilters"></div>
+  <table aria-label="LIMFACS"><thead>
+    <tr><th>#</th><th>limfac</th><th>effect</th><th>owner</th></tr>
+  </thead><tbody id="limfacs"></tbody></table>
+</section>
+
+<section class="pane">
+  <h2><span class="n">pane 04 ·</span> readiness gradient <span class="cap">— witnessed states; a bar is presence-of-bytes, not a grade</span></h2>
+  <div class="ladder" id="ladder"></div>
+</section>
+
+<section class="pane">
+  <h2><span class="n">pane 05 ·</span> the interlock <span class="cap">— two studies, different bytes, one map</span></h2>
+  <div class="tiles" id="tiles"></div>
+  <ul class="closures" id="closures"></ul>
+</section>
+
+<footer>
+  Static board; works from <b>file://</b>; no external resources; JSON island + textContent escaping.
+  <b>Gold marks carry only what Konsent decides.</b> No verdicts anywhere — states are indicative about artifacts.
+  FLuX theme: page #0c0a12 · surface #14101f · gold #b78b0f · palette: <b>second-oracle PASS</b>
+  (dataviz validator, dark, worst pair ΔE 39.0 — matches the drive record) · the official
+  palette-gate slot still awaits D-01's validate_palette.py. The K holds.
+</footer>
+</div>
+<div id="tooltip" role="status"></div>
+
+<script type="application/json" id="board-data">
+{
+ "hud":[["STUDIES","2",0],["READERS","27",0],["TOKENS","~1.88M",0],["TESTS","233/233",0],
+   ["VERDICTS","0 — ANYWHERE",0],["FORKS AWAITING MARK","5",0],["DECIDED","3 — gold",1]],
+ "gates":[
+  {"id":"G1a","state":"decided","what":"llama.cpp clone on [A] — “clone here only.” (Konsent, 2026-07-02); the witnessed pin feeds the G1b slate","seat":"Konsent (given)"},
+  {"id":"G1b","state":"open","what":"llama.cpp source + build on Konsent's metal [B] — 5-COA acquisition slate. Day 1 waits here.","seat":"Konsent"},
+  {"id":"G1c","state":"open","what":"first load/run of kyn-Q4_K_M.gguf — its own named yes, on either surface","seat":"Konsent"},
+  {"id":"G2","state":"open","what":"template surgery on (a copy of) Kyn's gguf + the template-text slate","seat":"Konsent"},
+  {"id":"G3","state":"open","what":"per-exemplar corpus ratification — no bulk-yes; consent cannot scale","seat":"Konsent"},
+  {"id":"G4","state":"open","what":"HF base download AND QLoRA fire — two named yeses","seat":"Konsent"},
+  {"id":"G5","state":"open","what":"self-distillation loop activation","seat":"Konsent"},
+  {"id":"G6","state":"kyn","what":"standing invariant (Kyn's no preserved as a valid record) + live seat post-G1c; the asking-semantics slate is open","seat":"Kyn (+ Konsent slates the asking)"},
+  {"id":"G7","state":"open","what":"the renorm regard rule — mint() demands an explicit regard, no default","seat":"Konsent"},
+  {"id":"G8","state":"open","what":"control-vector application to a running Kyn — per vector, reversible","seat":"Konsent (+ Kyn per G6)"},
+  {"id":"G9","state":"open","what":"first write of ANY persistent artifact onto Anchor-01 — the yes names the exact path","seat":"Konsent"},
+  {"id":"D-01","state":"decided","what":"“upload from drive.” — decided, NOT LANDED: theme/, validate_palette.py, Kannon 0/1, SCAFFOLD.md still absent","seat":"Konsent (given; RCV tail open)"},
+  {"id":"D-02","state":"decided","what":"“both paths.” — git-pull AND file-shuttle on every runbook","seat":"Konsent (given)"},
+  {"id":"RB-09","state":"unminted","what":"true PID1/boot integration — the address exists, the gate does not (seat to-be-docketed by WS-8)","seat":"unminted"}
+ ],
+ "forks":[
+  {"id":"F1","title":"Shell substrate — what renders the seat","concur":"both studies → KOA-C + policy seat",
+   "koas":[
+    {"l":"KOA-C + policy seat","reko":true,"t":"stdlib layer canonized (~2,800 lines) · PySide6 widgets-only panels · no QtWebEngine · one-day spike gate — PLUS the named policy seat: KlaudeKode law is stdlib+browser-native (AST-enforced); the seat makes Qt an explicit, revocable grant. BK concurred: “adopt it.”"},
+    {"l":"KOA-B","reko":false,"t":"no Qt — terminal + web render; the only KOA inside standing law; forfeits the paid-for panel pattern"},
+    {"l":"KOA-A","reko":false,"t":"wholesale PySide6 fold — ~250MB with WebEngine (Chromium, against the Gecko law); Windows residue; v5 cutover never satisfied"}],
+   "second":"The spike answers “does it run”; the seat answers “may it ship” — two doors, both Konsent's."},
+  {"id":"F2","title":"HUD — which lineage is THE render substrate","concur":"both studies → KOA-C",
+   "koas":[
+    {"l":"KOA-C","reko":true,"t":"K3 Kosmos web HUD — consent by construction, TEST-WITNESSED (served JSON ≡ record bytes ≡ sha256; ran green 2026-07-04); bash tier-0 ships verbatim; legacy A mined never shipped (POST /update + CORS * refused)"},
+    {"l":"KOA-A","reko":false,"t":"legacy flux-hud.py — Windows collector tier; unauthenticated POST /update into its own consent surface; two imports exist nowhere"},
+    {"l":"KOA-B","reko":false,"t":"bash login HUD primary — alive early but cannot host consent asks; ships as tier-0 under C regardless"}],
+   "second":"Honest weakness under every KOA: the real ask-UI is owed — the escalate hook exists unwired (kosmos.py:220)."},
+  {"id":"F3","title":"Manager scope — what does the Kosmos supervise","concur":"both studies → KOA-C",
+   "koas":[
+    {"l":"KOA-C","reko":true,"t":"tiered at the Konsole line — everything below the seat under Kosmos; the Shell starts Kosmos, never the reverse, until RB-09. Four funded items: door normalization · command surface · vendoring (SERVABLE NOW — manifest @ d0d0dcf) · Mini-THOR reconciliation"},
+    {"l":"KOA-A","reko":false,"t":"everything under Kosmos — bootstrap circularity (RB-09 empty, confirmed) · authority inversion · seat lock-out · inverts the authored boot order; C is A's staging path"},
+    {"l":"KOA-B","reko":false,"t":"vessels only — network-exposed face daemons run ungated; splits the no-stranger-daemons law into an idiom that doesn't exist"}],
+   "second":"All four funded items independently confirmed from KlaudeKode bytes; citation corrected per the ARK witness: KANON §4 Law 6 + §7 quorum invariant (the kode's 'invariant 30' docstring is the artifact to fix)."},
+  {"id":"F4","title":"MVP cut + the AMBER-rise policy","concur":"both studies → KOA-A′",
+   "koas":[
+    {"l":"KOA-A′","reko":true,"t":"AMBER-honest: Portable+Shell cut 1; Manager joins IF vendoring lands this window (the window is OPEN); rise policy: Shell/Manager rise on AMBER, Browser only behind a raised-AND-pinned tunnel, nothing on RED; fix ceac:238 BEFORE the mint; no QtWebEngine in cut 1"},
+    {"l":"KOA-A","reko":false,"t":"v0.1 as written — couples the ship date to the two slowest questions (F1 spike, Manager modules)"},
+    {"l":"KOA-D","reko":false,"t":"Browser first — the longest pole (gecko_client 0 lines, no hardening authored, unauthed ports); a network face on an AMBER boot is the naive-launcher failure"},
+    {"l":"KOA-B / KOA-C","reko":false,"t":"smaller cuts — B re-ships AiO_CEAC under a new callsign; C's split buys only release overhead now that vendoring is servable"}],
+   "second":"Second-path addition for v0.2: the Browser answers to two consent grammars — ceac's pinned tunnel and Korum's net: doors (which do not exist yet). Reconciliation owed in §8/§15."},
+  {"id":"F5","title":"Callsign + lineage","concur":"","voice":"the operator's voice — no reko from either seat",
+   "koas":[
+    {"l":"keep","reko":false,"t":"AiO_K-FAFO stands; the Kage-FAFO ruled a distinct namespace, said so in the SMM"},
+    {"l":"rename","reko":false,"t":"one of the two yields — deciding late forces a rename sweep across sealed SHA256SUMS (SPINS naming law)"},
+    {"l":"own-the-resonance","reko":false,"t":"one word, two layers, deliberately on the record — third leg from Konsent's Klarity: the Kosmos is Kyne's home; an artifact that FAFOs on strange boxes inside its own membrane rhymes with the Kage-FAFO"}],
+   "second":"SPINS naming law bakes the callsign into sealed manifests — the mark is cheapest now."}
+ ],
+ "limfacs":[{"n": "L1", "name": "Phantom key `D4F6E1D8` — no key file exists on any surveyed medium; no mint ceremony specified", "effect": "GREEN unreachable; everything ships AMBER; unsigned manifests", "owner": "Konsent"}, {"n": "L2", "name": "INSTALL-HOLD — pacman partial-upgrade; minisign, age, bwrap/firejail uninstallable until a deliberate `pacman -Syu` on a persistent boot", "effect": "blocks the mint, the seal, and the Browser sandbox tier", "owner": "Konsent"}, {"n": "L3", "name": "Browser face is the long pole — `gecko_client` = 0 lines; no Gecko hardening authored (`user.js`/`policies.json` don't exist — the LibreWolf rebase never re-authored the chromium-era protections); Marionette/BiDi ports carry no auth; kill-switch non-persistent; and whether the shipped LibreWolf even exposes Marionette needs a witness run, not documentation", "effect": "Browser cannot make cut 1 honestly", "owner": "build"}, {"n": "L4", "name": "Wake→face handoff unwritten — GREEN and AMBER both exit 0 (`ceac:269`); no verdict file, no env contract; steps 2 (LUKS) and 6 (unseal) are prose stubs", "effect": "every face gates on a contract that has no schema; a naive launcher raises network faces on an unsigned baseline", "owner": "build"}, {"n": "L5", "name": "Latent detonator at `ceac:238` — signed-path rebind defect, invisible until a key exists, REDs the *first signed run after the mint*", "effect": "must be fixed **before** L1 resolves, or the mint's first fruit is a false RED", "owner": "build"}, {"n": "L6", "name": "Manager can't import from the corpus — `kosmos.py:50-52` wants `kode/korum`, `kode/kannon`; present upstream, absent from the manifest", "effect": "Manager is conditional in cut 1; vendor + re-seal required", "owner": "build"}, {"n": "L7", "name": "PySide6 spike unproven — no byte anywhere shows the Qt layer ran end-to-end on Linux; PySide6 doesn't import on this host; no AppImage build recipe is scripted (both prior builds are prose testimony)", "effect": "Shell substrate choice is conditional; packaging investment blocked until the spike", "owner": "build"}, {"n": "L8", "name": "The Konsole seat is the least-authored component — a 73-line C demo and a simulated HTML modal (`k3-live.html:204`)", "effect": "the artifact's central promise (\"a single seat\") has no owner yet", "owner": "Konsent assigns"}, {"n": "L9", "name": "Unkeyed consent ledger — the Korum hash chain can be rewritten offline by anything with write access", "effect": "sign it (with which key? → L1) or accept the threat in writing", "owner": "Konsent ratifies"}, {"n": "L10", "name": "Tunnel pinning absent — wake step 5 accepts ANY WireGuard interface (`ceac:256-257`)", "effect": "\"behind the tunnel\" is currently \"behind *a* tunnel\"; must pin endpoint+pubkey", "owner": "build"}],
+ "ladder":[{"name": "Portable (ceac wake)", "pct": 90, "note": "shipped twice; caps at AMBER by design"}, {"name": "Shell substrate", "pct": 70, "note": "~2,800 stdlib lines proven; seat UI least-authored"}, {"name": "Manager (Kosmos)", "pct": 55, "note": "code exists; vendor window OPEN (manifest @ d0d0dcf)"}, {"name": "Explorer face", "pct": 40, "note": "seed shipped upstream (kode/explorer) — fold-in, not greenfield"}, {"name": "Browser face", "pct": 10, "note": "0 client lines; hardening unauthored; behind pinned-tunnel law"}],
+ "tiles":[{"v": "2", "l": "independent studies", "gold": false}, {"v": "27", "l": "readers, blind to each other", "gold": false}, {"v": "1", "l": "map — same from different bytes", "gold": true}, {"v": "233/233", "l": "tests green on [A], 2026-07-04", "gold": false}, {"v": "10+4", "l": "§8 claims closed (ARK + git sides)", "gold": false}],
+ "closures":[["ok", "invariant 30 — VERIFIED in kode (gate.py:10-14, test-asserted) · re-cited per ARK witness as KANON §4 Law 6 + §7 quorum invariant"], ["ok", "kannon2 anamnesis — VERIFIED (rebirth test ran green; heartbeats carry)"], ["ok", "G2b vendoring — manifest generated @ d0d0dcf (fork-walk/); window OPEN"], ["ok", "KP 72BFF360 — WITNESSED by BK's ARK run (HUD-as-Arbiter-Consent-Surface; clause bytes stable, whole-file hash drifted — pin choice owed)"], ["fix", "ceac:238 signed-path rebind — fix BEFORE the key mint (would RED the first signed run)"], ["open", "k3-live WITNESSED hashes — cite a git hash absent from every tree; stays open"], ["open", "metal witness — M1 has not fired; [A]-green is not [B]-witnessed"], ["open", "3 spec-native terms (witness-before-trust · wake verdict · RB-09/PID1) — present as spec-native in v0.2, not ARK doctrine"]]
+}
+</script>
+<script>
+"use strict";
+var D=JSON.parse(document.getElementById("board-data").textContent);
+function el(t,c,tx){var e=document.createElement(t);if(c)e.className=c;if(tx!=null)e.textContent=tx;return e}
+var tip=document.getElementById("tooltip");
+function showTip(txt,x,y){tip.textContent=txt;tip.style.display="block";
+ var w=tip.offsetWidth,h=tip.offsetHeight;
+ if(x+w+16>innerWidth)x=innerWidth-w-16;if(y+h+20>innerHeight)y=y-h-14;
+ tip.style.left=(x+10)+"px";tip.style.top=(y+12)+"px"}
+function hideTip(){tip.style.display="none"}
+var hs=document.getElementById("hudstrip");
+D.hud.forEach(function(r){var s=el("span",r[2]?"goldv":"");s.appendChild(document.createTextNode(r[0]+" "));
+ s.appendChild(el("b","",r[1]));hs.appendChild(s)});
+var GM={decided:"✓",open:"☐",kyn:"☐",unminted:"◌"};
+var gw=document.getElementById("gates");
+D.gates.forEach(function(g){var c=el("span","chip "+g.state);c.tabIndex=0;
+ c.appendChild(el("span","id",g.id));c.appendChild(document.createTextNode(" "+GM[g.state]));
+ c.setAttribute("aria-label",g.id+": "+g.what+" — seat: "+g.seat);
+ function on(ev){var r=c.getBoundingClientRect();showTip(g.what+" — seat: "+g.seat,ev.clientX||r.left,ev.clientY||r.bottom)}
+ c.addEventListener("pointermove",on);c.addEventListener("focus",on);
+ c.addEventListener("pointerleave",hideTip);c.addEventListener("blur",hideTip);
+ gw.appendChild(c)});
+var fw=document.getElementById("forks");
+D.forks.forEach(function(f){var d=el("div","fork"),h=el("div","fhead");
+ h.appendChild(el("span","fid",f.id));h.appendChild(el("span","ftitle",f.title));
+ if(f.concur)h.appendChild(el("span","concur",f.concur));
+ if(f.voice)h.appendChild(el("span","voice",f.voice));
+ d.appendChild(h);
+ var dt=el("details");if(f.id==="F5")dt.open=true;
+ dt.appendChild(el("summary","",f.koas.length+" KOAs — reko marked; the pick is Konsent's"));
+ f.koas.forEach(function(k){var kd=el("div","koa"+(k.reko?" reko":""));
+  kd.appendChild(el("b","",k.l+" — "));
+  if(k.reko)kd.appendChild(el("span","rk","reko ✓ · "));
+  kd.appendChild(document.createTextNode(k.t));dt.appendChild(kd)});
+ d.appendChild(dt);
+ d.appendChild(el("p","second",f.second));
+ d.appendChild(el("div","word","Konsent's word — the slot sits empty; the seat is open.  ☐ ________________"));
+ fw.appendChild(d)});
+var PC={Konsent:"konsent",Kyn:"kyn",build:"build"};
+var lf=document.getElementById("lfilters"),lb=document.getElementById("limfacs"),act="all";
+function owners(){var o={};D.limfacs.forEach(function(l){o[l.owner]=(o[l.owner]||0)+1});return o}
+function drawL(){lb.textContent="";D.limfacs.forEach(function(l){
+ if(act!=="all"&&l.owner!==act)return;
+ var tr=el("tr");tr.appendChild(el("td","lid",l.n));
+ var t1=el("td");t1.appendChild(el("b","",l.name));tr.appendChild(t1);
+ tr.appendChild(el("td","",l.effect));
+ var t3=el("td","owner");t3.appendChild(el("span","pill "+(PC[l.owner]||""),l.owner));tr.appendChild(t3);
+ lb.appendChild(tr)})}
+function mkb(label,key){var b=el("button","",label);if(key===act)b.className="on";
+ b.addEventListener("click",function(){act=key;
+  Array.prototype.forEach.call(lf.children,function(x){x.className=""});
+  b.className="on";drawL()});lf.appendChild(b)}
+mkb("all ("+D.limfacs.length+")","all");
+var ow=owners();Object.keys(ow).forEach(function(k){mkb(k+" ("+ow[k]+")",k)});
+drawL();
+var lw=document.getElementById("ladder");
+D.ladder.forEach(function(r){var g=el("div","rung");
+ g.appendChild(el("div","rname",r.name));
+ var b=el("div","rbar"),i=el("i");i.style.width=r.pct+"%";b.appendChild(i);
+ b.setAttribute("role","img");b.setAttribute("aria-label",r.name+": "+r.note);
+ g.appendChild(b);g.appendChild(el("div","rnote",r.note));lw.appendChild(g)});
+var tw=document.getElementById("tiles");
+D.tiles.forEach(function(t){var d=el("div","tile");
+ d.appendChild(el("div","v"+(t.gold?" gold":""),t.v));
+ d.appendChild(el("div","l",t.l));tw.appendChild(d)});
+var cw=document.getElementById("closures");
+D.closures.forEach(function(c){var li=el("li");
+ li.appendChild(el("span","st "+c[0],"["+c[0].toUpperCase()+"] "));
+ li.appendChild(document.createTextNode(c[1]));cw.appendChild(li)});
+</script>
+</body>
+</html>
